@@ -19,8 +19,8 @@ card:
   examples: []
 
 # Lifecycle
-status: draft
-created: "2026-28"
+status: published
+created: "2026-03-28"
 updated: "2026-03-28"
 ---
 
