@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getAllCards, getCardBySlug, moduleSlug } from '../../lib/cards';
-import { marked } from 'marked';
+import { Marked } from 'marked';
 
 export async function getStaticPaths() {
   const cards = getAllCards();
@@ -14,11 +14,24 @@ const { slug } = Astro.params;
 const card = getCardBySlug(slug!)!;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const bodyHtml = marked.parse(card.body);
-const answerHtml = marked.parseInline(
+// Custom renderer: mermaid code blocks become <pre class="mermaid"> so
+// the Mermaid client library can find and render them as diagrams.
+const mRenderer = new Marked({
+  renderer: {
+    code({ text, lang }: { text: string; lang?: string }) {
+      if (lang === 'mermaid') {
+        return `<pre class="mermaid">${text}</pre>`;
+      }
+      return false; // fall through to default renderer
+    },
+  },
+});
+
+const bodyHtml = mRenderer.parse(card.body);
+const answerHtml = mRenderer.parseInline(
   card.card.answer.replace(/\n/g, '\n\n')
 ) as string;
-const answerHtmlFull = marked.parse(card.card.answer);
+const answerHtmlFull = mRenderer.parse(card.card.answer);
 ---
 <Base title={`${card.title} – AP1`}>
   <div class="max-w-3xl mx-auto space-y-6">
@@ -94,13 +107,39 @@ const answerHtmlFull = marked.parse(card.card.answer);
 </Base>
 
 <script>
-  const card = document.getElementById('flashcard')!;
+  import mermaid from 'mermaid';
+
+  mermaid.initialize({ startOnLoad: false });
+
+  async function renderMermaid() {
+    const nodes = Array.from(
+      document.querySelectorAll<HTMLElement>('pre.mermaid:not([data-processed])')
+    );
+    if (nodes.length > 0) {
+      await mermaid.run({ nodes });
+    }
+  }
+
+  // Render any diagrams that are already visible on load.
+  renderMermaid();
+
+  // Re-render when "Vollständiger Inhalt" details panel is opened.
+  const details = document.querySelector('details');
+  if (details) {
+    details.addEventListener('toggle', () => {
+      if (details.open) renderMermaid();
+    });
+  }
+
+  // Flashcard flip – also re-render in case the answer contains a diagram.
+  const flashcard = document.getElementById('flashcard')!;
   const answer = document.getElementById('answer-block')!;
   const hint = document.getElementById('reveal-hint')!;
 
-  card.addEventListener('click', () => {
+  flashcard.addEventListener('click', () => {
     answer.classList.toggle('hidden');
     hint.classList.toggle('hidden');
+    if (!answer.classList.contains('hidden')) renderMermaid();
   });
 </script>
 
@@ -114,8 +153,11 @@ const answerHtmlFull = marked.parse(card.card.answer);
   .prose :global(td) {
     @apply px-3 py-2 border border-gray-200;
   }
-  .prose :global(pre) {
+  .prose :global(pre:not(.mermaid)) {
     @apply bg-gray-900 text-green-300 p-4 rounded-lg overflow-x-auto text-xs;
+  }
+  .prose :global(pre.mermaid) {
+    @apply bg-transparent p-0 overflow-x-auto;
   }
   .prose :global(code:not(pre code)) {
     @apply bg-gray-100 text-red-600 rounded px-1 py-0.5 text-xs;
