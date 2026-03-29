@@ -19,7 +19,7 @@ card:
   examples: []
 
 # Lifecycle
-status: draft
+status: published       # draft | published | deprecated
 created: "2026-25"
 updated: "2026-03-25"
 ---
