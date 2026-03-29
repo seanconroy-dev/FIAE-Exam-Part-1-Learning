@@ -18,7 +18,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // the Mermaid client library can find and render them as diagrams.
 const mRenderer = new Marked({
   renderer: {
-    code({ text, lang }: { text: string; lang?: string }) {
+    code(text: string, lang?: string) {
       if (lang === 'mermaid') {
         return `<pre class="mermaid">${text}</pre>`;
       }
