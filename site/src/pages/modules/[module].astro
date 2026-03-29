@@ -1,0 +1,61 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getAllModules, getCardsByModule, moduleSlug, moduleFromSlug } from '../../lib/cards';
+
+export async function getStaticPaths() {
+  const modules = getAllModules();
+  return modules.map(mod => ({
+    params: { module: moduleSlug(mod) },
+  }));
+}
+
+const { module: moduleParam } = Astro.params;
+const moduleName = moduleFromSlug(moduleParam!);
+const cards = getCardsByModule(moduleName);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title={`${moduleName} – AP1`}>
+  <div class="space-y-6">
+    <nav class="text-sm text-gray-500 flex items-center gap-1">
+      <a href={`${base}/`} class="hover:text-blue-600">Start</a>
+      <span>/</span>
+      <a href={`${base}/modules`} class="hover:text-blue-600">Module</a>
+      <span>/</span>
+      <span class="text-gray-700 font-medium">{moduleName}</span>
+    </nav>
+
+    <div class="flex items-center justify-between flex-wrap gap-3">
+      <h1 class="text-3xl font-bold text-gray-900">{moduleName}</h1>
+      <div class="flex items-center gap-3">
+        <span class="text-sm text-gray-500">{cards.length} Karten</span>
+        <a
+          href={`${base}/quiz?module=${encodeURIComponent(moduleName)}`}
+          class="text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors"
+        >
+          Modul üben
+        </a>
+      </div>
+    </div>
+
+    <div class="space-y-2">
+      {cards.map(card => (
+        <a
+          href={`${base}/cards/${card.slug}`}
+          class="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-sm transition-all group"
+        >
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="text-xs font-mono text-gray-400">{card.id}</span>
+              {card.tags.slice(0, 3).map(t => (
+                <span class="text-xs bg-gray-100 text-gray-600 rounded px-2 py-0.5">{t}</span>
+              ))}
+            </div>
+            <div class="font-semibold text-gray-800 group-hover:text-blue-700 truncate">{card.title}</div>
+            <div class="text-sm text-gray-500 truncate mt-0.5">{card.card.question}</div>
+          </div>
+          <div class="text-xs text-gray-400 bg-gray-100 rounded px-2 py-1 shrink-0 self-center">{card.card.type}</div>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>

@@ -1,0 +1,123 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getAllCards, getCardBySlug, moduleSlug } from '../../lib/cards';
+import { marked } from 'marked';
+
+export async function getStaticPaths() {
+  const cards = getAllCards();
+  return cards.map(card => ({
+    params: { slug: card.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const card = getCardBySlug(slug!)!;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const bodyHtml = marked.parse(card.body);
+const answerHtml = marked.parseInline(
+  card.card.answer.replace(/\n/g, '\n\n')
+) as string;
+const answerHtmlFull = marked.parse(card.card.answer);
+---
+<Base title={`${card.title} – AP1`}>
+  <div class="max-w-3xl mx-auto space-y-6">
+    <!-- Breadcrumb -->
+    <nav class="text-sm text-gray-500 flex items-center gap-1 flex-wrap">
+      <a href={`${base}/`} class="hover:text-blue-600">Start</a>
+      <span>/</span>
+      <a href={`${base}/modules/${moduleSlug(card.module)}`} class="hover:text-blue-600">{card.module}</a>
+      <span>/</span>
+      <span class="text-gray-700 font-medium">{card.title}</span>
+    </nav>
+
+    <!-- Header -->
+    <div>
+      <div class="flex items-center gap-2 flex-wrap mb-2">
+        <span class="text-xs font-mono text-gray-400">{card.id}</span>
+        <span class="text-xs bg-blue-100 text-blue-700 rounded px-2 py-0.5">{card.module}</span>
+        <span class="text-xs bg-gray-100 text-gray-600 rounded px-2 py-0.5">{card.card.type}</span>
+        {card.tags.map(t => (
+          <span class="text-xs bg-green-100 text-green-700 rounded px-2 py-0.5">{t}</span>
+        ))}
+      </div>
+      <h1 class="text-3xl font-extrabold text-gray-900">{card.title}</h1>
+      {card.topics.length > 0 && (
+        <div class="flex gap-2 flex-wrap mt-2">
+          {card.topics.map(t => (
+            <span class="text-xs text-gray-500 bg-gray-50 border border-gray-200 rounded px-2 py-0.5">{t}</span>
+          ))}
+        </div>
+      )}
+    </div>
+
+    <!-- Flashcard -->
+    <div id="flashcard" class="rounded-2xl border-2 border-blue-200 bg-white shadow-md overflow-hidden cursor-pointer select-none" title="Klicken zum Aufdecken">
+      <div class="bg-blue-50 px-6 py-4 border-b border-blue-200">
+        <div class="text-xs uppercase tracking-wider text-blue-400 font-semibold mb-1">Frage</div>
+        <div class="text-lg font-semibold text-gray-800">{card.card.question}</div>
+      </div>
+      <div id="answer-block" class="hidden px-6 py-5">
+        <div class="text-xs uppercase tracking-wider text-green-500 font-semibold mb-2">Antwort</div>
+        <div class="prose prose-sm max-w-none text-gray-700" set:html={answerHtmlFull} />
+        {card.card.examples && card.card.examples.length > 0 && (
+          <div class="mt-4 bg-gray-50 rounded-lg p-4">
+            <div class="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Beispiele</div>
+            <ul class="list-disc list-inside space-y-1 text-sm text-gray-600">
+              {card.card.examples.map(ex => <li>{ex}</li>)}
+            </ul>
+          </div>
+        )}
+      </div>
+      <div id="reveal-hint" class="px-6 py-3 text-center text-sm text-blue-400">
+        Klicken zum Aufdecken der Antwort →
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="flex justify-between items-center pt-2">
+      <a href={`${base}/cards`} class="text-sm text-gray-500 hover:text-blue-600">← Alle Karten</a>
+      <a href={`${base}/quiz?module=${encodeURIComponent(card.module)}`} class="text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors">
+        Modul üben →
+      </a>
+    </div>
+
+    <!-- Full content -->
+    <details class="bg-white border border-gray-200 rounded-xl overflow-hidden group">
+      <summary class="px-6 py-4 cursor-pointer font-semibold text-gray-700 hover:bg-gray-50 list-none flex justify-between items-center">
+        Vollständiger Inhalt
+        <span class="text-gray-400 text-sm group-open:rotate-180 transition-transform inline-block">▼</span>
+      </summary>
+      <div class="px-6 py-5 prose prose-sm max-w-none border-t border-gray-100" set:html={bodyHtml} />
+    </details>
+  </div>
+</Base>
+
+<script>
+  const card = document.getElementById('flashcard')!;
+  const answer = document.getElementById('answer-block')!;
+  const hint = document.getElementById('reveal-hint')!;
+
+  card.addEventListener('click', () => {
+    answer.classList.toggle('hidden');
+    hint.classList.toggle('hidden');
+  });
+</script>
+
+<style>
+  .prose :global(table) {
+    @apply w-full text-sm border-collapse;
+  }
+  .prose :global(th) {
+    @apply bg-gray-100 text-left px-3 py-2 border border-gray-200 font-semibold;
+  }
+  .prose :global(td) {
+    @apply px-3 py-2 border border-gray-200;
+  }
+  .prose :global(pre) {
+    @apply bg-gray-900 text-green-300 p-4 rounded-lg overflow-x-auto text-xs;
+  }
+  .prose :global(code:not(pre code)) {
+    @apply bg-gray-100 text-red-600 rounded px-1 py-0.5 text-xs;
+  }
+</style>

@@ -1,0 +1,35 @@
+---
+import '../styles/global.css';
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title = 'AP1 Lernkarten', description = 'Lernkarten für die AP1-Prüfung' } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+  </head>
+  <body class="min-h-screen bg-gray-50 text-gray-900 flex flex-col">
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-10 shadow-sm">
+      <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center gap-6">
+        <a href={`${base}/`} class="text-lg font-bold text-blue-700 hover:text-blue-900">AP1 Lernkarten</a>
+        <a href={`${base}/cards`} class="text-sm text-gray-600 hover:text-blue-700 transition-colors">Alle Karten</a>
+        <a href={`${base}/modules`} class="text-sm text-gray-600 hover:text-blue-700 transition-colors">Module</a>
+        <a href={`${base}/quiz`} class="text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-lg transition-colors ml-auto">Quiz starten</a>
+      </nav>
+    </header>
+    <main class="flex-1 max-w-6xl mx-auto w-full px-4 py-8">
+      <slot />
+    </main>
+    <footer class="border-t border-gray-200 text-center text-xs text-gray-400 py-4">
+      AP1 Lernkarten · {new Date().getFullYear()}
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getAllCards, getAllModules, getAllTags, moduleSlug } from '../../lib/cards';
+
+const cards = getAllCards();
+const modules = getAllModules();
+const tags = getAllTags();
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base title="Alle Karten – AP1">
+  <div class="space-y-6">
+    <div class="flex items-center justify-between flex-wrap gap-3">
+      <h1 class="text-3xl font-bold text-gray-900">Alle Karten</h1>
+      <span class="text-sm text-gray-500">{cards.length} Karten</span>
+    </div>
+
+    <!-- Filters -->
+    <div class="bg-white border border-gray-200 rounded-xl p-4 space-y-3">
+      <div class="flex flex-wrap gap-3">
+        <input
+          id="search"
+          type="search"
+          placeholder="Suche nach Titel oder Frage…"
+          class="flex-1 min-w-48 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <select id="filter-module" class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option value="">Alle Module</option>
+          {modules.map(m => <option value={m}>{m}</option>)}
+        </select>
+        <select id="filter-tag" class="border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <option value="">Alle Tags</option>
+          {tags.map(t => <option value={t}>{t}</option>)}
+        </select>
+      </div>
+    </div>
+
+    <!-- Cards list -->
+    <div id="cards-list" class="space-y-2">
+      {cards.map(card => (
+        <a
+          href={`${base}/cards/${card.slug}`}
+          class="card-item flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-sm transition-all group"
+          data-title={card.title.toLowerCase()}
+          data-question={card.card.question.toLowerCase()}
+          data-module={card.module}
+          data-tags={card.tags.join(',')}
+        >
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 flex-wrap mb-1">
+              <span class="text-xs font-mono text-gray-400">{card.id}</span>
+              <span class="text-xs bg-blue-100 text-blue-700 rounded px-2 py-0.5">{card.module}</span>
+              {card.tags.slice(0, 2).map(t => (
+                <span class="text-xs bg-gray-100 text-gray-600 rounded px-2 py-0.5">{t}</span>
+              ))}
+            </div>
+            <div class="font-semibold text-gray-800 group-hover:text-blue-700 truncate">{card.title}</div>
+            <div class="text-sm text-gray-500 truncate mt-0.5">{card.card.question}</div>
+          </div>
+          <div class="text-xs text-gray-400 bg-gray-100 rounded px-2 py-1 shrink-0 self-center">{card.card.type}</div>
+        </a>
+      ))}
+    </div>
+
+    <p id="no-results" class="hidden text-center text-gray-400 py-12">Keine Karten gefunden.</p>
+  </div>
+</Base>
+
+<script>
+  const search = document.getElementById('search') as HTMLInputElement;
+  const filterModule = document.getElementById('filter-module') as HTMLSelectElement;
+  const filterTag = document.getElementById('filter-tag') as HTMLSelectElement;
+  const items = document.querySelectorAll<HTMLElement>('.card-item');
+  const noResults = document.getElementById('no-results')!;
+
+  function applyFilters() {
+    const q = search.value.toLowerCase();
+    const mod = filterModule.value;
+    const tag = filterTag.value;
+    let visible = 0;
+
+    items.forEach(item => {
+      const matchQ = !q || item.dataset.title!.includes(q) || item.dataset.question!.includes(q);
+      const matchM = !mod || item.dataset.module === mod;
+      const matchT = !tag || item.dataset.tags!.split(',').includes(tag);
+      const show = matchQ && matchM && matchT;
+      item.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    noResults.classList.toggle('hidden', visible > 0);
+  }
+
+  search.addEventListener('input', applyFilters);
+  filterModule.addEventListener('change', applyFilters);
+  filterTag.addEventListener('change', applyFilters);
+</script>

@@ -1,0 +1,38 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getAllModules, getCardsByModule, moduleSlug } from '../../lib/cards';
+
+const modules = getAllModules();
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const moduleColors = [
+  'bg-blue-50 border-blue-200 hover:bg-blue-100',
+  'bg-purple-50 border-purple-200 hover:bg-purple-100',
+  'bg-green-50 border-green-200 hover:bg-green-100',
+  'bg-yellow-50 border-yellow-200 hover:bg-yellow-100',
+  'bg-red-50 border-red-200 hover:bg-red-100',
+  'bg-indigo-50 border-indigo-200 hover:bg-indigo-100',
+  'bg-pink-50 border-pink-200 hover:bg-pink-100',
+];
+---
+<Base title="Module – AP1">
+  <div class="space-y-6">
+    <h1 class="text-3xl font-bold text-gray-900">Module</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      {modules.map((mod, i) => {
+        const cards = getCardsByModule(mod);
+        const color = moduleColors[i % moduleColors.length];
+        return (
+          <a
+            href={`${base}/modules/${moduleSlug(mod)}`}
+            class={`border-2 rounded-2xl p-6 transition-colors ${color}`}
+          >
+            <div class="text-3xl font-extrabold text-gray-700 mb-1">{cards.length}</div>
+            <div class="text-xs text-gray-400 mb-3">Karten</div>
+            <div class="font-semibold text-gray-800 leading-snug text-sm">{mod}</div>
+          </a>
+        );
+      })}
+    </div>
+  </div>
+</Base>
