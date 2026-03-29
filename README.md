@@ -4,6 +4,8 @@ Lernmaterialien und Ressourcen zur Vorbereitung auf die **AP1-Prüfung (IT-Beruf
 
 Dieses Repository enthält strukturierte Lernkarten und ergänzende Erklärungen für die Inhalte der Abschlussprüfung Teil 1.
 
+🌐 **Live-Website:** [https://seanconroy-dev.github.io/Ap1-Learning](https://seanconroy-dev.github.io/Ap1-Learning)
+
 ---
 
 # Ordnerstruktur
@@ -11,7 +13,7 @@ Dieses Repository enthält strukturierte Lernkarten und ergänzende Erklärungen
 | Ordner | Beschreibung |
 |--------|--------------|
 | [Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben](./Plannen,Vorbereiten%20und%20Durchführen%20von%20Arbeitsaufgaben/) | Planung und Durchführung von IT-Arbeitsaufgaben |
-| [Informieren und Beraten von Kunden und Kundinnen](./Informieren%20und%20Beraten%20von%20Kunden%20und%20Beraten%20von%20Kunden%20und%20Kundinnen/) | Kundenkommunikation und Beratung |
+| [Informieren und Beraten von Kunden und Kundinnen](./Informieren%20und%20Beraten%20von%20Kunden%20und%20Kundinnen/) | Kundenkommunikation und Beratung |
 | [Beurteilen marktgängiger IT-Systeme und Lösungen](./Beurteilen%20marktgängiger%20IT-Systeme%20und%20Lösungen/) | Analyse und Bewertung von IT-Systemen |
 | [Entwickeln, Erstellen und Betreuen von IT_Lösungen](./Entwickeln,%20Erstellen%20und%20Betreuen%20von%20IT_Lösungen/) | Entwicklung und Betreuung von IT-Lösungen |
 | [Qualitätssichernde Maßnahmen](./Qualitätssichernde%20Maßnahmen/) | Qualitätssicherung und -management |
