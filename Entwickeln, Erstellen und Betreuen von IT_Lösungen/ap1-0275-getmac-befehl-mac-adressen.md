@@ -14,7 +14,7 @@ tags: ["ap1", "getmac", "mac", "netzwerk"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welches Befehlszeilenkommando wurde hier ausgeführt?"
+  question: "Welches Befehlszeilenkommando zeigt die MAC-Adressen der Netzwerkadapter an?"
   answer: "getmac -v – zeigt die MAC-Adressen der Netzwerkadapter inklusive zusätzlicher Informationen (z. B. Name und Transportprotokoll)."
   examples: ["getmac", "getmac -v"]
 

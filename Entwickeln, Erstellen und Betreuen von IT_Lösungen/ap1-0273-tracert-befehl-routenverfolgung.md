@@ -14,7 +14,7 @@ tags: ["ap1", "tracert", "netzwerk", "diagnose"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welches Befehlszeilenkommando wurde hier ausgeführt?"
+  question: "Welches Befehlszeilenkommando verfolgt den Weg (Hops) zu einem Zielhost und misst die Antwortzeiten der einzelnen Stationen?"
   answer: "tracert – zeigt den Weg (Hops) von einem Rechner zum Zielhost und misst die Antwortzeiten der einzelnen Stationen."
   examples: ["tracert www.google.de", "Analyse von Netzwerkproblemen"]
 

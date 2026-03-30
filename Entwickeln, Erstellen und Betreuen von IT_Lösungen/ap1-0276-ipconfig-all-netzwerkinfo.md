@@ -14,7 +14,7 @@ tags: ["ap1", "ipconfig", "netzwerk", "ip"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welches Befehlszeilenkommando wurde hier ausgeführt?"
+  question: "Welches Befehlszeilenkommando zeigt detaillierte Netzwerkinformationen wie IP-Adresse, MAC-Adresse, DNS-Server und Gateway an?"
   answer: "ipconfig /all – zeigt detaillierte Netzwerkinformationen wie IP-Adresse, MAC-Adresse, DNS-Server und Gateway."
   examples: ["ipconfig", "ipconfig /all"]
 
