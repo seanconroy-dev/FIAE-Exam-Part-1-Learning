@@ -7,7 +7,7 @@ slug: ipv6-adresse-bestandteile
 title: "Bestandteile einer IPv6-Adresse"
 
 # Classification / navigation (machine-side)
-module: "Beurteilen marktgängiger IT-Systeme und Lösungen
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["ipv6", "adressierung"]
 tags: ["ipv6", "netzwerkgrundlagen", "adressstruktur"]
 
