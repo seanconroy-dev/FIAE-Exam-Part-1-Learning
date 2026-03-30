@@ -7,7 +7,7 @@ slug: "security-by-design"
 title: "Security by Design"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["entwicklung", "sicherheit", "prinzipien"]
 tags: ["ap1", "grundlagen", "softwareentwicklung"]
 

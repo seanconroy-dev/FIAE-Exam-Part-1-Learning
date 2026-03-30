@@ -7,7 +7,7 @@ slug: "blauer-engel-umweltzeichen"
 title: "Blauer Engel (Umweltzeichen)"
 
 # Classification / navigation (machine-side)
-module: "qualitaetssicherung"
+module: "Qualitätssichernde Maßnahmen"
 topics: ["blauer-engel", "umweltzeichen", "nachhaltigkeit"]
 tags: ["ap1", "umwelt", "zertifizierung", "qualität"]
 
@@ -20,7 +20,7 @@ card:
 
 # Lifecycle
 status: published       # draft | published | deprecated
-created: "2026-25"
+created: "2026-03-25"
 updated: "2026-03-25"
 ---
 

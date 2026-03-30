@@ -7,7 +7,7 @@ slug: kritischer-pfad-bestimmen
 title: Kritischen Pfad in einem Netzplan bestimmen
 
 # Classification / navigation (machine-side)
-module: ""
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektmanagement", "Netzplantechnik"]
 tags: ["prüfungsrelevant", "kritischer-pfad", "netzplan"]
 

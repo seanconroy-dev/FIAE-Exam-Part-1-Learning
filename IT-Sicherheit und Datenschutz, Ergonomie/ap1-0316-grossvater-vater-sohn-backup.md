@@ -7,7 +7,7 @@ slug: "grossvater-vater-sohn-backup"
 title: "Großvater-Vater-Sohn-Prinzip (Backup-Rotation)"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["backup", "datensicherung", "strategie"]
 tags: ["ap1", "backup", "rotation", "konzept"]
 

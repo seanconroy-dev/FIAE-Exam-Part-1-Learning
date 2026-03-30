@@ -7,7 +7,7 @@ slug: ki-unterstuetzung-iuk
 title: Unterstützung der Informations- und Kommunikationstechnologie durch KI
 
 # Classification / navigation (machine-side)
-module: Digitalisierung
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Künstliche Intelligenz", "IT-Systeme"]
 tags: ["prüfungsrelevant", "ki", "automatisierung"]
 

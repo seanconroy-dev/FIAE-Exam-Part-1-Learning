@@ -7,7 +7,7 @@ slug: projektplanungs-werkzeuge
 title: Werkzeuge zur Planung und Überwachung eines Projekts
 
 # Classification / navigation (machine-side)
-module: Projektmanagement
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektplanung"]
 tags: ["prüfungsrelevant", "werkzeuge", "planung"]
 

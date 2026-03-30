@@ -7,7 +7,7 @@ slug: helpdesk-ticketsystem-vorteile
 title: Vorteile eines User-Helpdesk-Ticketsystems
 
 # Classification / navigation (machine-side)
-module: IT-Service-Management
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Helpdesk", "Ticketsystem"]
 tags: ["prüfungsrelevant", "support", "service-management"]
 

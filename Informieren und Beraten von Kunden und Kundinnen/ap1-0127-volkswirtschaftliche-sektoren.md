@@ -7,7 +7,7 @@ slug: volkswirtschaftliche-sektoren
 title: Volkswirtschaftliche Sektoren
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Volkswirtschaft", "Wirtschaftssektoren"]
 tags: ["definition", "prüfungsrelevant"]
 

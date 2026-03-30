@@ -7,7 +7,7 @@ slug: meilenstein-planung
 title: Meilenstein-Planung
 
 # Classification / navigation (machine-side)
-module: Projektmanagement
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektplanung", "Terminplanung"]
 tags: ["prüfungsrelevant", "definition", "meilenstein"]
 

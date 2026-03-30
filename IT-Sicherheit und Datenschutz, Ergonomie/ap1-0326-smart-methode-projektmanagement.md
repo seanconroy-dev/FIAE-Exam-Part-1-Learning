@@ -7,7 +7,7 @@ slug: "smart-methode-projektmanagement"
 title: "SMART-Methode im Projektmanagement"
 
 # Classification / navigation (machine-side)
-module: "projektmanagement"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["smart", "zieldefinition"]
 tags: ["ap1", "planung", "methoden"]
 

@@ -7,7 +7,7 @@ slug: vorgangselemente-netzplan
 title: Elemente eines Vorgangs im Netzplan
 
 # Classification / navigation (machine-side)
-module: Projektmanagement
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Netzplan", "Netzplantechnik"]
 tags: ["prüfungsrelevant", "definition", "netzplan"]
 

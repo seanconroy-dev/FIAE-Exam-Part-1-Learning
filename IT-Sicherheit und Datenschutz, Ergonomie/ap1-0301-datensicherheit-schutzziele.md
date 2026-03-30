@@ -7,7 +7,7 @@ slug: "datensicherheit-schutzziele"
 title: "Datensicherheit und Schutzziele"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["datensicherheit", "schutzziele", "cia-triad"]
 tags: ["ap1", "sicherheit", "grundlagen", "risiken"]
 

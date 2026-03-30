@@ -7,7 +7,7 @@ slug: "pdca-zyklus-qualitaetsmanagement"
 title: "PDCA-Zyklus im Qualitätsmanagement"
 
 # Classification / navigation (machine-side)
-module: "qualitaetssicherung"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["pdca", "kontinuierliche-verbesserung"]
 tags: ["ap1", "prozesse", "qm"]
 

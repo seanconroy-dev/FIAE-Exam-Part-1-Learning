@@ -7,7 +7,7 @@ slug: "tom-kontrollen-dsgvo"
 title: "Konkrete Maßnahmen der TOM (DSGVO)"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["datenschutz", "tom", "zugriffskontrolle"]
 tags: ["ap1", "ds-gvo", "sicherheit", "maßnahmen"]
 

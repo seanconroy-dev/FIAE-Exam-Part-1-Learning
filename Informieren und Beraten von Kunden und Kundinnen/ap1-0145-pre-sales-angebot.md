@@ -7,7 +7,7 @@ slug: pre-sales-angebot
 title: Pre-Sales-Angebot
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Vertrieb", "Marketing"]
 tags: ["definition", "prüfungsrelevant"]
 

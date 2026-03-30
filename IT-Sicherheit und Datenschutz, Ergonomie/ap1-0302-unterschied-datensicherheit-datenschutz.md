@@ -7,7 +7,7 @@ slug: "unterschied-datensicherheit-datenschutz"
 title: "Unterschied zwischen Datensicherheit und Datenschutz"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["datensicherheit", "datenschutz", "grundlagen"]
 tags: ["ap1", "sicherheit", "recht", "cia"]
 

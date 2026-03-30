@@ -7,7 +7,7 @@ slug: "ergonomischer-arbeitsplatz"
 title: "Ergonomischer PC-Arbeitsplatz"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["ergonomie", "arbeitsplatz", "gesundheit"]
 tags: ["ap1", "grundlagen", "arbeitsplatzgestaltung"]
 

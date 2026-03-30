@@ -7,7 +7,7 @@ slug: "mail-sicherheit"
 title: "Sicherheitsmaßnahmen bei E-Mail-Systemen"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["email", "verschluesselung", "netzwerk"]
 tags: ["ap1", "kommunikation", "sicherheit"]
 

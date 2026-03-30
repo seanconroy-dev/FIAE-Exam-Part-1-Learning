@@ -7,7 +7,7 @@ slug: ausserbetriebnahme-it-systeme
 title: Außerbetriebnahme von IT-Systemen
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["IT-Betrieb", "Systemmanagement"]
 tags: ["prüfungsrelevant"]
 

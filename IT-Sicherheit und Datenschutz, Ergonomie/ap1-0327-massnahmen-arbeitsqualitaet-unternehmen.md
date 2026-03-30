@@ -7,7 +7,7 @@ slug: "massnahmen-arbeitsqualitaet-unternehmen"
 title: "Maßnahmen zur Verbesserung der Arbeitsqualität"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["arbeitsqualitaet", "mitarbeiterzufriedenheit"]
 tags: ["ap1", "organisation", "arbeitsumfeld"]
 

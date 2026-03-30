@@ -7,7 +7,7 @@ slug: "recycling-it-produkte-weee"
 title: "Recycling von IT-Produkten (WEEE)"
 
 # Classification / navigation (machine-side)
-module: "qualitaetssicherung"
+module: "Qualitätssichernde Maßnahmen"
 topics: ["weee", "recycling", "elektroschrott"]
 tags: ["ap1", "umwelt", "entsorgung", "it-hardware"]
 
@@ -20,7 +20,7 @@ card:
 
 # Lifecycle
 status: published       # draft | published | deprecated
-created: "2026-25"
+created: "2026-03-25"
 updated: "2026-03-25"
 ---
 

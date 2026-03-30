@@ -7,7 +7,7 @@ slug: "themen-it-sicherheitsbeauftragter"
 title: "Aufgaben und Themen eines IT-Sicherheitsbeauftragten (TÜV)"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["isms", "iso27001", "bsi"]
 tags: ["ap1", "it-sicherheit", "organisation"]
 

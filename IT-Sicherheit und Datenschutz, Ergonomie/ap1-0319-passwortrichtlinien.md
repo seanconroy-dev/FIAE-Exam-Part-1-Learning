@@ -7,7 +7,7 @@ slug: "passwortrichtlinien"
 title: "Sichere Passwortrichtlinien"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["passwort", "authentifizierung", "sicherheit"]
 tags: ["ap1", "grundlagen", "richtlinien"]
 

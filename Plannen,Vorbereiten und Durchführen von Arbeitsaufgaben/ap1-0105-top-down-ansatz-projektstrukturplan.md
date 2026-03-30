@@ -7,7 +7,7 @@ slug: top-down-ansatz-projektstrukturplan
 title: Top-Down-Ansatz beim Projektstrukturplan
 
 # Classification / navigation (machine-side)
-module: Projektmanagement
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektstrukturplan", "Planungsmethoden"]
 tags: ["prüfungsrelevant", "definition", "psp"]
 

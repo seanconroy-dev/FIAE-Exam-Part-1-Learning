@@ -7,7 +7,7 @@ slug: machbarkeitsanalyse
 title: Machbarkeitsanalyse
 
 # Classification / navigation (machine-side)
-module: ""
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektmanagement", "Planung"]
 tags: ["prüfungsrelevant", "machbarkeitsanalyse", "projektplanung"]
 

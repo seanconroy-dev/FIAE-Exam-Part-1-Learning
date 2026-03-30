@@ -7,7 +7,7 @@ slug: "iso-9001-bedeutung-ausbildungsbetrieb"
 title: "ISO 9001 im Ausbildungsbetrieb"
 
 # Classification / navigation (machine-side)
-module: "qualitaetssicherung"
+module: "Qualitätssichernde Maßnahmen"
 topics: ["iso-9001", "qualitätsmanagement"]
 tags: ["ap1", "normen", "prozesse", "optimierung"]
 
@@ -20,7 +20,7 @@ card:
 
 # Lifecycle
 status: published       # draft | published | deprecated
-created: "2026-25"
+created: "2026-03-25"
 updated: "2026-03-25"
 ---
 

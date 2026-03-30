@@ -7,7 +7,7 @@ slug: "router-schutzziele-bsi"
 title: "Schutzziele und Schutzbedarf eines Routers (BSI)"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["schutzziele", "bsi", "router"]
 tags: ["ap1", "it-sicherheit", "cia"]
 

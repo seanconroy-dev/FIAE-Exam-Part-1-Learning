@@ -7,7 +7,7 @@ slug: kritischer-pfad-netzplan
 title: Kritischer Pfad im Netzplan
 
 # Classification / navigation (machine-side)
-module: Projektmanagement
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Netzplan", "Terminplanung"]
 tags: ["prüfungsrelevant", "definition", "netzplantechnik"]
 

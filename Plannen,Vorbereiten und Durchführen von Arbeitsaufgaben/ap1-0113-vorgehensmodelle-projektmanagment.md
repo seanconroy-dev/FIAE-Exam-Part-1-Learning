@@ -7,7 +7,7 @@ slug: vorgehensmodelle-projektmanagement
 title: Vorgehensmodelle im Projektmanagement
 
 # Classification / navigation (machine-side)
-module: Projektmanagement
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Vorgehensmodelle", "Softwareentwicklung"]
 tags: ["prüfungsrelevant", "überblick", "modelle"]
 

@@ -7,7 +7,7 @@ slug: "sicherheitsprozess-bsi-phasen"
 title: "Phasen des Sicherheitsprozesses nach BSI IT-Grundschutz"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["bsi", "sicherheitsprozess"]
 tags: ["ap1", "it-sicherheit", "grundschutz"]
 

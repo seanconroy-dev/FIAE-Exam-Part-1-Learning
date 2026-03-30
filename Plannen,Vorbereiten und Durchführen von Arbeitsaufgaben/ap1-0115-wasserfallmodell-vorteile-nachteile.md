@@ -7,7 +7,7 @@ slug: wasserfallmodell-vorteile-nachteile
 title: Vor- und Nachteile des Wasserfallmodells
 
 # Classification / navigation (machine-side)
-module: ""
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektmanagement", "Vorgehensmodelle"]
 tags: ["prüfungsrelevant", "wasserfallmodell", "vergleich"]
 

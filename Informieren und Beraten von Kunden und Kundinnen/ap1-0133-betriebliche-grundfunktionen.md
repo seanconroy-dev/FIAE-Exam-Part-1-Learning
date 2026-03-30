@@ -7,7 +7,7 @@ slug: betriebliche-grundfunktionen
 title: Betriebliche Grundfunktionen
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Betriebswirtschaft", "Unternehmen"]
 tags: ["definition", "prüfungsrelevant"]
 

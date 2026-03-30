@@ -7,7 +7,7 @@ slug: direkter-vertrieb-vor-und-nachteile
 title: Direkter Vertrieb – Vor- und Nachteile
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Vertrieb", "Marketing"]
 tags: ["prüfungsrelevant", "vergleich"]
 

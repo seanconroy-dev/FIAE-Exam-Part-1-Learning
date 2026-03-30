@@ -7,7 +7,7 @@ slug: offene-handelsgesellschaft-ohg
 title: Offene Handelsgesellschaft (OHG)
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Unternehmensformen", "Personengesellschaften"]
 tags: ["definition", "prüfungsrelevant"]
 

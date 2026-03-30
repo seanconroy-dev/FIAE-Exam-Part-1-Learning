@@ -7,7 +7,7 @@ slug: "gs-siegel-gepruefte-sicherheit"
 title: "GS-Siegel (Geprüfte Sicherheit)"
 
 # Classification / navigation (machine-side)
-module: "qualitaetssicherung"
+module: "Qualitätssichernde Maßnahmen"
 topics: ["gs-siegel", "produktsicherheit", "zertifizierung"]
 tags: ["ap1", "sicherheit", "normen", "prüfung"]
 
@@ -20,7 +20,7 @@ card:
 
 # Lifecycle
 status: published       # draft | published | deprecated
-created: "2026-25"
+created: "2026-03-25"
 updated: "2026-03-25"
 ---
 

@@ -7,7 +7,7 @@ slug: marktgleichgewicht
 title: Marktgleichgewicht
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Volkswirtschaft", "Marktmechanismus"]
 tags: ["definition", "prüfungsrelevant"]
 

@@ -7,7 +7,7 @@ slug: gantt-diagramm
 title: Gantt-Diagramm
 
 # Classification / navigation (machine-side)
-module: Projektmanagement
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektplanung", "Gantt-Diagramm"]
 tags: ["prüfungsrelevant", "definition", "planung"]
 

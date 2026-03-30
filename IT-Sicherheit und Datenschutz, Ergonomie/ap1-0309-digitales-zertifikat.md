@@ -7,7 +7,7 @@ slug: "digitales-zertifikat"
 title: "Digitales Zertifikat"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["kryptografie", "zertifikate", "pki"]
 tags: ["ap1", "grundlagen", "verschluesselung", "authentifizierung"]
 

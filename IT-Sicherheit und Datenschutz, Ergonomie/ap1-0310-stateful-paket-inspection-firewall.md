@@ -7,7 +7,7 @@ slug: "stateful-packet-inspection-firewall"
 title: "Stateful Packet Inspection (SPI) Firewall"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["netzwerksicherheit", "firewall", "spi"]
 tags: ["ap1", "grundlagen", "netzwerk", "sicherheit"]
 

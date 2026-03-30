@@ -7,7 +7,7 @@ slug: stakeholder-definition
 title: Stakeholder (Begriff und Bedeutung)
 
 # Classification / navigation (machine-side)
-module: ""
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektmanagement", "Stakeholder"]
 tags: ["prüfungsrelevant", "definition"]
 

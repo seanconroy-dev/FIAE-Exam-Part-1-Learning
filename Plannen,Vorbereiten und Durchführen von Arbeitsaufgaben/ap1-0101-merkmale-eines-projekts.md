@@ -7,7 +7,7 @@ slug: merkmale-eines-projekts
 title: Merkmale eines Projekts
 
 # Classification / navigation (machine-side)
-module: Projektmanagement
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektdefinition"]
 tags: ["prüfungsrelevant", "definition", "grundlagen"]
 

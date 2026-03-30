@@ -7,7 +7,7 @@ slug: "public-key-infrastruktur-pki"
 title: "Public Key Infrastruktur (PKI)"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["kryptografie", "pki", "zertifikate"]
 tags: ["ap1", "grundlagen", "verschluesselung", "authentifizierung"]
 

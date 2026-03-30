@@ -7,7 +7,7 @@ slug: "massnahmen-produktqualitaet-verbesserung"
 title: "Maßnahmen zur Verbesserung der Produktqualität"
 
 # Classification / navigation (machine-side)
-module: "qualitaetssicherung"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["produktqualitaet", "qualitaetsmanagement"]
 tags: ["ap1", "prozesse", "optimierung"]
 

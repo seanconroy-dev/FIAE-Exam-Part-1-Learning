@@ -7,7 +7,7 @@ slug: cross-selling
 title: Cross-Selling
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Marketing", "Vertrieb"]
 tags: ["definition", "prüfungsrelevant"]
 

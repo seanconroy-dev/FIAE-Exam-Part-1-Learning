@@ -7,7 +7,7 @@ slug: "multi-factor-authentication-mfa"
 title: "Multi-Faktor-Authentifizierung (MFA)"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["mfa", "authentifizierung", "zugriffssicherheit"]
 tags: ["ap1", "sicherheit", "login", "schutz"]
 

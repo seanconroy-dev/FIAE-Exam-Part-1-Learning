@@ -7,7 +7,7 @@ slug: betriebsergebnis-beeinflussen
 title: Betriebs­ergebnis positiv beeinflussen
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Kostenrechnung", "Unternehmensführung"]
 tags: ["definition", "prüfungsrelevant"]
 

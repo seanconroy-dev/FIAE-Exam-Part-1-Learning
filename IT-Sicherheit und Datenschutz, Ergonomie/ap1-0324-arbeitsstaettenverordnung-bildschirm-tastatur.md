@@ -7,7 +7,7 @@ slug: "arbeitsstaettenverordnung-bildschirm-tastatur"
 title: "Arbeitsstättenverordnung: Bildschirm & Tastatur"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["ergonomie", "arbeitsplatz", "arbstaettv"]
 tags: ["ap1", "richtlinien", "gesundheit"]
 

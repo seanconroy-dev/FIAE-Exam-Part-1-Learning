@@ -7,7 +7,7 @@ slug: kick-off-meeting
 title: Kick-Off-Meeting
 
 # Classification / navigation (machine-side)
-module: Projektmanagement
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektstart", "Projektorganisation"]
 tags: ["prüfungsrelevant", "definition", "meeting"]
 

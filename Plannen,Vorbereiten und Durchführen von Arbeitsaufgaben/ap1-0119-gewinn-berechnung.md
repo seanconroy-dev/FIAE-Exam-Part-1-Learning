@@ -7,7 +7,7 @@ slug: gewinn-berechnung
 title: Gewinnberechnung im Unternehmen
 
 # Classification / navigation (machine-side)
-module: ""
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["BWL-Grundlagen"]
 tags: ["gewinn", "kosten", "erloes", "bwl", "pruefungsrelevant"]
 

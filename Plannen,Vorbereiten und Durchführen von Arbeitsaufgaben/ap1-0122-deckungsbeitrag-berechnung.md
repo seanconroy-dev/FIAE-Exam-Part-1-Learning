@@ -7,7 +7,7 @@ slug: deckungsbeitrag-berechnung
 title: Berechnung des Deckungsbeitrags
 
 # Classification / navigation (machine-side)
-module: ""
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["BWL-Grundlagen", "Kostenrechnung"]
 tags: ["prüfungsrelevant", "deckungsbeitrag", "kostenrechnung"]
 

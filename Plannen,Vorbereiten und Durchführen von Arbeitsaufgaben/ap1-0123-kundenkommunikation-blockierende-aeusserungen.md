@@ -7,7 +7,7 @@ slug: kundenkommunikation-blockierende-aeusserungen
 title: Nicht förderliche Äußerungen im Kundengespräch
 
 # Classification / navigation (machine-side)
-module: ""
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Kundenkommunikation", "Soft Skills"]
 tags: ["prüfungsrelevant", "kommunikation", "kundengespräch"]
 

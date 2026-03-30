@@ -7,7 +7,7 @@ slug: "differenziell-vs-inkrementell-backup"
 title: "Differenzielles vs. inkrementelles Backup"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["backup", "datensicherung"]
 tags: ["ap1", "backup", "grundlagen", "vergleich"]
 

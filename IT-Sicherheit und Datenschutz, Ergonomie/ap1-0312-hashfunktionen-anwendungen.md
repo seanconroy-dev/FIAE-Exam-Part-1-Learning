@@ -7,7 +7,7 @@ slug: "hashfunktionen-anwendungen"
 title: "Anwendungen von Hashfunktionen"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["kryptografie", "hashfunktionen", "integritaet"]
 tags: ["ap1", "grundlagen", "sicherheit", "hash"]
 

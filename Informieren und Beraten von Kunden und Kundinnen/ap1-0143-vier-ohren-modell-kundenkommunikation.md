@@ -7,7 +7,7 @@ slug: vier-ohren-modell-kundenkommunikation
 title: Vier-Ohren-Modell in der Kundenkommunikation
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Kommunikation", "Kundenkommunikation"]
 tags: ["definition", "prüfungsrelevant"]
 

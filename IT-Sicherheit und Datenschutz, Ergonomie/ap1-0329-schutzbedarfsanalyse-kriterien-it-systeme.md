@@ -7,7 +7,7 @@ slug: "schutzbedarfsanalyse-kriterien-it-systeme"
 title: "Schutzbedarfsanalyse von IT-Systemen"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["schutzbedarfsanalyse", "risikobewertung"]
 tags: ["ap1", "it-sicherheit", "risiken"]
 

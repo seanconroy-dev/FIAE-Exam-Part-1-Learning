@@ -7,7 +7,7 @@ slug: risikoanalyse-bestandteile
 title: Bestandteile einer Risikoanalyse
 
 # Classification / navigation (machine-side)
-module: ""
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektmanagement", "Risikomanagement"]
 tags: ["prüfungsrelevant", "risikoanalyse"]
 

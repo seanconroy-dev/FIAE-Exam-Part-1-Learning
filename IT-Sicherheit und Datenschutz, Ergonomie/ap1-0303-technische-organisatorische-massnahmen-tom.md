@@ -7,7 +7,7 @@ slug: "technisch-organisatorische-massnahmen-tom"
 title: "Technisch-organisatorische Maßnahmen (TOM)"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["datenschutz", "ds-gvo", "tom"]
 tags: ["ap1", "recht", "sicherheit", "organisation"]
 

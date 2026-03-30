@@ -7,7 +7,7 @@ slug: "datenminimierung-ziele"
 title: "Ziele der Datenminimierung"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["datenschutz", "datenminimierung", "ds-gvo"]
 tags: ["ap1", "grundlagen", "datenschutz", "prinzipien"]
 

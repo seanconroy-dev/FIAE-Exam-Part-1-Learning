@@ -7,7 +7,7 @@ slug: europaeische-gesellschaft-se
 title: Europäische Gesellschaft (SE)
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Unternehmensformen", "Rechtsformen"]
 tags: ["definition", "prüfungsrelevant"]
 

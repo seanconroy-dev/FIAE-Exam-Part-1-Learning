@@ -7,7 +7,7 @@ slug: "rechte-personenbezogene-daten-dsgvo"
 title: "Rechte betroffener Personen (DSGVO)"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["datenschutz", "dsgvo", "betroffenenrechte"]
 tags: ["ap1", "grundlagen", "rechte", "eu"]
 

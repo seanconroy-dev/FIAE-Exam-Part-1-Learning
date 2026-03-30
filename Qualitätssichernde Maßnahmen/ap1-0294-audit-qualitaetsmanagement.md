@@ -7,7 +7,7 @@ slug: "audit-qualitaetsmanagement"
 title: "Audit im Qualitätsmanagement"
 
 # Classification / navigation (machine-side)
-module: "qualitaetssicherung"
+module: "Qualitätssichernde Maßnahmen"
 topics: ["audit", "qualitätsmanagement", "zertifizierung"]
 tags: ["ap1", "iso-9001", "prüfung", "prozesse"]
 
@@ -20,7 +20,7 @@ card:
 
 # Lifecycle
 status: published       # draft | published | deprecated
-created: "2026-25"
+created: "2026-03-25"
 updated: "2026-03-25"
 ---
 

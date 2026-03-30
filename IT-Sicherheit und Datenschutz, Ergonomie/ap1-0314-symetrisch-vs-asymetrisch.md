@@ -7,7 +7,7 @@ slug: "symmetrisch-vs-asymmetrisch"
 title: "Symmetrische vs. asymmetrische Verschlüsselung"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["kryptografie", "verschluesselung", "vergleich"]
 tags: ["ap1", "grundlagen", "sicherheit", "rsa", "aes"]
 

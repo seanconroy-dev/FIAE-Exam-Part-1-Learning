@@ -7,7 +7,7 @@ slug: kundenzufriedenheit-massnahmen
 title: Maßnahmen zur Steigerung der Kundenzufriedenheit
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Kundenmanagement", "Marketing"]
 tags: ["prüfungsrelevant"]
 

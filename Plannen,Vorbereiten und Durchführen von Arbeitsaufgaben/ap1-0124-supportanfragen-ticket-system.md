@@ -7,7 +7,7 @@ slug: supportanfragen-ticket-system
 title: Software zur Verarbeitung von Supportanfragen
 
 # Classification / navigation (machine-side)
-module: ""
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Support", "IT-Service-Management"]
 tags: ["prüfungsrelevant", "ticketsystem", "support"]
 

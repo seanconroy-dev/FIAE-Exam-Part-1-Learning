@@ -7,7 +7,7 @@ slug: nutzwertanalyse
 title: Nutzwertanalyse
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Entscheidungsfindung", "Analyseverfahren"]
 tags: ["definition", "prüfungsrelevant"]
 

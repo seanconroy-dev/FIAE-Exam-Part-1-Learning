@@ -7,7 +7,7 @@ slug: "softwarequalitaetskriterien"
 title: "Softwarequalitätskriterien"
 
 # Classification / navigation (machine-side)
-module: "qualitaetssicherung"
+module: "Qualitätssichernde Maßnahmen"
 topics: ["softwarequalität", "iso-9126", "qualitätsmerkmale"]
 tags: ["ap1", "software", "qualität", "kriterien"]
 
@@ -20,7 +20,7 @@ card:
 
 # Lifecycle
 status: published       # draft | published | deprecated
-created: "2026-25"
+created: "2026-03-25"
 updated: "2026-03-25"
 ---
 

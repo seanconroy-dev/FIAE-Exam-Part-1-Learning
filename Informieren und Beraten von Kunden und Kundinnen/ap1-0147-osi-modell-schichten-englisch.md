@@ -7,7 +7,7 @@ slug: osi-modell-schichten-englisch
 title: OSI-Modell – englische Bezeichnungen der Schichten
 
 # Classification / navigation (machine-side)
-module: Netzwerke
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["OSI", "Netzwerkmodelle"]
 tags: ["prüfungsrelevant", "grundlagen"]
 

@@ -7,7 +7,7 @@ slug: "wpa2-personal-vs-enterprise"
 title: "WPA2-Personal vs. WPA2-Enterprise"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["wlan", "verschluesselung", "authentifizierung"]
 tags: ["ap1", "netzwerk", "sicherheit"]
 

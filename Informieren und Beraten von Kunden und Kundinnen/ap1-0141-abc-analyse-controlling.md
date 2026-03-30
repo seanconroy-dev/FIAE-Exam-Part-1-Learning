@@ -7,7 +7,7 @@ slug: abc-analyse-controlling
 title: ABC-Analyse im Controlling
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Controlling", "Analyseverfahren"]
 tags: ["definition", "prüfungsrelevant"]
 

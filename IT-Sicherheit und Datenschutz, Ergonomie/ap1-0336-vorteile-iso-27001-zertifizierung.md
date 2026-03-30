@@ -7,7 +7,7 @@ slug: "vorteile-iso-27001-zertifizierung"
 title: "Vorteile einer ISO 27001 Zertifizierung"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["iso27001", "isms", "vorteile"]
 tags: ["ap1", "it-sicherheit", "normen"]
 

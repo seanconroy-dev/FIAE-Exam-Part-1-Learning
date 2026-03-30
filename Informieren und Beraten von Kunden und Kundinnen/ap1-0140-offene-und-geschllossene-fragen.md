@@ -7,7 +7,7 @@ slug: offene-und-geschlossene-fragen
 title: Offene und geschlossene Fragen
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Kundenkommunikation", "Support"]
 tags: ["definition", "prüfungsrelevant"]
 

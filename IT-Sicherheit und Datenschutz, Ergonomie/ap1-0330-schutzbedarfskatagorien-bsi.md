@@ -7,7 +7,7 @@ slug: "schutzbedarfskategorien-bsi"
 title: "Schutzbedarfskategorien nach BSI (normal, hoch, sehr hoch)"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["schutzbedarf", "bsi", "klassifizierung"]
 tags: ["ap1", "it-sicherheit", "grundschutz"]
 

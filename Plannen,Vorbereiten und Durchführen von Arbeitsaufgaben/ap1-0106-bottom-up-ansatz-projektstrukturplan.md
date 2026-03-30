@@ -7,7 +7,7 @@ slug: bottom-up-ansatz-projektstrukturplan
 title: Bottom-Up-Ansatz beim Projektstrukturplan
 
 # Classification / navigation (machine-side)
-module: Projektmanagement
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektstrukturplan", "Planungsmethoden"]
 tags: ["prüfungsrelevant", "definition", "psp"]
 

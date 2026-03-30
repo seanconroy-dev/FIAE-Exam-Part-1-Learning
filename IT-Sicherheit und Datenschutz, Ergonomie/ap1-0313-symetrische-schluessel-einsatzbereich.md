@@ -7,7 +7,7 @@ slug: "symmetrische-schluessel-einsatzbereiche"
 title: "Einsatzbereiche symmetrischer Schlüssel"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["kryptografie", "verschluesselung", "symmetrisch"]
 tags: ["ap1", "grundlagen", "sicherheit", "aes", "des"]
 

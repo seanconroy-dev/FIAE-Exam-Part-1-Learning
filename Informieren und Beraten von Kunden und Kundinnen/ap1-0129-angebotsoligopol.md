@@ -7,7 +7,7 @@ slug: angebotsoligopol
 title: Angebotsoligopol
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Marktformen", "Volkswirtschaft"]
 tags: ["definition", "prüfungsrelevant"]
 

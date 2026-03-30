@@ -7,7 +7,7 @@ slug: datensicherheit-schutzziele-cia
 title: Hauptziele der Datensicherheit (CIA-Triade)
 
 # Classification / navigation (machine-side)
-module: ""
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["IT-Sicherheit", "Grundlagen"]
 tags: ["prüfungsrelevant", "cia-triade", "datensicherheit"]
 

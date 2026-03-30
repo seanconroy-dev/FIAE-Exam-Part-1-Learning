@@ -7,7 +7,7 @@ slug: "endpoint-security"
 title: "Endpoint Security"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["netzwerksicherheit", "endpoint", "schutzmassnahmen"]
 tags: ["ap1", "grundlagen", "sicherheit", "endgeraete"]
 

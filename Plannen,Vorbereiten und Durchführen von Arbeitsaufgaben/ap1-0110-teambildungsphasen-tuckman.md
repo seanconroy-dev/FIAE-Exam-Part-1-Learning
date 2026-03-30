@@ -7,7 +7,7 @@ slug: teambildungsphasen-tuckman
 title: Forming, Storming, Norming und Performing
 
 # Classification / navigation (machine-side)
-module: Projektmanagement
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Teamarbeit", "Teamentwicklung"]
 tags: ["prüfungsrelevant", "definition", "team"]
 

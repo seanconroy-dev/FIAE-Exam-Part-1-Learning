@@ -7,7 +7,7 @@ slug: netzplan-projektmanagement
 title: Netzplan im Projektmanagement
 
 # Classification / navigation (machine-side)
-module: Projektmanagement
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektplanung", "Netzplan"]
 tags: ["prüfungsrelevant", "definition", "planung"]
 

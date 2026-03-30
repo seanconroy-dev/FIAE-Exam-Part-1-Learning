@@ -7,7 +7,7 @@ slug: webinar-vor-und-nachteile
 title: Vor- und Nachteile von Webinaren
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Vertrieb", "Kundenberatung", "Online-Schulung"]
 tags: ["prüfungsrelevant", "vergleich"]
 

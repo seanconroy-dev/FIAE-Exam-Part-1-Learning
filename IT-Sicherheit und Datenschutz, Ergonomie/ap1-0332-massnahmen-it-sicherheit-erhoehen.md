@@ -7,7 +7,7 @@ slug: "massnahmen-it-sicherheit-erhoehen"
 title: "Maßnahmen zur Erhöhung der IT-Sicherheit"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["sicherheitsmassnahmen", "netzwerksicherheit"]
 tags: ["ap1", "it-sicherheit", "schutz"]
 

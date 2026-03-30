@@ -7,7 +7,7 @@ slug: personengesellschaften-deutschland
 title: Personengesellschaften in Deutschland
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Unternehmensformen", "Rechtsformen"]
 tags: ["definition", "prüfungsrelevant"]
 

@@ -7,7 +7,7 @@ slug: "energy-star-bedeutung"
 title: "Energy Star Label"
 
 # Classification / navigation (machine-side)
-module: "qualitaetssicherung"
+module: "Qualitätssichernde Maßnahmen"
 topics: ["energy-star", "energieeffizienz", "zertifizierung"]
 tags: ["ap1", "umwelt", "hardware", "standards"]
 
@@ -20,7 +20,7 @@ card:
 
 # Lifecycle
 status: published       # draft | published | deprecated
-created: "2026-25"
+created: "2026-03-25"
 updated: "2026-03-25"
 ---
 

@@ -7,7 +7,7 @@ slug: regeln-telefonischer-kundensupport
 title: Regeln im telefonischen Kundensupport
 
 # Classification / navigation (machine-side)
-module: Wirtschaft
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["Kundenkommunikation", "Support"]
 tags: ["prüfungsrelevant", "grundlagen"]
 

@@ -7,7 +7,7 @@ slug: "datentraeger-vernichtung-sicherheit"
 title: "Vernichtung von Datenträgern"
 
 # Classification / navigation (machine-side)
-module: "it-sicherheit"
+module: "IT-Sicherheit und Datenschutz, Ergonomie"
 topics: ["datenschutz", "datentraeger", "vernichtung"]
 tags: ["ap1", "din-66399", "sicherheit", "entsorgung"]
 

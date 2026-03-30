@@ -7,7 +7,7 @@ slug: it-benchmarking
 title: IT-Benchmarking
 
 # Classification / navigation (machine-side)
-module: IT-Service-Management
+module: "Informieren und Beraten von Kunden und Kundinnen"
 topics: ["IT-Management", "IT-Controlling"]
 tags: ["definition", "prüfungsrelevant"]
 

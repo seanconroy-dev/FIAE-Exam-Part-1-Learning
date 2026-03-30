@@ -7,7 +7,7 @@ slug: vier-phasen-modell-projektmanagement
 title: 4-Phasen-Modell im Projektmanagement
 
 # Classification / navigation (machine-side)
-module: Projektmanagement
+module: "Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben"
 topics: ["Projektphasen", "Projektmanagement Grundlagen"]
 tags: ["prüfungsrelevant", "definition", "projektphasen"]
 

@@ -7,7 +7,7 @@ slug: "pdca-zyklus-qualitaetsmanagement"
 title: "PDCA-Zyklus im Qualitätsmanagement"
 
 # Classification / navigation (machine-side)
-module: "qualitaetssicherung"
+module: "Qualitätssichernde Maßnahmen"
 topics: ["pdca", "qualitätsmanagement", "prozesse"]
 tags: ["ap1", "kontinuierliche-verbesserung", "iso-9001"]
 
@@ -20,7 +20,7 @@ card:
 
 # Lifecycle
 status: published       # draft | published | deprecated
-created: "2026-25"
+created: "2026-03-25"
 updated: "2026-03-25"
 ---
 
