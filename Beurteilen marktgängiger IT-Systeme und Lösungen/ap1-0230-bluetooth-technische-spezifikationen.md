@@ -1,86 +1,93 @@
 ---
 # Identity (stable; never change after publishing)
-id: ap1-0131
-slug: virtualisierung-vor-und-nachteile
+id: ap1-0230
+slug: bluetooth-spezifikationen-reichweite-datenrate-frequenz
 
 # Display
-title: "Virtualisierung: Vor- und Nachteile (inkl. Cloud)"
+title: "Bluetooth: Reichweite, Datenrate und Frequenzbereich"
 
 # Classification / navigation (machine-side)
 module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
-topics: ["Virtualisierung", "Cloud", "Server"]
-tags: ["ap1", "virtualisierung", "cloud"]
+topics: ["bluetooth", "funktechnik"]
+tags: ["ap1", "netzwerke", "drahtlos", "ism-band"]
 
 # Flashcard payload
 card:
-  type: basic       # basic | multi | steps | definition | comparison
-  question: "Nenne die Vor- und Nachteile der Virtualisierung von Servern und Desktops (inkl. Cloud)."
-  answer: "Vorteile: Stromersparnis, Skalierbarkeit, Redundanz, schnelle Bereitstellung, geringe Investitionskosten (Cloud). Nachteile: evtl. höhere Latenz, nicht immer 24/7 kostengünstig, Abhängigkeit von Hardware/Software und Anbieter, eingeschränkte Individualisierung."
+  type: basic
+  question: "Welche technischen Spezifikationen hat Bluetooth in Bezug auf Reichweite, Datentransferrate und Frequenzbereich?"
+  answer: "Reichweite: Klasse 1 ≈ 200 m (100 mW), Klasse 2 ≈ 20 m (2,5 mW), Klasse 3 ≈ 10 m (1 mW). Datentransferrate: Basic Rate ≈ 1 MBit/s, Enhanced Data Rate ≈ 2–3 MBit/s. Frequenzbereich: 2,402–2,480 GHz (ISM-Band)."
   examples: []
 
 # Lifecycle
-status: published       # draft | published | deprecated
+status: draft
 created: "2026-03-18"
-updated: "2026-03-18"
+updated: "2026-03-30"
 ---
 
-## Virtualisierung: Vor- und Nachteile (inkl. Cloud)
-Virtualisierung ermöglicht es, mehrere **virtuelle Systeme auf einer physischen Hardware** zu betreiben.
+## Bluetooth: Reichweite, Datenrate und Frequenzbereich
 
-➡️ Häufig genutzt für:
-- Server (Server-Virtualisierung)
-- Desktops (VDI)
-- Cloud-Umgebungen
+Bluetooth ist ein drahtloser Kommunikationsstandard im **ISM-Band**, der sich durch unterschiedliche Reichweitenklassen, Datenraten und Betriebsmodi (Classic vs. Low Energy) auszeichnet.
 
 ## Kernerklärung
 
-### Vorteile
+### 1. Reichweite (abhängig von Sendeleistung)
+| Klasse | Sendeleistung | Reichweite (typisch) |
+|--------|--------------|----------------------|
+| Klasse 1 | 100 mW (20 dBm) | ca. 200 m |
+| Klasse 2 | 2,5 mW (4 dBm) | ca. 20 m |
+| Klasse 3 | 1 mW (0 dBm) | ca. 10 m |
 
-- **Stromersparnis** (weniger physische Hardware)
-- **Skalierbarkeit** (Ressourcen flexibel anpassen)
-- **Redundanz / Ausfallsicherheit**
-- **Schnelle Bereitstellung von Systemen**
-- **Kaum Kapazitätsgrenzen (Cloud)**
-- **Geringe Investitionskosten** (Pay-as-you-go)
-- **Lebensverlängerung alter Software**
+➡️ Höhere Leistung = größere Reichweite, aber höherer Energieverbrauch.
 
-### Nachteile
+---
 
-- **Nicht jede Lösung ist für 24/7 günstig**
-- **Höhere Latenzen möglich**
-- **Abhängigkeit von Hardware / Software / Anbieter**
-- **Nicht alles vollständig selbst administrierbar**
-- **Eingeschränkte Individualisierung**
-- **Nicht überall verfügbar (Regionen / Anbieter)**
+### 2. Datentransferrate
+| Modus | Datenrate (brutto) |
+|------|-------------------|
+| Basic Rate (BR) | ca. 1 MBit/s |
+| Enhanced Data Rate (EDR) | ca. 2–3 MBit/s |
 
-```mermaid
-flowchart LR
-A[Physischer Server] --> B[Hypervisor]
-B --> C[VM 1]
-B --> D[VM 2]
-B --> E[VM n]
-```
+➡️ EDR verbessert die Effizienz und Geschwindigkeit gegenüber BR.
+
+---
+
+### 3. Frequenzbereich
+- **2,402 – 2,480 GHz**
+- Lizenzfreies **ISM-Band**
+- Nutzung von **Frequenzsprungverfahren (FHSS)** zur Störungsreduktion
+
+---
+
+### 4. Bluetooth-Versionen
+- **Bluetooth Classic (1.x – 3.x)** → höhere Datenrate
+- **Bluetooth Low Energy (BLE, ab 4.x)** → energieeffizient, geringere Datenrate
+
+---
 
 ## Praktisches Beispiel
-Ein Unternehmen nutzt Cloud-Server:
+- **Bluetooth-Kopfhörer (Klasse 2)**  
+  → Reichweite ca. 10–20 m, ausreichend für Wohnung
 
-- Früher: mehrere physische Server → hohe Kosten  
-- Heute: virtuelle Maschinen in der Cloud  
-- Vorteil: flexible Skalierung bei Lastspitzen  
+- **Industrieanwendung (Klasse 1)**  
+  → größere Reichweite bis 200 m erforderlich
 
-➡️ Beispiel: Webserver wird bei hoher Nachfrage automatisch erweitert
+---
 
 ## Prüfungsrelevanz (AP1)
 
 ### Typische Prüfungsfragen
-- Was ist Virtualisierung?
-- Nenne Vorteile der Virtualisierung
-- Welche Nachteile hat Cloud Computing?
+- Welche Reichweitenklassen gibt es bei Bluetooth?
+- Welche Datenraten unterstützen BR und EDR?
+- In welchem Frequenzbereich arbeitet Bluetooth?
+- Warum nutzt Bluetooth das ISM-Band?
 
 ### Antworten auf die typischen Prüfungsfragen
-- Mehrere virtuelle Systeme auf einer Hardware
-- Kostenersparnis, Skalierbarkeit, schnelle Bereitstellung
-- Abhängigkeit, Latenz, Kosten bei Dauerbetrieb
+- 3 Klassen: 1 (200 m), 2 (20 m), 3 (10 m)
+- BR: 1 MBit/s, EDR: 2–3 MBit/s
+- 2,402–2,480 GHz
+- Lizenzfrei, weltweit nutzbar
+
+---
 
 ## Merksatz
-**Virtualisierung spart Hardware und bringt Flexibilität – kostet aber Kontrolle und kann Latenzen erhöhen.**
+**Bluetooth = 2,4 GHz ISM-Band + Klassen für Reichweite + BR/EDR für Datenrate.**
