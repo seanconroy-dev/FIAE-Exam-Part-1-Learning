@@ -4,7 +4,10 @@ interface Props {
   title?: string;
   description?: string;
 }
-const { title = 'AP1 Lernkarten', description = 'Lernkarten für die AP1-Prüfung' } = Astro.props;
+const { 
+  title = 'AP1 Lernsystem für Fachinformatiker', 
+  description = 'Interaktives Lernsystem zur Vorbereitung auf die AP1-Prüfung für Fachinformatiker'
+} = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <!doctype html>
