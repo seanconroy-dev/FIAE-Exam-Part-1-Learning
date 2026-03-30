@@ -14,7 +14,7 @@ tags: ["ap1", "chmod", "linux", "rechte"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Beschreibe die Aufgabe und Funktionsweise des Befehls chmod in einem Linux-Betriebssystem."
+  question: "Was bewirkt der Befehl chmod in einem Linux-Betriebssystem und wie wird er verwendet?"
   answer: "chmod dient zum Ändern von Dateiberechtigungen (lesen, schreiben, ausführen) für Benutzer, Gruppe und andere – symbolisch oder oktal."
   examples: ["chmod 770 test.txt", "chmod u+x script.sh"]
 

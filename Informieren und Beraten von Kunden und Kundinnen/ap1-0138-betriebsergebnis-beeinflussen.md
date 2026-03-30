@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: multi
-  question: "Ein Betriebsergebnis errechnet sich aus den Umsatzerlösen minus den Umsatzkosten. Welche Sachverhalte können das Betriebsergebnis positiv beeinflussen?"
+  question: "Welche Faktoren können das Betriebsergebnis positiv beeinflussen?"
   answer: |
     Das Betriebsergebnis kann verbessert werden, indem Kosten reduziert oder Prozesse effizienter gestaltet werden.
 

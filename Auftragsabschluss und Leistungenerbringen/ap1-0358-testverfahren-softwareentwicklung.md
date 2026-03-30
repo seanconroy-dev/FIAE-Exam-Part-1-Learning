@@ -14,7 +14,7 @@ tags: ["tests", "unit-test", "integrationstest", "blackbox", "whitebox"]
 # Flashcard payload
 card:
   type: basic
-  question: "In der Anwendungsentwicklung sind Testverfahren unerlässlich. Welche Testverfahren kennst du?"
+  question: "Welche Testverfahren gibt es in der Anwendungsentwicklung?"
   answer: "Zu den Testverfahren gehören Black-Box- und White-Box-Tests sowie Unit-, Modul-, Integrations-, System-, Abnahme- und Lasttests."
   examples: []
 

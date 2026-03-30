@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition"]
 # Flashcard payload
 card:
   type: comparison
-  question: "Ordne typische Protokolle und Netzwerkkomponenten den Schichten des OSI-Modells zu."
+  question: "Welchen Schichten des OSI-Modells lassen sich typische Protokolle und Netzwerkkomponenten zuordnen?"
   answer: |
     **Schicht 7 – Anwendung:** DNS, DHCP  
     **Schicht 6 – Darstellung:** IMAPS, SMTPS, HTTPS  

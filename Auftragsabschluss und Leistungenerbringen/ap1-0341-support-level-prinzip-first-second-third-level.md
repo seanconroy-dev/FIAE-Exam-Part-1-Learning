@@ -14,7 +14,7 @@ tags: ["1st-level", "2nd-level", "3rd-level", "supportprozess"]
 # Flashcard payload
 card:
   type: basic
-  question: "Erläutere das mehrstufige Prinzip des First-Level-, Second-Level- und Third-Level-Supports."
+  question: "Wie funktioniert das mehrstufige Prinzip des First-Level-, Second-Level- und Third-Level-Supports?"
   answer: "1st Level: erste Anlaufstelle, erfasst Anfragen und löst einfache Probleme\n2nd Level: Spezialisten bearbeiten komplexere Fälle\n3rd Level: Experten/Entwickler lösen tiefgehende oder systemnahe Probleme"
   examples: []
 

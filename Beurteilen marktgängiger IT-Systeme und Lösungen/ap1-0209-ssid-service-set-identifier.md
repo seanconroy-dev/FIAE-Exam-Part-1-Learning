@@ -14,7 +14,7 @@ tags: ["ssid", "wlan", "802.11"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was bedeutet der Begriff SSID (Service Set Identifier)?"
+  question: "Erkläre den Begriff SSID (Service Set Identifier)."
   answer: "Die SSID ist der frei wählbare Name eines WLANs (Funknetzwerks) gemäß IEEE 802.11, dient zur Identifikation des Netzwerks und kann bis zu 32 ASCII-Zeichen lang sein."
   examples: ["MeinWLAN", "Firma-Gastnetz"]
 

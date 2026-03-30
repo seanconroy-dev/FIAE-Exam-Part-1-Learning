@@ -14,7 +14,7 @@ tags: ["ssd", "hdd", "netzwerk", "performance"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Maßnahmen sind geeignet, um die Verarbeitungsgeschwindigkeit eines Personal Computers zu verbessern?"
+  question: "Wie kann man die Verarbeitungsgeschwindigkeit eines Personal Computers verbessern?"
   answer: "Einsatz schnellerer Datenträger (SSD/M.2 statt HDD), schnellere HDDs (höhere Drehzahl), Trennung von OS und Daten auf verschiedene Laufwerke sowie schnellere Netzwerkkarten (z. B. 1 Gbit/s statt 100 Mbit/s)."
   examples: ["SSD statt HDD einbauen", "Gigabit-Netzwerkkarte nutzen"]
 

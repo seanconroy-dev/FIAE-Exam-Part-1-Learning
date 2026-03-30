@@ -14,7 +14,7 @@ tags: ["ap1", "kommunikation", "sicherheit"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Sicherheitsmaßnahmen sind beim Einsatz eines E-Mail-Systems zu beachten?"
+  question: "Was muss beim Einsatz eines E-Mail-Systems in Bezug auf Sicherheit beachtet werden?"
   answer: "E-Mails verschlüsseln und signieren, TLS/SSL verwenden sowie POP3, IMAP und SMTP nur über sichere SSL/TLS-Ports betreiben."
   examples: []
 

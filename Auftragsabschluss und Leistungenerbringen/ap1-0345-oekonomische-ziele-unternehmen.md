@@ -14,7 +14,7 @@ tags: ["ertragsziele", "marktziele", "leistungsziele"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welches sind die ökonomischen Ziele eines Unternehmens?"
+  question: "Was sind die ökonomischen Ziele eines Unternehmens?"
   answer: "Ertragsziele (Umsatz, Gewinn), Marktziele (Marktanteil) und Leistungsziele (Qualität, Arbeitsplatzsicherung)"
   examples: []
 

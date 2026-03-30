@@ -14,7 +14,7 @@ tags: ["vlan", "tagging", "trunk"]
 # Flashcard payload
 card:
   type: basic
-  question: "Wann kommt ein tagged VLAN (Virtual Local Area Network) zum Einsatz?"
+  question: "In welchen Situationen wird ein tagged VLAN (Virtual Local Area Network) eingesetzt?"
   answer: "Ein tagged VLAN wird eingesetzt, wenn mehrere VLANs über eine Verbindung (Trunk-Port) zwischen Switches übertragen werden. Dabei werden Ethernet-Frames mit VLAN-Tags versehen, um die Zugehörigkeit zu kennzeichnen."
   examples: []
 

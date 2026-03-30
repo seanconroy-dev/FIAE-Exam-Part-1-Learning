@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "ticketsystem", "support"]
 # Flashcard payload
 card:
   type: multi
-  question: "In welchem Softwaresystem werden in der Regel Supportanfragen verarbeitet?"
+  question: "Welches Softwaresystem wird üblicherweise zur Bearbeitung von Supportanfragen eingesetzt?"
   answer: |
     Supportanfragen werden in der Regel in einem Ticketsystem verarbeitet.
 

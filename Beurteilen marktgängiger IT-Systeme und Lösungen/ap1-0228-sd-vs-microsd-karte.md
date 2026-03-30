@@ -14,7 +14,7 @@ tags: ["ap1", "hardware", "speicher"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche Speicherkarte ist eine SD-Karte und welche ist eine microSD-Karte?"
+  question: "Wie unterscheiden sich SD-Karte und microSD-Karte auf dem Bild?"
   answer: "Die SD-Karte ist Nummer 1, die microSD-Karte ist Nummer 3."
   examples: []
 

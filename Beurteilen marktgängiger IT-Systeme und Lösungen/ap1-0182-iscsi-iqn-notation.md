@@ -14,7 +14,7 @@ tags: ["iscsi","storage","san"]
 # Flashcard payload
 card:
   type: definition
-  question: "Wie lautet die Notation einer iSCSI-Verbindung?"
+  question: "Auf welche Weise wird eine iSCSI-Verbindung notiert?"
   answer: "Die Notation einer iSCSI-Verbindung erfolgt über einen iSCSI Qualified Name (IQN) im Format: iqn.yyyy-mm.naming-authority:unique-name."
   examples:
     - "iqn.2005-01.com.microsoft:iscsi:name1"

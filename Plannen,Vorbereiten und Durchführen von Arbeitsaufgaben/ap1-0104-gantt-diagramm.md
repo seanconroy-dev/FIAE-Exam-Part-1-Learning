@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition", "planung"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was ist ein Gantt-Diagramm?"
+  question: "Beschreibe den Begriff Gantt-Diagramm."
   answer: |
     Ein **Gantt-Diagramm** ist ein Werkzeug zur **Zeitplanung und Überwachung von Projekten**.
 

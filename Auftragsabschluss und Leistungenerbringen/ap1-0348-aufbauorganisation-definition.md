@@ -14,7 +14,7 @@ tags: ["aufbauorganisation", "hierarchie", "organigramm"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was versteht man unter einer Aufbauorganisation?"
+  question: "Wie wird der Begriff Aufbauorganisation definiert?"
   answer: "Die Aufbauorganisation ist die hierarchische Struktur eines Unternehmens, die Aufgaben, Abteilungen, Leitungsebenen und Weisungsbeziehungen festlegt."
   examples: []
 

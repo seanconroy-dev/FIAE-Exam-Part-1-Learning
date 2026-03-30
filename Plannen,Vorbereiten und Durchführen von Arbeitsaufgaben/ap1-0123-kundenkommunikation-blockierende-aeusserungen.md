@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "kommunikation", "kundengespräch"]
 # Flashcard payload
 card:
   type: multi
-  question: "Welche Arten von Äußerungen sind in einem Kundengespräch nicht förderlich?"
+  question: "Was für Äußerungen sollte man in einem Kundengespräch vermeiden?"
   answer: |
     In der Kundenkommunikation gelten folgende Äußerungen als nicht förderlich:
 

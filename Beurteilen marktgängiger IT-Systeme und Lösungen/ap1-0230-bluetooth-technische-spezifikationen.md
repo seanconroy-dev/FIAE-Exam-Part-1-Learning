@@ -14,7 +14,7 @@ tags: ["ap1", "netzwerke", "drahtlos", "ism-band"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche technischen Spezifikationen hat Bluetooth in Bezug auf Reichweite, Datentransferrate und Frequenzbereich?"
+  question: "Was sind die technischen Spezifikationen von Bluetooth hinsichtlich Reichweite, Datentransferrate und Frequenzbereich?"
   answer: "Reichweite: Klasse 1 ≈ 200 m (100 mW), Klasse 2 ≈ 20 m (2,5 mW), Klasse 3 ≈ 10 m (1 mW). Datentransferrate: Basic Rate ≈ 1 MBit/s, Enhanced Data Rate ≈ 2–3 MBit/s. Frequenzbereich: 2,402–2,480 GHz (ISM-Band)."
   examples: []
 

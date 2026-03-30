@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "machbarkeitsanalyse", "projektplanung"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was versteht man unter einer Machbarkeitsanalyse?"
+  question: "Wie definiert man den Begriff Machbarkeitsanalyse?"
   answer: |
     Eine Machbarkeitsanalyse ist eine Untersuchung, mit der geprüft wird,
     ob ein Projekt oder Vorhaben realisierbar ist.

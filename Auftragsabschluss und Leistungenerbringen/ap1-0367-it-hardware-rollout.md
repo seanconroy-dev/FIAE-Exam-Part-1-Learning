@@ -14,7 +14,7 @@ tags: ["hardware-rollout", "migration", "deployment"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Dinge müssen bei einem IT-Hardware-Rollout beachtet werden?"
+  question: "Worauf muss bei einem IT-Hardware-Rollout geachtet werden?"
   answer: "Beim IT-Hardware-Rollout müssen u. a. Rollout-Management, Datenmigration, Asset-Dokumentation, Kompatibilitätsprüfung, Backupkonzept, Terminüberwachung und Abstimmung mit dem Kunden berücksichtigt werden."
   examples: []
 

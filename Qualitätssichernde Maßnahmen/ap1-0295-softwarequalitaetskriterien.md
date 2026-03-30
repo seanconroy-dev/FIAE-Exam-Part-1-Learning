@@ -14,7 +14,7 @@ tags: ["ap1", "software", "qualität", "kriterien"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welchen Qualitätskriterien unterliegt Software?"
+  question: "Welche Qualitätskriterien sind für Software relevant?"
   answer: "Software sollte folgende Qualitätskriterien erfüllen: Funktionalität, Benutzbarkeit, Zuverlässigkeit, Effizienz, Übertragbarkeit und Änderbarkeit."
   examples: []
 

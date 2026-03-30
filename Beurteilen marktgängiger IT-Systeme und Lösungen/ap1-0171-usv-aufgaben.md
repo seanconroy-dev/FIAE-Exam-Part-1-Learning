@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition"]
 # Flashcard payload
 card:
   type: definition
-  question: "IT-Infrastrukturen werden heute 24/7 (24 Stunden pro Tag, 7 Tage die Woche) betrieben. Welche Aufgabe übernimmt in diesem Zusammenhang eine USV?"
+  question: "Welchen Zweck hat eine USV im 24/7-Betrieb von IT-Infrastrukturen?"
   answer: |
     Eine **unterbrechungsfreie Stromversorgung (USV)** stellt die Stromversorgung kritischer IT-Komponenten bei Störungen im Stromnetz kurzfristig sicher.
 

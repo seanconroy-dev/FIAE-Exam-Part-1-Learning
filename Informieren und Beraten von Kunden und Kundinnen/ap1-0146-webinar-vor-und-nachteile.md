@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "vergleich"]
 # Flashcard payload
 card:
   type: comparison
-  question: "Welche Vor- und Nachteile bieten Webinare?"
+  question: "Was sind die Vor- und Nachteile von Webinaren?"
   answer: |
     Vorteile:
     - Es entstehen keine Reisekosten.

@@ -14,7 +14,7 @@ tags: ["kauf", "vorteile", "nachteile", "it-hardware"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Vor- und Nachteile hat der Kauf von IT-Hardware für Unternehmen?"
+  question: "Was sind die Vor- und Nachteile beim Kauf von IT-Hardware für Unternehmen?"
   answer: "Vorteile: sofortiges Eigentum, volle Verfügungsgewalt, keine Laufzeitbindung, Wiederverkauf möglich. Nachteile: hohe Kapitalbindung, geringere Liquidität und Risiko der schnellen Veralterung."
   examples: []
 

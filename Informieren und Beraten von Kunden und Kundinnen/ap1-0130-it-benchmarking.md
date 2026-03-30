@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was versteht man unter dem Begriff IT-Benchmarking?"
+  question: "Wie definiert man den Begriff IT-Benchmarking?"
   answer: |
     IT-Benchmarking (Betriebsvergleich) ist eine strategische IT-Management-Methode, bei der die Performance von IT-Dienstleistungen eines Unternehmens mit denen anderer Unternehmen verglichen wird.
 

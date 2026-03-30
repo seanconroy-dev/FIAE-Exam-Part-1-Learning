@@ -14,7 +14,7 @@ tags: ["ap1", "umwelt", "hardware", "standards"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was bedeutet das Label „Energy Star“?"
+  question: "Wofür steht das Label Energy Star?"
   answer: "Das Energy Star Label kennzeichnet energieeffiziente Geräte, die Stromsparrichtlinien der US-Umweltbehörde (EPA) erfüllen und durch Standby- und Energiesparmodi einen geringen Stromverbrauch haben."
   examples: []
 

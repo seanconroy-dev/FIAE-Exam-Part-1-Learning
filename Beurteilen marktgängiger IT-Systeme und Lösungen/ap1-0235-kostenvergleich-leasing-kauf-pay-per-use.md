@@ -14,7 +14,7 @@ tags: ["ap1", "leasing", "cloud", "kosten"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche Variante ist über 3 Jahre kostengünstiger: Leasing, Kauf oder Pay-per-use?"
+  question: "Vergleiche Leasing, Kauf und Pay-per-use: Welche Option ist über 3 Jahre kostengünstiger?"
   answer: "Pay-per-use ist am günstigsten (~84.621,60 €), danach Kauf (~130.000 €), am teuersten ist Leasing (~156.000 €)."
   examples: ["Pay-per-use: 3,22 €/h", "Kauf: 100.000 € + Service", "Leasing: monatliche Raten"]
 

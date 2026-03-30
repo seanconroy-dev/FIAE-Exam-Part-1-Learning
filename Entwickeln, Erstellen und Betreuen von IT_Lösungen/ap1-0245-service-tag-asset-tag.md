@@ -14,7 +14,7 @@ tags: ["ap1", "asset", "service-tag", "inventar"]
 # Flashcard payload
 card:
   type: definition       # basic | multi | steps | definition | comparison
-  question: "Was versteht man unter einem Service-Tag oder Asset-Tag?"
+  question: "Wie definiert man die Begriffe Service-Tag und Asset-Tag?"
   answer: "Ein Service- bzw. Asset-Tag ist eine eindeutige Kennzeichnung (z. B. Seriennummer, Barcode oder QR-Code) zur Identifikation und Verwaltung von Hardware."
   examples: ["Aufkleber mit Barcode auf einem Laptop", "Service-Tag bei Dell-Geräten"]
 

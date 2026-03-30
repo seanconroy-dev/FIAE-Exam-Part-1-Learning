@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was versteht man unter einem Thin Client?"
+  question: "Wie definiert man den Begriff Thin Client?"
   answer: "Ein Thin Client ist ein schlanker Computer, der hauptsächlich zur Darstellung von Anwendungen dient und seine Rechenleistung überwiegend von einem zentralen Server bezieht. Programme, Daten und Verarbeitung laufen auf dem Server, während der Thin Client hauptsächlich Ein- und Ausgaben übernimmt."
   examples:
     - "Virtuelle Desktop-Infrastruktur (VDI) mit zentralen Servern"

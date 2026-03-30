@@ -14,7 +14,7 @@ tags: ["cache", "l1", "l2", "l3"]
 # Flashcard payload
 card:
   type: definition
-  question: "Erläutere den Begriff des CPU-Caches."
+  question: "Was versteht man unter dem Begriff CPU-Cache?"
   answer: "Der CPU-Cache ist ein schneller Zwischenspeicher direkt im Prozessor, der häufig benötigte Daten speichert, um Zugriffszeiten zu verkürzen. Er besteht aus mehreren Ebenen (L1, L2, L3) mit unterschiedlicher Größe und Geschwindigkeit."
   examples: []
 

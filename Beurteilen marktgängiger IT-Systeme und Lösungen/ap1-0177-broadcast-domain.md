@@ -14,7 +14,7 @@ tags: ["definition","prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was ist eine Broadcast-Domäne?"
+  question: "Erkläre den Begriff Broadcast-Domäne."
   answer: "Eine Broadcast-Domäne ist ein Netzwerkbereich, in dem ein Broadcast-Paket von allen Geräten empfangen wird."
   examples:
     - "In einem einfachen LAN ohne Router befinden sich alle Geräte in derselben Broadcast-Domäne."

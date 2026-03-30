@@ -14,7 +14,7 @@ tags: ["ap1", "download", "bandbreite", "rechnung"]
 # Flashcard payload
 card:
   type: steps       # basic | multi | steps | definition | comparison
-  question: "Berechne die Zeit für den Download einer 2 GiB großen Datei über eine 50 Mbit/s ADSL-Verbindung."
+  question: "Wie lange dauert der Download einer 2 GiB großen Datei über eine 50 Mbit/s ADSL-Verbindung?"
   answer: "≈ 5 Minuten und 44 Sekunden"
   examples: ["Downloadzeit bei gegebenen Datenmengen berechnen"]
 

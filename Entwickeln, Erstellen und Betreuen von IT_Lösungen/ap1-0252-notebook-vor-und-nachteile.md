@@ -14,7 +14,7 @@ tags: ["ap1", "notebook", "laptop"]
 # Flashcard payload
 card:
   type: comparison       # basic | multi | steps | definition | comparison
-  question: "Welche Vor- und Nachteile hat ein Notebook?"
+  question: "Was sind die Vor- und Nachteile eines Notebooks?"
   answer: "Vorteile: mobil, netzunabhängig, integrierte Eingabegeräte, platzsparend. Nachteile: höheres Gewicht als Tablet, geringere Aufrüstbarkeit, weniger Leistung/Speicher als Desktop, weniger Anschlüsse."
   examples: ["Mobiles Arbeiten im Homeoffice", "Notebook mit Dockingstation im Büro"]
 

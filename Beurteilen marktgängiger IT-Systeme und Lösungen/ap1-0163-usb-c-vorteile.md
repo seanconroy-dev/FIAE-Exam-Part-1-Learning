@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "grundlagen"]
 # Flashcard payload
 card:
   type: multi
-  question: "Nenne Vorteile des USB-C-Anschlusses gegenüber den USB-Typen A und B."
+  question: "Welche Vorteile bietet der USB-C-Anschluss gegenüber den USB-Typen A und B?"
   answer: "USB-C bietet mehrere Vorteile gegenüber USB-A und USB-B: reversible Steckrichtung, höhere Leistungsfähigkeit (höhere Datenraten), kompaktere Bauform, schnellere Ladezeiten, bidirektionale Stromversorgung und bessere Zukunftssicherheit."
   examples:
     - "Stecker kann beidseitig eingesteckt werden"

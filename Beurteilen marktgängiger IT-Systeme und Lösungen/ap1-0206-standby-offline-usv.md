@@ -14,7 +14,7 @@ tags: ["usv", "stromausfall", "hardware"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was bedeutet der Begriff Standby- oder Offline-USV?"
+  question: "Erkläre den Begriff Standby- oder Offline-USV."
   answer: "Eine Standby-/Offline-USV versorgt Geräte im Normalbetrieb direkt aus dem Netz und schaltet bei Stromausfall mit kurzer Verzögerung (ca. 4–10 ms) auf Batterie um; sie schützt nur begrenzt vor Spannungsschwankungen."
   examples: []
 

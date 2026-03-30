@@ -14,7 +14,7 @@ tags: ["ap1", "ram", "dual-channel", "hardware"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche Bedingungen müssen beim Einsatz von Arbeitsspeichern im Dual Channel Mode erfüllt sein?"
+  question: "Was muss beim Einsatz von Arbeitsspeichern im Dual Channel Mode beachtet werden?"
   answer: "Module müssen baugleich sein, gleiche Kapazität besitzen, kompatibel zum Mainboard/CPU sein und paarweise eingesetzt werden."
   examples: ["2×8 GB identische RAM-Module", "Dual Channel auf Mainboard aktiv"]
 

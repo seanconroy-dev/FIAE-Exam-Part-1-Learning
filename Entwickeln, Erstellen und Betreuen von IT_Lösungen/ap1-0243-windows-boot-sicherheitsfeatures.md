@@ -14,7 +14,7 @@ tags: ["ap1", "windows", "boot", "security"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Nenne die 4 Features, die verhindern, dass während des Startvorgangs von Windows 10 Schadsoftware wie Rootkits und Bootkits geladen werden können."
+  question: "Welche 4 Features schützen den Windows-10-Startvorgang vor dem Laden von Schadsoftware wie Rootkits und Bootkits?"
   answer: "Sicherer Start (Secure Boot), vertrauenswürdiger Start, Antischadsoftware-Frühstart (ELAM), kontrollierter Start."
   examples: ["Secure Boot verhindert unsignierte Bootloader", "ELAM prüft Treiber beim Start"]
 

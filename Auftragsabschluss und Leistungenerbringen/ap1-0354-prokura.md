@@ -14,7 +14,7 @@ tags: ["prokura", "hgb", "vollmacht"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was versteht man unter dem Begriff Prokura?"
+  question: "Wie definiert man den Begriff Prokura?"
   answer: "Die Prokura ist eine handelsrechtliche Vollmacht, die zu allen gerichtlichen und außergerichtlichen Geschäften eines Handelsgewerbes berechtigt (mit wenigen Ausnahmen)."
   examples: []
 

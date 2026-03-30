@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "risikoanalyse"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was sind Bestandteile einer Risikoanalyse?"
+  question: "Aus welchen Bestandteilen besteht eine Risikoanalyse?"
   answer: |
     Die Bestandteile einer Risikoanalyse sind:
 

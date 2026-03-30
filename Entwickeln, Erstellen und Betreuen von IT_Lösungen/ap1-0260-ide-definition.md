@@ -14,7 +14,7 @@ tags: ["ap1", "ide", "entwicklung"]
 # Flashcard payload
 card:
   type: definition       # basic | multi | steps | definition | comparison
-  question: "Was versteht man in der Anwendungsentwicklung unter dem Begriff IDE?"
+  question: "Wie definiert man in der Anwendungsentwicklung den Begriff IDE?"
   answer: "Eine IDE ist eine integrierte Entwicklungsumgebung, die verschiedene Werkzeuge zur Softwareentwicklung unter einer einheitlichen Oberfläche vereint."
   examples: ["Eclipse", "Visual Studio", "IntelliJ IDEA"]
 

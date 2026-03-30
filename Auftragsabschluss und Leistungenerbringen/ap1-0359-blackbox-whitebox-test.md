@@ -14,7 +14,7 @@ tags: ["blackbox", "whitebox", "softwaretest"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was bedeuten in der Anwendungsentwicklung die Begriffe Black-Box-Test und White-Box-Test?"
+  question: "Wie unterscheiden sich in der Anwendungsentwicklung Black-Box-Test und White-Box-Test?"
   answer: "Beim Black-Box-Test wird das äußere Verhalten ohne Kenntnis des Codes getestet. Beim White-Box-Test wird die interne Struktur und Logik des Quellcodes überprüft."
   examples: []
 

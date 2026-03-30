@@ -14,7 +14,7 @@ tags: ["ssd", "sata"]
 # Flashcard payload
 card:
   type: comparison
-  question: "Nenne Vor- und Nachteile einer SATA-SSD."
+  question: "Was sind die Vor- und Nachteile einer SATA-SSD?"
   answer: "Vorteile: kostengünstig, hohe Kompatibilität, zuverlässig. Nachteile: geringere Geschwindigkeit als NVMe/M.2, begrenzte Bandbreite durch SATA-Schnittstelle, ungeeignet für High-End-Anwendungen."
   examples: []
 

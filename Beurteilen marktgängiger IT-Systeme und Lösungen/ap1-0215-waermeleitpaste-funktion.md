@@ -14,7 +14,7 @@ tags: ["waermeleitpaste", "cpu", "kuehler"]
 # Flashcard payload
 card:
   type: definition
-  question: "Erläutere, welche Aufgabe die Wärmeleitpaste zwischen der CPU und dem Kühler hat."
+  question: "Welchen Zweck hat die Wärmeleitpaste zwischen der CPU und dem Kühler?"
   answer: "Wärmeleitpaste verbessert die Wärmeübertragung zwischen CPU und Kühler, indem sie Unebenheiten ausgleicht und so eine effiziente Kühlung ermöglicht."
   examples: []
 

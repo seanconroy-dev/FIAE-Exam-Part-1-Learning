@@ -14,7 +14,7 @@ tags: ["ap1", "sql", "grundlagen"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Nenne die 5 SQL-Befehlstypen und jeweils mindestens einen ausführbaren SQL-Befehl."
+  question: "Welche 5 SQL-Befehlstypen gibt es und welcher SQL-Befehl gehört jeweils dazu?"
   answer: "DDL: CREATE; DML: INSERT; DCL: GRANT; TCL: COMMIT; DQL: SELECT."
   examples: ["CREATE TABLE kunden (...);", "SELECT * FROM kunden;"]
 

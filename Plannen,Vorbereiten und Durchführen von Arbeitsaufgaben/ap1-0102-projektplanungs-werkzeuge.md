@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "werkzeuge", "planung"]
 # Flashcard payload
 card:
   type: multi
-  question: "Mit welchen Werkzeugen kann man ein Projekt planen und überwachen?"
+  question: "Welche Werkzeuge eignen sich zur Planung und Überwachung von Projekten?"
   answer: |
     Typische Werkzeuge zur Planung und Überwachung eines Projekts sind:
 

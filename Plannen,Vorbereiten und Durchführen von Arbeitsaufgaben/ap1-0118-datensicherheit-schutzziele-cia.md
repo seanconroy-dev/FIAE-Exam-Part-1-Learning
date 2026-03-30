@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "cia-triade", "datensicherheit"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welches sind die Hauptziele der Datensicherheit?"
+  question: "Was sind die Hauptziele der Datensicherheit?"
   answer: |
     Die drei Hauptziele der Datensicherheit (CIA-Triade) sind:
 

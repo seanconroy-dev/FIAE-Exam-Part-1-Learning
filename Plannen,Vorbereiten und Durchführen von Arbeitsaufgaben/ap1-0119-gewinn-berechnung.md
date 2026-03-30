@@ -14,7 +14,7 @@ tags: ["gewinn", "kosten", "erloes", "bwl", "pruefungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Wie errechnet sich der Gewinn eines Unternehmens?"
+  question: "Auf welche Weise berechnet sich der Gewinn eines Unternehmens?"
   answer: "Der Gewinn eines Unternehmens ergibt sich aus der Differenz zwischen Erlösen und Kosten.\n\nFormel: Gewinn = Erlös − Kosten"
   examples:
     - "Ein Unternehmen erzielt 10.000 € Erlös und hat 7.000 € Kosten → Gewinn = 3.000 €"

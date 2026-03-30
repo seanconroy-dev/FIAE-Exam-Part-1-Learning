@@ -14,7 +14,7 @@ tags: ["ap1", "sicherheit", "recht", "cia"]
 # Flashcard payload
 card:
   type: basic
-  question: "Worin unterscheiden sich Datensicherheit und Datenschutz?"
+  question: "Was ist der Unterschied zwischen Datensicherheit und Datenschutz?"
   answer: "Datensicherheit schützt alle Daten technisch und organisatorisch (Vertraulichkeit, Integrität, Verfügbarkeit), während Datenschutz speziell personenbezogene Daten und die Rechte der betroffenen Personen schützt."
   examples: []
 

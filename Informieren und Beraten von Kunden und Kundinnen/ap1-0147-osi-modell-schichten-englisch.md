@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "grundlagen"]
 # Flashcard payload
 card:
   type: basic
-  question: "Nenne die englischen Bezeichnungen der einzelnen Schichten im OSI-Referenzmodell."
+  question: "Wie lauten die englischen Bezeichnungen der einzelnen Schichten im OSI-Referenzmodell?"
   answer: |
     7 – Application Layer  
     6 – Presentation Layer  

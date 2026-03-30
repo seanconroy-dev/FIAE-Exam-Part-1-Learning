@@ -14,7 +14,7 @@ tags: ["glasfaser", "singlemode", "multimode", "lichtwellenleiter"]
 # Flashcard payload
 card:
   type: basic
-  question: "Worin unterscheiden sich die Lichtwellenleiter der Single- und Multimodefasern?"
+  question: "Wie unterscheiden sich Single- und Multimodefasern als Lichtwellenleiter?"
   answer: "Singlemodefasern besitzen einen deutlich kleineren Faserkern (ca. 9 µm) als Multimodefasern (50 µm oder 62,5 µm). Dadurch können Singlemodefasern größere Übertragungsstrecken erreichen (bis ca. 10 km), während Multimodefasern kürzere Distanzen (bis ca. 2 km) unterstützen."
   examples: []
 

@@ -14,7 +14,7 @@ tags: ["usv", "stromausfall", "online-usv"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was versteht man unter einer Online-USV?"
+  question: "Wie funktioniert eine Online-USV?"
   answer: "Eine Online-USV versorgt Verbraucher dauerhaft über einen Wechselrichter und erzeugt ständig eine stabile Ausgangsspannung; bei Netzausfall erfolgt keine Umschaltzeit, da die Batterie bereits aktiv eingebunden ist."
   examples: []
 

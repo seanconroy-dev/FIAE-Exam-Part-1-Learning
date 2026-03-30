@@ -14,7 +14,7 @@ tags: ["ap1", "pflichtenheft", "lastenheft", "projekt"]
 # Flashcard payload
 card:
   type: definition       # basic | multi | steps | definition | comparison
-  question: "Was versteht man unter einem Pflichtenheft?"
+  question: "Wie definiert man den Begriff Pflichtenheft?"
   answer: "Ein Pflichtenheft beschreibt detailliert, wie und womit der Auftragnehmer die Anforderungen des Auftraggebers umsetzt („Wie und womit“)."
   examples: ["Technische Umsetzung eines Systems", "Detailplanung eines IT-Projekts"]
 

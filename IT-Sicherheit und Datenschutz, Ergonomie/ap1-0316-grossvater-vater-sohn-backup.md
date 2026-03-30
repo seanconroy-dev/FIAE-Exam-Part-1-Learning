@@ -14,7 +14,7 @@ tags: ["ap1", "backup", "rotation", "konzept"]
 # Flashcard payload
 card:
   type: basic
-  question: "Wie gestaltet sich ein vollständiger Backup-Plan nach dem Großvater-Vater-Sohn-Prinzip?"
+  question: "Beschreibe einen vollständigen Backup-Plan nach dem Großvater-Vater-Sohn-Prinzip."
   answer: "Das Großvater-Vater-Sohn-Prinzip nutzt eine Backup-Rotation: tägliche inkrementelle Backups (Sohn), wöchentliche Vollbackups (Vater) und monatliche Vollbackups (Großvater)."
   examples: []
 

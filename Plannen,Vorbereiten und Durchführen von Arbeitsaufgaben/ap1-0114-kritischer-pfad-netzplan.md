@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "kritischer-pfad", "netzplan"]
 # Flashcard payload
 card:
   type: basic
-  question: "Wie erkennt man im dargestellten Netzplan den kritischen Pfad?"
+  question: "Auf welche Weise lässt sich der kritische Pfad im dargestellten Netzplan erkennen?"
   answer: "Der kritische Pfad besteht aus allen Vorgängen mit Gesamtpuffer (GP) = 0. In diesem Netzplan: A → C → E → F. Die Projektdauer beträgt 50 Zeiteinheiten."
   examples:
     - "Nicht kritisch: A → B → D → F (enthält Pufferzeiten)"

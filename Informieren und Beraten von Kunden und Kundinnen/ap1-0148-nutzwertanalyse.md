@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was ist eine Nutzwertanalyse?"
+  question: "Erkläre den Begriff Nutzwertanalyse."
   answer: |
     Die Nutzwertanalyse ist ein Entscheidungsverfahren zur Bewertung und zum Vergleich verschiedener Handlungsalternativen.
 

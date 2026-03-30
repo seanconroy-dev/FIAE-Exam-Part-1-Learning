@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was verbirgt sich hinter der Bezeichnung UHD 4K?"
+  question: "Was bedeutet die Bezeichnung UHD 4K?"
   answer: "UHD 4K (Ultra High Definition) bezeichnet ein digitales Videoformat mit sehr hoher Auflösung. Im Consumer-Bereich bedeutet UHD meist eine Auflösung von 3840 × 2160 Pixeln, während das Cinema-4K-Format 4096 × 2160 Pixel verwendet."
   examples:
     - "UHD (3840 × 2160 Pixel) – Standard bei Fernsehern"

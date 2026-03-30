@@ -14,7 +14,7 @@ tags: ["abnahme", "dokumentation", "it-projekt"]
 # Flashcard payload
 card:
   type: basic
-  question: "Nenne die wesentlichen Bestandteile eines Abnahmeprotokolls für ein IT-Projekt."
+  question: "Was sind die wesentlichen Bestandteile eines Abnahmeprotokolls für ein IT-Projekt?"
   answer: "Wesentliche Bestandteile sind: Gegenstand der Abnahme, beteiligte Personen/Firmen, Ort/Datum/Uhrzeit, Abnahmekriterien und Qualität, Nachweis der Anforderungen, Unterschriften sowie offene Punkte."
   examples: []
 

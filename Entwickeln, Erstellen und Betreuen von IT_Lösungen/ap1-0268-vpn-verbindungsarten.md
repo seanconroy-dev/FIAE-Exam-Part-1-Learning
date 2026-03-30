@@ -14,7 +14,7 @@ tags: ["ap1", "vpn", "netzwerk", "sicherheit"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche 3 VPN Verbindungsarten gibt es?"
+  question: "Führe die 3 VPN-Verbindungsarten auf."
   answer: "End-to-Site (Host-to-LAN / Remote Access), Site-to-Site (LAN-to-LAN / Gateway-to-Gateway) und End-to-End (Host-to-Host)."
   examples: ["Homeoffice-Zugriff per Remote Access VPN", "Verbindung zweier Firmenstandorte"]
 

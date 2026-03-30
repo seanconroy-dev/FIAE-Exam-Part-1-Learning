@@ -14,7 +14,7 @@ tags: ["pflichten", "gewaehrleistung", "vertrag"]
 # Flashcard payload
 card:
   type: basic
-  question: "Nenne die wesentlichen Bestandteile eines Kaufvertrags."
+  question: "Was sind die wesentlichen Bestandteile eines Kaufvertrags?"
   answer: "- Vertragstypische Pflichten (Eigentumsübertragung, Zahlung)\n- Rechte des Käufers bei Mängeln (Nacherfüllung, Minderung)\n- Garantie / Gewährleistung\n- Haftungsausschlüsse"
   examples: []
 

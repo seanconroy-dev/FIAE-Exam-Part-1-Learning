@@ -14,7 +14,7 @@ tags: ["ap1", "grundlagen", "sicherheit", "hash"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Anwendungen oder Verfahren verwenden kryptografische Hashfunktionen?"
+  question: "In welchen Anwendungen oder Verfahren kommen kryptografische Hashfunktionen zum Einsatz?"
   answer: "Integritätsprüfungen, Prüfsummen, Sitzungsschlüssel-Erzeugung, Einmal-Passwörter, digitale Signaturen (Authentifizierung) und Passwortspeicherung."
   examples: []
 

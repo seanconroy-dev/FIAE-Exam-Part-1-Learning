@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was ist ein Network Attached Storage (NAS)?"
+  question: "Wie definiert man den Begriff Network Attached Storage (NAS)?"
   answer: "Ein Network Attached Storage (NAS) ist ein netzgebundener Dateiserver, der zentralen Speicher im Netzwerk bereitstellt."
   examples:
     - "Ein NAS dient als zentraler Speicher für Backups im Heimnetzwerk."

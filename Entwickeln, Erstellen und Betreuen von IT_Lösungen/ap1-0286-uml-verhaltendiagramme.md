@@ -14,7 +14,7 @@ tags: ["ap1", "uml", "verhaltensdiagramme"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Nenne einige UML-Verhaltensdiagramme sowie deren Zweck."
+  question: "Welche UML-Verhaltensdiagramme gibt es und welchem Zweck dienen sie?"
   answer: "Aktivitätsdiagramm (Abläufe), Zustandsdiagramm (Zustände/Übergänge), Use-Case-Diagramm (Anwendungsfälle), Sequenzdiagramm (zeitliche Interaktionen), Kommunikationsdiagramm (Beziehungen), Interaktionsübersichtsdiagramm (Prozessübersicht), Zeitverlaufsdiagramm (Zustandsänderungen über Zeit)."
   examples: ["Sequenzdiagramm für Login-Prozess", "Aktivitätsdiagramm eines Bestellablaufs"]
 

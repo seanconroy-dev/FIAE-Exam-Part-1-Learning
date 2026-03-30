@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: multi
-  question: "Welche Merkmale besitzt eine Europäische Gesellschaft (Societas Europaea, kurz SE)?"
+  question: "Was sind die Merkmale einer Europäischen Gesellschaft (Societas Europaea, kurz SE)?"
   answer: |
     Eine Europäische Gesellschaft (SE) besitzt folgende Merkmale:
 

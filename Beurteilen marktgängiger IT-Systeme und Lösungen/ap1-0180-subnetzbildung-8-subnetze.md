@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant","berechnung"]
 # Flashcard payload
 card:
   type: steps
-  question: "Das Unternehmensnetzwerk (192.168.30.0/24) soll zukünftig in 8 Subnetze unterteilt werden. Wie lautet die korrekte Subnetzmaske und wie viele Host-IP-Adressen kann ich zusammen in allen 8 Subnetzen nutzen?"
+  question: "Wie lautet die Subnetzmaske, wenn das Netzwerk 192.168.30.0/24 in 8 Subnetze aufgeteilt wird, und wie viele Host-IP-Adressen stehen insgesamt zur Verfügung?"
   answer: |
     8 Subnetze = 2³ → 3 zusätzliche Netzbits
 

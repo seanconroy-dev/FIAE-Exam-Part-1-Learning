@@ -14,7 +14,7 @@ tags: ["ap1", "tablet", "hardware"]
 # Flashcard payload
 card:
   type: comparison       # basic | multi | steps | definition | comparison
-  question: "Nenne einige Vor- und Nachteile von Tablets."
+  question: "Was sind Vor- und Nachteile von Tablets?"
   answer: "Vorteile: leicht, mobil, lange Akkulaufzeit, Touchbedienung. Nachteile: eingeschränkte Eingabe, geringere Leistung/Speicher, wenige Anschlüsse, kaum aufrüstbar."
   examples: ["Tablet für Präsentationen", "Mobiles Arbeiten mit Touchbedienung"]
 

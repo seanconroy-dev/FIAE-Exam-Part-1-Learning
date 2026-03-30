@@ -14,7 +14,7 @@ tags: ["ap1", "it-sicherheit", "normen"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welches sind die Inhalte einer Zertifizierung nach ISO 27001?"
+  question: "Was sind die Inhalte einer Zertifizierung nach ISO 27001?"
   answer: "Anforderungen an Aufbau, Einführung, Umsetzung, Überwachung und Dokumentation eines ISMS inkl. Risikomanagement sowie Berücksichtigung von Organisation, Personal, Infrastruktur und Prozessen."
   examples: []
 

@@ -14,7 +14,7 @@ tags: ["ap1", "linux", "ip", "netzwerk"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche Kommandos oder Werkzeuge kennst du, um unter Linux eine IPv4-Adresse eines Netzwerkadapters anzuzeigen?"
+  question: "Welche Kommandos oder Werkzeuge stehen unter Linux zum Anzeigen der IPv4-Adresse eines Netzwerkadapters zur Verfügung?"
   answer: "ifconfig, ip addr show, ip a sowie grafische Tools wie NetworkManager, nmtui, Wicd oder YaST."
   examples: ["ip a", "ifconfig"]
 

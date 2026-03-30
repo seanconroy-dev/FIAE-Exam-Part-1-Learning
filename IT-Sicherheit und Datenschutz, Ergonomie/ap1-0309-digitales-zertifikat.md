@@ -14,7 +14,7 @@ tags: ["ap1", "grundlagen", "verschluesselung", "authentifizierung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was versteht man unter einem digitalen Zertifikat?"
+  question: "Wie definiert man den Begriff digitales Zertifikat?"
   answer: "Ein digitaler Datensatz, der mithilfe kryptografischer Schlüssel die Authentizität von Personen, Webseiten oder Organisationen bestätigt und deren öffentliche Schlüssel enthält."
   examples: []
 

@@ -14,7 +14,7 @@ tags: ["ap1", "it-sicherheit", "risiken"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welches sind die allgemeinen Kriterien einer Schutzbedarfsanalyse von IT-Systemen?"
+  question: "Was sind die allgemeinen Kriterien einer Schutzbedarfsanalyse für IT-Systeme?"
   answer: "Risiko von Angriffen, schützenswerte Objekte, Bedrohungsszenarien, Schadenshöhe, Gefährdungspotenzial, Schutzmaßnahmen und Kosten-Nutzen-Betrachtung."
   examples: []
 

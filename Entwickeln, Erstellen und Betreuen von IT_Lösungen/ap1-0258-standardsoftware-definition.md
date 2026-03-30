@@ -14,7 +14,7 @@ tags: ["ap1", "standardsoftware", "software"]
 # Flashcard payload
 card:
   type: definition       # basic | multi | steps | definition | comparison
-  question: "Was versteht man unter Standardsoftware?"
+  question: "Wie definiert man den Begriff Standardsoftware?"
   answer: "Standardsoftware ist vorgefertigte, am Markt verfügbare Software, die ohne individuelle Entwicklung genutzt und ggf. angepasst werden kann."
   examples: ["Microsoft Office", "SAP", "ERP-Systeme"]
 

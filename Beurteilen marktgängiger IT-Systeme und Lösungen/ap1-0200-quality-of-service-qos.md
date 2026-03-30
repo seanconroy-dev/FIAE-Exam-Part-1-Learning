@@ -14,7 +14,7 @@ tags: ["qos", "netzwerkqualität", "priorisierung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was versteht man im Netzwerkbereich unter dem Quality of Service?"
+  question: "Wie definiert man den Begriff Quality of Service im Netzwerkbereich?"
   answer: "Quality of Service (QoS) beschreibt die Güte eines Netzwerkdienstes und umfasst Maßnahmen wie Priorisierung, Bandbreitenreservierung und Paketoptimierung zur Reduzierung von Latenz, Jitter und Paketverlust."
   examples: []
 

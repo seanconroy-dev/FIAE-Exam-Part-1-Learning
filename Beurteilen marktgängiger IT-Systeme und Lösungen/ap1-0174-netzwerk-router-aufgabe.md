@@ -14,7 +14,7 @@ tags: ["definition","prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Welche Aufgabe hat ein Netzwerk-Router?"
+  question: "Wofür wird ein Netzwerk-Router verwendet?"
   answer: "Ein Netzwerk-Router verbindet mehrere Netzwerke miteinander und leitet Datenpakete zwischen ihnen weiter."
   examples:
     - "Ein Router verbindet ein Heimnetzwerk (LAN) mit dem Internet (WAN)."

@@ -14,7 +14,7 @@ tags: ["ap1", "lastenheft", "anforderungen"]
 # Flashcard payload
 card:
   type: definition       # basic | multi | steps | definition | comparison
-  question: "Was wird in einem Lastenheft beschrieben?"
+  question: "Welche Inhalte enthält ein Lastenheft?"
   answer: "Das Lastenheft beschreibt die Gesamtheit der Anforderungen (funktional und nicht-funktional) des Auftraggebers an das zu entwickelnde Produkt."
   examples: ["Funktionale Anforderungen eines Systems", "Lieferumfang und Lieferzeiten eines Projekts"]
 

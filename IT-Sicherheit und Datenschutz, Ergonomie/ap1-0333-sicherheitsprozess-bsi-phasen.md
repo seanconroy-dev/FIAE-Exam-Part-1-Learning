@@ -14,7 +14,7 @@ tags: ["ap1", "it-sicherheit", "grundschutz"]
 # Flashcard payload
 card:
   type: basic
-  question: "Aus welchen Phasen besteht der Sicherheitsprozess laut BSI IT-Grundschutz?"
+  question: "Welche Phasen umfasst der Sicherheitsprozess laut BSI IT-Grundschutz?"
   answer: "Initiierung, Erstellung einer Sicherheitskonzeption, Umsetzung der Sicherheitskonzeption sowie Aufrechterhaltung und kontinuierliche Verbesserung."
   examples: []
 

@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition", "psp"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was versteht man unter dem Top-Down-Ansatz beim Projektstrukturplan?"
+  question: "Wie definiert man den Top-Down-Ansatz beim Projektstrukturplan?"
   answer: |
     Der **Top-Down-Ansatz** ist eine Methode zur Erstellung eines **Projektstrukturplans (PSP)**.
 

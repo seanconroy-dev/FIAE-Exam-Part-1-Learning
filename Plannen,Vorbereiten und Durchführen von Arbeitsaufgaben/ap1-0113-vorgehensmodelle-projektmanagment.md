@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "überblick", "modelle"]
 # Flashcard payload
 card:
   type: multi
-  question: "Welche Vorgehensmodelle solltest du im Projektmanagement, insbesondere in der Anwendungsentwicklung kennen?"
+  question: "Welche Vorgehensmodelle sind im Projektmanagement und in der Anwendungsentwicklung relevant?"
   answer: |
     In der **Anwendungsentwicklung und im Projektmanagement** unterscheidet man hauptsächlich zwischen **klassischen** und **agilen Vorgehensmodellen**.
 

@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition", "psp"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was versteht man unter dem Begriff Bottom-Up-Ansatz beim Projektstrukturplan?"
+  question: "Wie wird der Bottom-Up-Ansatz beim Projektstrukturplan definiert?"
   answer: |
     Der **Bottom-Up-Ansatz** ist eine Methode zur Erstellung eines **Projektstrukturplans (PSP)**.
 

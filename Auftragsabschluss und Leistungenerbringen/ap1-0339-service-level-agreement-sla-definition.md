@@ -14,7 +14,7 @@ tags: ["vertrag", "servicelevel", "reaktionszeit", "it-service"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was versteht man in der Informationstechnologie unter dem Begriff Service Level Agreement (SLA)?"
+  question: "Wie wird der Begriff Service Level Agreement (SLA) in der Informationstechnologie definiert?"
   answer: "Ein SLA ist eine vertragliche Vereinbarung zwischen Kunde und Anbieter, die Leistungsumfang, Qualität und Reaktionszeiten von IT-Services definiert."
   examples: []
 

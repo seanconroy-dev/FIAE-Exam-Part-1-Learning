@@ -14,7 +14,7 @@ tags: ["definition","prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Welche Aufgabe übernimmt ein Datenbankmanagementsystem (DBMS)?"
+  question: "Welchen Zweck hat ein Datenbankmanagementsystem (DBMS)?"
   answer: "Ein Datenbankmanagementsystem (DBMS) verwaltet Datenbanken und ermöglicht das Speichern, Verändern, Löschen und Abfragen von Daten sowie den sicheren Mehrbenutzerzugriff."
   examples:
     - "Ein Unternehmen speichert Kundendaten in einer Datenbank und greift über SQL-Abfragen darauf zu."

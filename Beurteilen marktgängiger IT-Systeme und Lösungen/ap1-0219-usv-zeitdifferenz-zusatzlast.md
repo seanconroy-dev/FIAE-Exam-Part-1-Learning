@@ -14,7 +14,7 @@ tags: ["ap1", "berechnung", "stromversorgung"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Um wie viele Minuten verkürzt sich die Überbrückungszeit einer USV, wenn zusätzlich zu 1,2 kW Last weitere 400 W hinzukommen (bei 20 Batterien à 12 V / 4,5 Ah)?"
+  question: "Wie stark verkürzt sich die Überbrückungszeit einer USV, wenn neben 1,2 kW Last weitere 400 W hinzukommen (20 Batterien à 12 V / 4,5 Ah)?"
   answer: "Die Überbrückungszeit verkürzt sich um 14 Minuten."
   examples: []
 

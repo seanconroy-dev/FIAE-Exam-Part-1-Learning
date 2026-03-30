@@ -14,7 +14,7 @@ tags: ["ap1", "mimo", "netzwerk"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Was bedeutet der Begriff MIMO im Bereich der Nachrichtentechnik?"
+  question: "Was bezeichnet man als MIMO im Bereich der Nachrichtentechnik?"
   answer: "MIMO (Multiple Input Multiple Output) nutzt mehrere Sende- und Empfangsantennen parallel, um Datenströme gleichzeitig zu übertragen und so den Datendurchsatz zu erhöhen."
   examples: []
 

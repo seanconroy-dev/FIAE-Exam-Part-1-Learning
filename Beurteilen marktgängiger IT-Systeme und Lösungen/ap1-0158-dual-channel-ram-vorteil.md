@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welchen Vorteil bringt der Einsatz von Dual-Channel-Technik bei Speichermodulen?"
+  question: "Was ist der Vorteil der Dual-Channel-Technik bei Speichermodulen?"
   answer: "Die Dual-Channel-Technik ermöglicht es dem Speichercontroller, Daten gleichzeitig über zwei Arbeitsspeichermodule zu übertragen. Dadurch können Daten parallel gelesen und geschrieben werden, wodurch sich die verfügbare Speicherbandbreite und damit die Datenrate erhöht."
   examples:
     - "2 identische RAM-Module ermöglichen Dual-Channel-Betrieb."

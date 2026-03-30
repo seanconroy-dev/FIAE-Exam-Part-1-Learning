@@ -14,7 +14,7 @@ tags: ["leistung", "spannung", "strom"]
 # Flashcard payload
 card:
   type: basic
-  question: "Wie berechnet man die Wirkleistung von elektrischen Geräten?"
+  question: "Auf welche Weise ermittelt man die Wirkleistung von elektrischen Geräten?"
   answer: "Die elektrische Leistung wird mit P = U · I berechnet (Leistung = Spannung × Stromstärke)."
   examples: ["230 V × 2 A = 460 W"]
 

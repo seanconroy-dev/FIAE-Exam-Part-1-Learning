@@ -14,7 +14,7 @@ tags: ["ap1", "datenbank", "dbms"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche allgemeinen Anforderungen werden an ein Datenbanksystem gestellt?"
+  question: "Welche Anforderungen muss ein Datenbanksystem erfüllen?"
   answer: "Datenunabhängigkeit, effizienter Speicherzugriff, paralleler Zugriff, Datenkonsistenz, gemeinsame Datenbasis, Datenintegrität, Datensicherheit, Wiederherstellungsverfahren, Abfragesprache, kontrollierte Redundanz."
   examples: []
 

@@ -14,7 +14,7 @@ tags: ["dhcp", "ip-adressen", "netzwerkdienste"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Aufgaben hat ein DHCP-Server innerhalb der IT-Infrastruktur?"
+  question: "Welchen Zweck erfüllt ein DHCP-Server innerhalb der IT-Infrastruktur?"
   answer: "Ein DHCP-Server weist Geräten automatisch IP-Adressen und Netzwerkkonfigurationen zu (z. B. Subnetzmaske, Gateway, DNS). Er verwaltet Adressbereiche und vergibt diese dynamisch über einen definierten Zeitraum (Lease)."
   examples: []
 

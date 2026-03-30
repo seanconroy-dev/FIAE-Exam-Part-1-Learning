@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Welche Kriterien müssen erfüllt sein für ein Marktgleichgewicht?"
+  question: "Was sind die Voraussetzungen für ein Marktgleichgewicht?"
   answer: |
     Ein Marktgleichgewicht liegt vor, wenn die angebotene Menge und die nachgefragte Menge eines Gutes übereinstimmen.
 

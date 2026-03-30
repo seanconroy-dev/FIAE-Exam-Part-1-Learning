@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was versteht man unter dem Begriff Stakeholder?"
+  question: "Wie definiert man den Begriff Stakeholder?"
   answer: |
     Stakeholder sind interne oder externe Anspruchsgruppen, 
     die Ziele und Interessen in Bezug auf ein Projekt, einen Prozess 

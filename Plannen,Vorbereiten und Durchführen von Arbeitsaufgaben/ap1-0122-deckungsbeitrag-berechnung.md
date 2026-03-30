@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "deckungsbeitrag", "kostenrechnung"]
 # Flashcard payload
 card:
   type: definition
-  question: "Wie berechnet sich der Deckungsbeitrag bei Unternehmen?"
+  question: "Auf welche Weise wird der Deckungsbeitrag bei Unternehmen berechnet?"
   answer: |
     Der Deckungsbeitrag berechnet sich aus der Differenz zwischen Erlös
     und den variablen Kosten.

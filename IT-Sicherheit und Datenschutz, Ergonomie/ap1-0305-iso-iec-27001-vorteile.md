@@ -14,7 +14,7 @@ tags: ["ap1", "sicherheit", "management", "risiken"]
 # Flashcard payload
 card:
   type: basic
-  question: "Nenne die wesentlichen Vorteile einer ISO/IEC 27001 Zertifizierung für Unternehmen."
+  question: "Welche Vorteile bringt eine ISO/IEC 27001 Zertifizierung für Unternehmen?"
   answer: "Minimierung von IT-Risiken, Abschätzung von Schäden, Wettbewerbsvorteil, Vertrauenssteigerung, Sicherstellung von Compliance und Aufdeckung von Schwachstellen."
   examples: []
 

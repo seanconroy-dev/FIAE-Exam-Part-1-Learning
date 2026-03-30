@@ -14,7 +14,7 @@ tags: ["ap1", "open-source", "software"]
 # Flashcard payload
 card:
   type: multi       # basic | multi | steps | definition | comparison
-  question: "Nenne 3 charakteristische Eigenschaften von Open Source Software."
+  question: "Welche 3 charakteristischen Eigenschaften hat Open Source Software?"
   answer: "Quellcode ist öffentlich zugänglich, Software darf frei genutzt und verbreitet werden, sowie verändert und weitergegeben werden."
   examples: ["Linux", "Apache Webserver", "Mozilla Firefox"]
 

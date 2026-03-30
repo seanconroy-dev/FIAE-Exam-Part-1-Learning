@@ -14,7 +14,7 @@ tags: ["multicast","netzwerkkommunikation","ip"]
 # Flashcard payload
 card:
   type: basic
-  question: "In IPv6 Netzwerken werden MAC-Adressen mithilfe von Multicast aufgelöst. Was versteht man unter dem Begriff Multicast?"
+  question: "Was bezeichnet man in IPv6-Netzwerken als Multicast und wie wird er zur MAC-Adressauflösung genutzt?"
   answer: "Multicast bezeichnet eine Netzwerkkommunikation, bei der ein Sender Daten gleichzeitig an eine definierte Gruppe von Empfängern überträgt."
   examples:
     - "IPv6 Neighbor Discovery verwendet Multicast zur Adressauflösung."

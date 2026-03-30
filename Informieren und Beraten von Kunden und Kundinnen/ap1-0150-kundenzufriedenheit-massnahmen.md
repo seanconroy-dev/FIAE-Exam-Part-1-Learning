@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant"]
 # Flashcard payload
 card:
   type: multi
-  question: "Mit welchen Maßnahmen kann man die Kundenzufriedenheit erhöhen?"
+  question: "Welche Maßnahmen eignen sich zur Steigerung der Kundenzufriedenheit?"
   answer: |
     Maßnahmen zur Erhöhung der Kundenzufriedenheit sind zum Beispiel:
 

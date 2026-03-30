@@ -14,7 +14,7 @@ tags: ["leistung", "kwh", "verbrauch"]
 # Flashcard payload
 card:
   type: basic
-  question: "Berechne die Gesamtleistungsaufnahme einer IT-Landschaft für ein Jahr (24/7-Betrieb)."
+  question: "Wie berechnet man die Gesamtleistungsaufnahme einer IT-Landschaft für ein Jahr im 24/7-Betrieb?"
   answer: "10 Server à 800 W = 8 kW, 25 PCs à 350 W = 8,75 kW, 2 Switches à 200 W = 0,4 kW → Gesamt: 17,15 kW; Jahresverbrauch: 17,15 kW × 8.760 h = 150.234 kWh."
   examples: []
 

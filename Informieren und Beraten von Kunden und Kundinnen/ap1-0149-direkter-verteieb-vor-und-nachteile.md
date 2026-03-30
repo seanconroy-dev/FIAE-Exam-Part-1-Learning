@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "vergleich"]
 # Flashcard payload
 card:
   type: comparison
-  question: "Nenne Vor- und Nachteile eines direkten Vertriebs."
+  question: "Was sind die Vor- und Nachteile eines direkten Vertriebs?"
   answer: |
     Vorteile:
     - Höhere Gewinnspanne, da keine Provisionen für Zwischenhändler anfallen

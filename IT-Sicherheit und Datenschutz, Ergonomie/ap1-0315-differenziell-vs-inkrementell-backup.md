@@ -14,7 +14,7 @@ tags: ["ap1", "backup", "grundlagen", "vergleich"]
 # Flashcard payload
 card:
   type: basic
-  question: "Erläutere den Unterschied zwischen einem differenziellen und inkrementellen Backup."
+  question: "Wie unterscheiden sich differenzielles und inkrementelles Backup?"
   answer: "Differenziell: sichert alle Änderungen seit dem letzten Vollbackup. Inkrementell: sichert nur Änderungen seit dem letzten Backup. Wiederherstellung: differenziell einfacher, inkrementell aufwendiger."
   examples: []
 

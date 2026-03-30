@@ -14,7 +14,7 @@ tags: ["ap1", "thin-client", "vorteile", "vdI"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche Vorteile bringt der Einsatz von Thin Clients in einer IT-Landschaft, die auf Desktop-Virtualisierung setzt?"
+  question: "Welchen Nutzen haben Thin Clients in einer IT-Landschaft, die auf Desktop-Virtualisierung setzt?"
   answer: "Geringer Stromverbrauch, leise, wenig Platzbedarf, leicht austauschbar, flexibel einsetzbar, geringes Gewicht, umweltfreundlich, sicher durch read-only System."
   examples: ["Thin Client im Büro statt Desktop-PC", "VDI-Umgebung mit zentralen Servern"]
 

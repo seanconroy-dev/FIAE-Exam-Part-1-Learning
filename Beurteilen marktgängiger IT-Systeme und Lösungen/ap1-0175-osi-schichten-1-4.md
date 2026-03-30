@@ -14,7 +14,7 @@ tags: ["definition","prüfungsrelevant"]
 # Flashcard payload
 card:
   type: multi
-  question: "Nenne die 4 transportorientierten Schichten des OSI-Modells und erläutere deren Aufgaben."
+  question: "Welche 4 transportorientierten Schichten hat das OSI-Modell und was sind ihre Aufgaben?"
   answer: |
     **Schicht 1 – Bitübertragungsschicht (Physical Layer)**  
     Stellt die physische Verbindung her und überträgt Bits über das Übertragungsmedium.

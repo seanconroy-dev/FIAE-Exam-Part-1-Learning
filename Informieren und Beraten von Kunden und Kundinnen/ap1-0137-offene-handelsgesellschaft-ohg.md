@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Welche Bedingungen und welche Haftungsregeln gelten bei einer offenen Handelsgesellschaft (OHG)?"
+  question: "Wie sind die Bedingungen und Haftungsregeln bei einer offenen Handelsgesellschaft (OHG) geregelt?"
   answer: |
     Eine OHG entsteht, wenn sich mindestens zwei Personen zum Betrieb eines Handelsgewerbes im Sinne des § 1 HGB zusammenschließen.
 

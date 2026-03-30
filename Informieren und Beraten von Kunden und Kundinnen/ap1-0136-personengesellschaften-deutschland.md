@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: multi
-  question: "Welche Unternehmensformen sind in Deutschland Personengesellschaften?"
+  question: "Führe die Personengesellschaften auf, die es in Deutschland gibt."
   answer: |
     Zu den Personengesellschaften in Deutschland gehören:
 

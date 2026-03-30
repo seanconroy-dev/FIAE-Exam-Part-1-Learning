@@ -14,7 +14,7 @@ tags: ["ap1", "sata", "hardware"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Um welche Schnittstelle handelt es sich auf dem Bild?"
+  question: "Welche Schnittstelle ist auf dem Bild zu sehen?"
   answer: "Es handelt sich um eine SATA-Schnittstelle (Serial ATA)."
   examples: []
 

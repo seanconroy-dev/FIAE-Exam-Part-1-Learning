@@ -14,7 +14,7 @@ tags: ["ap1", "wlan", "sicherheit", "netzwerk"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Mit welchen Maßnahmen kann eine drahtlose Netzwerkverbindung (WLAN/WiFi) abgesichert werden?"
+  question: "Welche Maßnahmen eignen sich zur Absicherung einer drahtlosen Netzwerkverbindung (WLAN/WiFi)?"
   answer: "Durch WPA2/WPA3-Verschlüsselung, Einsatz eines RADIUS-Servers, MAC-Filter (Whitelist), Client-Zertifikate und VPN-Verbindungen."
   examples: ["WPA3-geschütztes WLAN", "Firmen-WLAN mit RADIUS-Authentifizierung"]
 

@@ -14,7 +14,7 @@ tags: ["tcp", "udp", "vergleich", "netzwerkgrundlagen"]
 # Flashcard payload
 card:
   type: basic
-  question: "Vergleiche die Protokolle UDP und TCP."
+  question: "Worin unterscheiden sich die Protokolle UDP und TCP?"
   answer: "UDP: kleiner Header (8 Byte), hohe Geschwindigkeit, keine Fehlerkontrolle oder Sicherung. TCP: größerer Header (20 Byte), langsamer, dafür zuverlässige Übertragung mit Fehlerkontrolle, Reihenfolge und Verbindungsüberwachung."
   examples: []
 

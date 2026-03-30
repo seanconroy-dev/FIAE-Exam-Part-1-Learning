@@ -14,7 +14,7 @@ tags: ["energieeffizienz", "virtualisierung", "ssd", "standby"]
 # Flashcard payload
 card:
   type: basic
-  question: "Mit welchen Maßnahmen kann der Umweltschutz im IT-Betrieb verstärkt berücksichtigt werden?"
+  question: "Welche Maßnahmen eignen sich, um den Umweltschutz im IT-Betrieb stärker zu berücksichtigen?"
   answer: "- Einsatz von Green-IT-Komponenten\n- Nutzung von Standby-Regeln\n- Einsatz von SSD statt HDD\n- Nutzung von Abschaltautomatiken\n- Virtualisierung von Servern und Anwendungen"
   examples: []
 

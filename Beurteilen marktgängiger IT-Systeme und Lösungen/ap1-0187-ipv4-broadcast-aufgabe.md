@@ -14,7 +14,7 @@ tags: ["broadcast", "ipv4", "netzwerkgrundlagen", "subnetz"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Aufgabe hat bei IPv4 eine Broadcast-Adresse?"
+  question: "Wofür dient eine Broadcast-Adresse in IPv4-Netzwerken?"
   answer: "Eine Broadcast-Adresse ermöglicht das Senden eines Pakets an alle Geräte innerhalb eines lokalen Netzwerks. Sie ist die letzte IP-Adresse eines Subnetzes und wird nicht über Router weitergeleitet."
   examples: []
 

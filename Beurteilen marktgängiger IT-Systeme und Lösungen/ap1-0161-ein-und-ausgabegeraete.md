@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "grundlagen"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche IT-Komponenten sind Ein- oder Ausgabegeräte? Ordne richtig zu: Drucker, Scanner, Maus, Display, Touchpad."
+  question: "Ordne folgende IT-Komponenten als Ein- oder Ausgabegeräte ein: Drucker, Scanner, Maus, Display, Touchpad."
   answer: "Eingabegeräte: Scanner, Maus, Touchpad. Ausgabegeräte: Drucker, Display."
   examples:
     - "Maus → Eingabegerät"

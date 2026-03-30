@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "ki", "automatisierung"]
 # Flashcard payload
 card:
   type: multi
-  question: "Wie können KI-Systeme in der Informations- und Kommunikationstechnologie (IuK) unterstützen?"
+  question: "Welche Unterstützung leisten KI-Systeme in der Informations- und Kommunikationstechnologie (IuK)?"
   answer: |
     - Netzwerkmanagement
     - Cybersicherheit

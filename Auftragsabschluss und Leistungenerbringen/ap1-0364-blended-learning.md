@@ -14,7 +14,7 @@ tags: ["blended-learning", "e-learning", "weiterbildung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Bedeutung hat der Begriff Blended Learning?"
+  question: "Was bezeichnet man als Blended Learning?"
   answer: "Blended Learning ist eine Lernform, bei der Präsenzunterricht mit digitalen Lernmethoden kombiniert wird, um flexibles und effektives Lernen zu ermöglichen."
   examples: []
 

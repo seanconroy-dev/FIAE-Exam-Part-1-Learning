@@ -14,7 +14,7 @@ tags: ["ap1", "grundlagen", "arbeitsplatzgestaltung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Bedingungen muss ein ergonomischer PC-Arbeitsplatz erfüllen?"
+  question: "Was sind die Anforderungen an einen ergonomischen PC-Arbeitsplatz?"
   answer: "Monitor leicht unter Augenhöhe, Abstand ca. 50 cm, keine Blendung, höhenverstellbar, 90°-Winkel bei Armen/Beinen, genügend Beinfreiheit und natürliche Körperhaltung."
   examples: []
 

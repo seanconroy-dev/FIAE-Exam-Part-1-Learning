@@ -14,7 +14,7 @@ tags: ["ap1", "apipa", "dhcp", "ipv4"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche Aussagen sind zutreffend, wenn ein Netzwerkadapter eine APIPA-Adresse (169.254.x.x) anzeigt?"
+  question: "Was bedeutet es, wenn ein Netzwerkadapter eine APIPA-Adresse (169.254.x.x) anzeigt?"
   answer: "Windows-System, keine statische IP gesetzt, DHCP-Request erfolglos, DHCP-Server nicht erreichbar, APIPA aktiviert, automatische IP aus 169.254.0.0/16."
   examples: ["169.254.10.5", "APIPA bei Netzwerkausfall"]
 

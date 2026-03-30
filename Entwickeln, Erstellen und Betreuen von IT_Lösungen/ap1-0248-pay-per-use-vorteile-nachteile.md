@@ -14,7 +14,7 @@ tags: ["ap1", "pay-per-use", "cloud", "kosten"]
 # Flashcard payload
 card:
   type: comparison       # basic | multi | steps | definition | comparison
-  question: "Erläutere die Vor- und Nachteile beim Lizenzmodell Pay-per-use."
+  question: "Was sind die Vor- und Nachteile beim Lizenzmodell Pay-per-use?"
   answer: "Vorteile: keine Anfangsinvestition, skalierbar, geringes finanzielles Risiko. Nachteile: laufende Kosten, Abhängigkeit vom Anbieter, bei Dauerbetrieb oft teurer."
   examples: ["Cloud-Dienste wie AWS oder Azure", "Bezahlung pro Nutzung von Rechenleistung"]
 

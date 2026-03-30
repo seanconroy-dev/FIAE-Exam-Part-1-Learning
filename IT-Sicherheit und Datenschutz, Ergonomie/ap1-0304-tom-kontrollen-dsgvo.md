@@ -14,7 +14,7 @@ tags: ["ap1", "ds-gvo", "sicherheit", "maßnahmen"]
 # Flashcard payload
 card:
   type: basic
-  question: "Durch welche konkreten Maßnahmen können technisch-organisatorische Maßnahmen (TOM) DSGVO-konform umgesetzt werden?"
+  question: "Wie können technisch-organisatorische Maßnahmen (TOM) DSGVO-konform in der Praxis umgesetzt werden?"
   answer: "Durch Zutritts-, Zugangs-, Zugriffs-, Weitergabe-, Eingabe-, Auftrags-, Verfügbarkeits- und Trennungskontrollen."
   examples: []
 

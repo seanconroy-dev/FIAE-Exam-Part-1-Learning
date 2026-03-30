@@ -14,7 +14,7 @@ tags: ["ap1", "grundlagen", "sicherheit", "aes", "des"]
 # Flashcard payload
 card:
   type: basic
-  question: "Nenne Einsatzbereiche und Verfahren von symmetrischen Schlüsseln."
+  question: "In welchen Bereichen und Verfahren werden symmetrische Schlüssel eingesetzt?"
   answer: "Einsatzbereiche: WLAN (WPA2/WPA3), VPN (z. B. OpenVPN), IPsec, SSH, SRTP, WiMAX. Verfahren: AES, Triple-DES, Blowfish, SHA-2."
   examples: []
 

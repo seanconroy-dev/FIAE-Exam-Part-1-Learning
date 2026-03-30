@@ -14,7 +14,7 @@ tags: ["ap1", "grundlagen", "verschluesselung", "authentifizierung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was ist eine PKI (Public Key Infrastructure)?"
+  question: "Erkläre den Begriff PKI (Public Key Infrastructure)."
   answer: "Ein System zur Erstellung, Verwaltung und Prüfung digitaler Zertifikate, das mittels asymmetrischer Kryptografie die sichere Verschlüsselung und Signatur von Daten ermöglicht."
   examples: []
 

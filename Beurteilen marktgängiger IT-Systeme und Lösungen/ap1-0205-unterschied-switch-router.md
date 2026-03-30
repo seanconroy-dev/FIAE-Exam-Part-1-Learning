@@ -14,7 +14,7 @@ tags: ["netzwerkgeraete", "osi", "routing", "switching"]
 # Flashcard payload
 card:
   type: comparison
-  question: "Erläutere den Unterschied zwischen einem Switch und einem Router."
+  question: "Was ist der Unterschied zwischen einem Switch und einem Router?"
   answer: "Switch: arbeitet auf OSI-Schicht 2, leitet Frames anhand von MAC-Adressen weiter. Router: arbeitet auf OSI-Schicht 3, verbindet Netzwerke und routet Pakete anhand von IP-Adressen."
   examples: []
 

@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition", "planung"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was ist ein Netzplan im Projektmanagement?"
+  question: "Erkläre den Begriff Netzplan im Projektmanagement."
   answer: |
     Ein **Netzplan** ist ein Planungswerkzeug im Projektmanagement zur **Terminplanung von Projekten**.
 

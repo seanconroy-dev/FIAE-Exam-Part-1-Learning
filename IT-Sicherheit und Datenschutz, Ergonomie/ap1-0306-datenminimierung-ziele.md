@@ -14,7 +14,7 @@ tags: ["ap1", "grundlagen", "datenschutz", "prinzipien"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welches sind die Ziele bei der Datenminimierung?"
+  question: "Was sind die Ziele der Datenminimierung?"
   answer: "Nur so viele personenbezogene Daten wie nötig erheben und speichern, um Betroffene vor übermäßiger Datenspeicherung und Missbrauch zu schützen."
   examples: []
 

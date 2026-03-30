@@ -14,7 +14,7 @@ tags: ["ap1", "dsl", "adsl", "vdsl", "sdsl"]
 # Flashcard payload
 card:
   type: comparison       # basic | multi | steps | definition | comparison
-  question: "Erläutere die Unterschiede zwischen ADSL, VDSL und SDSL."
+  question: "Wie unterscheiden sich ADSL, VDSL und SDSL voneinander?"
   answer: "ADSL/VDSL: asymmetrisch (Download > Upload), VDSL schneller. SDSL: symmetrisch (Upload = Download)."
   examples: ["ADSL für Privatkunden", "VDSL für schnelles Internet", "SDSL für Unternehmen"]
 

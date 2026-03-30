@@ -14,7 +14,7 @@ tags: ["ap1", "pay-per-use", "cloud", "kostenmodell"]
 # Flashcard payload
 card:
   type: definition       # basic | multi | steps | definition | comparison
-  question: "Beschreibe das Modell Pay-per-use in der Informationstechnologie."
+  question: "Was versteht man in der Informationstechnologie unter dem Modell Pay-per-use?"
   answer: "Beim Pay-per-use Modell zahlt der Nutzer nur für die tatsächlich genutzten Ressourcen (z. B. Rechenleistung, Speicher oder Zeit)."
   examples: ["Cloud-Abrechnung nach Nutzungsdauer", "Speicherplatz nach GB bezahlt"]
 

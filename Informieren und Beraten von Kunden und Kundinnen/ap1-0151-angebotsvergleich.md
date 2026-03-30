@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Welchem Zweck dient ein Angebotsvergleich?"
+  question: "Warum ist ein Angebotsvergleich wichtig?"
   answer: |
     Ein Angebotsvergleich dient dazu, mehrere Angebote verschiedener Anbieter systematisch zu vergleichen, um die beste Kaufentscheidung zu treffen.
 

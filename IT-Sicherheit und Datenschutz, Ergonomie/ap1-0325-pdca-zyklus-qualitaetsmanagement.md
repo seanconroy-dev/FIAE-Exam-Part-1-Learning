@@ -14,7 +14,7 @@ tags: ["ap1", "prozesse", "qm"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was ist der PDCA-Zyklus und aus welchen Schritten besteht er?"
+  question: "Beschreibe den PDCA-Zyklus und seine einzelnen Schritte."
   answer: "Ein kontinuierlicher Verbesserungsprozess im Qualitätsmanagement bestehend aus Plan (Planen), Do (Umsetzen), Check (Überprüfen) und Act (Verbessern)."
   examples: []
 

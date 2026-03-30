@@ -14,7 +14,7 @@ tags: ["ap1", "oop", "klasse", "objekt"]
 # Flashcard payload
 card:
   type: comparison       # basic | multi | steps | definition | comparison
-  question: "Erkläre den Unterschied zwischen einem Objekt und einer Klasse."
+  question: "Worin unterscheiden sich ein Objekt und eine Klasse?"
   answer: "Eine Klasse ist ein Bauplan mit Attributen und Methoden; ein Objekt ist eine konkrete Instanz dieser Klasse mit konkreten Werten."
   examples: ["Klasse: Auto → Objekt: meinAuto (rot, 150 PS)"]
 

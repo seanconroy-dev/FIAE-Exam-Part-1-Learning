@@ -14,7 +14,7 @@ tags: ["leistung", "spannung", "strom", "berechnung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Wie berechnet man die maximale Leistung einer Steckdose (z. B. 230 V, 16 A)?"
+  question: "Wodurch ergibt sich die maximale Leistung einer Steckdose (z. B. 230 V, 16 A)?"
   answer: "Mit P = U · I → 230 V × 16 A = 3.680 W (≈ 3,68 kW)."
   examples: ["230 V × 16 A = 3.680 W"]
 

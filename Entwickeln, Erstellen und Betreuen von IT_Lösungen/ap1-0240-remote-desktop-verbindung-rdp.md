@@ -14,7 +14,7 @@ tags: ["ap1", "rdp", "remote-desktop"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Beschreibe die Funktionsweise einer Remote Desktop Verbindung."
+  question: "Wie funktioniert eine Remote Desktop Verbindung?"
   answer: "Eine Remote Desktop Verbindung (RDP) ermöglicht den Fernzugriff auf einen Computer über Netzwerk (Port 3389), wobei Bildschirminhalte übertragen und lokale Eingaben (Maus, Tastatur) sowie Ressourcen genutzt werden."
   examples: ["Fernwartung eines PCs", "Zugriff auf Firmenserver von zuhause"]
 

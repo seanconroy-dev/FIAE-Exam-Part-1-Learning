@@ -14,7 +14,7 @@ tags: ["ap1", "grundlagen", "softwareentwicklung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Erläutere, bezogen auf den Bereich der Entwicklung, den Begriff Security by Design."
+  question: "Was versteht man im Bereich der Entwicklung unter dem Begriff Security by Design?"
   answer: "Security by Design bedeutet, dass Sicherheitsanforderungen bereits in der Entwicklungsphase berücksichtigt werden, um Sicherheitslücken von Anfang an zu vermeiden."
   examples: []
 

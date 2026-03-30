@@ -14,7 +14,7 @@ tags: ["ap1", "arp", "netzwerk", "mac"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche Aufgabe erfüllt das Befehlszeilenkommando ARP?"
+  question: "Wofür wird das Befehlszeilenkommando ARP verwendet?"
   answer: "ARP dient zur Ermittlung und Anzeige der Zuordnung von IP-Adressen zu MAC-Adressen (ARP-Cache)."
   examples: ["arp -a", "Anzeige der ARP-Tabelle"]
 

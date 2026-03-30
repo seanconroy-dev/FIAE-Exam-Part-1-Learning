@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was versteht man unter dem Begriff volkswirtschaftliche Sektoren?"
+  question: "Wie definiert man den Begriff volkswirtschaftliche Sektoren?"
   answer: |
     Volkswirtschaftliche Sektoren sind eine Einteilung der wirtschaftlichen Produktion in verschiedene Bereiche der Wirtschaft.
 

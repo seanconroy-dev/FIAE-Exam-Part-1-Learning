@@ -14,7 +14,7 @@ tags: ["ap1", "din-66399", "sicherheit", "entsorgung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was sollte man beim Verschrotten von Datenträgern unbedingt beachten?"
+  question: "Worauf muss beim Verschrotten von Datenträgern unbedingt geachtet werden?"
   answer: "Alle Daten müssen vor der Entsorgung sicher gelöscht oder zerstört werden, z. B. durch mechanische, magnetische oder thermische Verfahren nach DIN 66399."
   examples: []
 

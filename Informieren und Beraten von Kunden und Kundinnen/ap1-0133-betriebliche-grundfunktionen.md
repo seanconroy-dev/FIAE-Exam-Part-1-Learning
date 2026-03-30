@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: multi
-  question: "Welche Aufgaben und Ziele verfolgen die betrieblichen Grundfunktionen?"
+  question: "Welchem Zweck dienen die betrieblichen Grundfunktionen?"
   answer: |
     Zu den betrieblichen Grundfunktionen zählen:
 

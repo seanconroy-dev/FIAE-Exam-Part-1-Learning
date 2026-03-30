@@ -14,7 +14,7 @@ tags: ["ap1", "it-sicherheit", "schutz"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Maßnahmen sind geeignet, um Schäden an der IT-Infrastruktur zu vermeiden bzw. die Sicherheit der IT-Systeme zu erhöhen?"
+  question: "Wie kann man Schäden an der IT-Infrastruktur vermeiden und die Sicherheit der IT-Systeme erhöhen?"
   answer: "Datenverschlüsselung, Netzsegmentierung (VLAN), Firewalls/Endpoint-Security, Rechtekonzepte, regelmäßige Updates, Logging & Audits, starke Authentifizierung (MFA), organisatorische Regeln und Mitarbeiterschulungen."
   examples: []
 

@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Welche Kriterien müssen für die Marktform des Polypols erfüllt sein?"
+  question: "Was sind die Voraussetzungen für die Marktform des Polypols?"
   answer: |
     Ein Polypol liegt vor, wenn viele Anbieter vielen Nachfragern gegenüberstehen.
 

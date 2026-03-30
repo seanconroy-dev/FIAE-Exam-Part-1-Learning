@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "bilderkennung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Schnittstellen sind auf dem Bild zu sehen?"
+  question: "Um welche Schnittstellen handelt es sich auf dem Bild?"
   answer: "DisplayPort, DVI, VGA, USB Typ B und zwei USB Typ A."
   examples:
     - "DisplayPort → digitale Videoübertragung"

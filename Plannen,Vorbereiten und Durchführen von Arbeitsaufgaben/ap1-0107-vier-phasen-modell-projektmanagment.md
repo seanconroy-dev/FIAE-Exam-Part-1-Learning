@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition", "projektphasen"]
 # Flashcard payload
 card:
   type: multi
-  question: "Was versteht man unter dem 4-Phasen-Modell beim Projektmanagement?"
+  question: "Wie ist das 4-Phasen-Modell im Projektmanagement aufgebaut?"
   answer: |
     Das **4-Phasen-Modell** beschreibt die grundlegenden **Projektphasen im Projektmanagement**.
 

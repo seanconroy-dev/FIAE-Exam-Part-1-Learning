@@ -14,7 +14,7 @@ tags: ["ap1", "sicherheit", "grundlagen", "risiken"]
 # Flashcard payload
 card:
   type: basic
-  question: "Beschreibe den Begriff Datensicherheit und nenne deren Schutzziele."
+  question: "Was versteht man unter Datensicherheit und welche Schutzziele gehören dazu?"
   answer: "Datensicherheit umfasst Maßnahmen zum Schutz von Daten vor Gefahren und zielt auf die Schutzziele Vertraulichkeit, Integrität und Verfügbarkeit ab."
   examples: []
 

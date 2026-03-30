@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant"]
 # Flashcard payload
 card:
   type: multi
-  question: "Was ist bei der Außerbetriebnahme von IT-Systemen zu beachten?"
+  question: "Worauf muss bei der Außerbetriebnahme von IT-Systemen geachtet werden?"
   answer: |
     Bei der Außerbetriebnahme von IT-Systemen sollten mehrere organisatorische und technische Punkte beachtet werden:
 

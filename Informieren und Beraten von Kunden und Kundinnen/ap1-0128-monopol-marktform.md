@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was versteht man unter der Marktform des Monopols?"
+  question: "Wie wird die Marktform des Monopols definiert?"
   answer: |
     Ein Monopol ist eine Marktform, bei der es nur einen Anbieter oder nur einen Nachfrager gibt.
 

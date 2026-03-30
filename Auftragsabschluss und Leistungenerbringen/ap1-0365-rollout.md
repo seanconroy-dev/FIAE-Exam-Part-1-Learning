@@ -14,7 +14,7 @@ tags: ["rollout", "deployment", "hardware", "software"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was verbirgt sich hinter dem Begriff Rollout?"
+  question: "Was bedeutet der Begriff Rollout?"
   answer: "Ein Rollout bezeichnet die Einführung bzw. Verteilung neuer Hard- oder Software, z. B. durch Austausch alter Systeme oder Bereitstellung neuer Systeme an einem Standort oder im gesamten Unternehmen."
   examples: []
 

@@ -14,7 +14,7 @@ tags: ["ap1", "grundlagen", "netzwerk", "sicherheit"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was ist eine SPI (Stateful Packet Inspection) Firewall?"
+  question: "Erkläre den Begriff SPI (Stateful Packet Inspection) Firewall."
   answer: "Eine Firewall, die den Zustand von Verbindungen überwacht und Datenpakete anhand gespeicherter Sitzungsinformationen (z. B. TCP-Status) prüft und filtert."
   examples: []
 

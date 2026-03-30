@@ -14,7 +14,7 @@ tags: ["ap1", "cmd", "tools", "netzwerk"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche CMD-Tools werden für welche Netzwerkaufgaben verwendet?"
+  question: "Welchen Netzwerkaufgaben sind welche CMD-Tools zuzuordnen?"
   answer: "ipconfig: Adapterkonfiguration, IP, DHCP, Hostname; ping: Erreichbarkeit prüfen; nslookup: DNS-Abfragen; arp: MAC-Adressen im Netzwerk; netsh: Netzwerkkonfiguration und Firewall-Regeln."
   examples: ["ping www.google.de", "ipconfig /all"]
 

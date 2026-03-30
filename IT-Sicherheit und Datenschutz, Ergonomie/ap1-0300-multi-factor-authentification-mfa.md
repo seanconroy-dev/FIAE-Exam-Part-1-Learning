@@ -14,7 +14,7 @@ tags: ["ap1", "sicherheit", "login", "schutz"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was bedeutet der Begriff MFA (Multi-Factor-Authentication) und wo kommt sie zum Einsatz?"
+  question: "Erkläre den Begriff MFA (Multi-Factor-Authentication) und nenne typische Einsatzbereiche."
   answer: "MFA ist eine erweiterte Authentifizierung, bei der mehrere unabhängige Faktoren (z. B. Passwort und Code) überprüft werden, um den Zugriff zu gewähren; sie wird z. B. im Online-Banking oder bei Online-Zugängen eingesetzt."
   examples: []
 

@@ -14,7 +14,7 @@ tags: ["kauf", "miete", "leasing", "wirtschaft"]
 # Flashcard payload
 card:
   type: comparison
-  question: "Welche Unterscheidungsmerkmale haben Kauf, Miete und Leasing?"
+  question: "Wie unterscheiden sich Kauf, Miete und Leasing voneinander?"
   answer: "Kauf: Eigentum geht auf den Käufer über. Miete: Nutzung gegen Zahlung, Eigentum bleibt beim Vermieter. Leasing: ähnliche Nutzung wie Miete, aber mit erweiterten Rechten/Pflichten und oft wirtschaftlicher Eigentumsübertragung während der Laufzeit."
   examples: []
 

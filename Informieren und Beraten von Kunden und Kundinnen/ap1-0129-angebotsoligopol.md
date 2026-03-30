@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Wann spricht man in der Wirtschaft von einem Angebotsoligopol?"
+  question: "Was versteht man in der Wirtschaft unter einem Angebotsoligopol?"
   answer: |
     Von einem Angebotsoligopol spricht man, wenn wenige Anbieter vielen Nachfragern gegenüberstehen.
 

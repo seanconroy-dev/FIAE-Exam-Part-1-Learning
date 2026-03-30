@@ -14,7 +14,7 @@ tags: ["dhcp", "netzwerkkonfiguration", "ip-adressen"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Informationen stellt der DHCP-Dienst (Dynamic Host Configuration Protocol) zur Verfügung?"
+  question: "Welche Informationen werden durch den DHCP-Dienst (Dynamic Host Configuration Protocol) bereitgestellt?"
   answer: "DHCP stellt automatisch Netzwerkinformationen bereit wie IP-Adresse, Subnetzmaske, Standard-Gateway, DNS-Server sowie weitere Optionen wie Lease-Time, NTP-Server, Domain-Name oder PXE-Boot-Informationen."
   examples: []
 

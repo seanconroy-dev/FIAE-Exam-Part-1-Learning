@@ -14,7 +14,7 @@ tags: ["ap1", "nslookup", "dns", "netzwerk"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welches Befehlszeilenkommando fragt DNS-Informationen ab und löst Domainnamen in IP-Adressen auf?"
+  question: "Mit welchem Befehlszeilenkommando können DNS-Informationen abgefragt und Domainnamen in IP-Adressen aufgelöst werden?"
   answer: "nslookup – dient zur Abfrage von DNS-Informationen und zur Auflösung von Domainnamen in IP-Adressen (und umgekehrt)."
   examples: ["nslookup google.de", "Überprüfung von DNS-Servern"]
 

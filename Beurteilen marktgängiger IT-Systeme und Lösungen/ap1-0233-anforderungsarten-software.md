@@ -14,7 +14,7 @@ tags: ["ap1", "anforderungen", "alm"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche Anforderungsarten gibt es und was bedeuten sie?"
+  question: "Was sind die verschiedenen Anforderungsarten und was bedeuten sie?"
   answer: "Geschäftsanforderungen: Ziele aus Kundensicht. Benutzeranforderungen: Anforderungen der Nutzer. Funktionale Anforderungen: konkrete Funktionen der Software. Projektanforderungen: Rahmenbedingungen zur Umsetzung des Projekts."
   examples: ["Geschäft: Umsatz steigern", "Benutzer: einfache Bedienung", "Funktional: Login-System", "Projekt: Zeit- und Budgetvorgaben"]
 

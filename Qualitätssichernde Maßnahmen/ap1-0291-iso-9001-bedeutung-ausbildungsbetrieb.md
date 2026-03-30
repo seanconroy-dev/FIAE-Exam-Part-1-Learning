@@ -14,7 +14,7 @@ tags: ["ap1", "normen", "prozesse", "optimierung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Dein Ausbildungsbetrieb ist ISO 9001 zertifiziert. Was bedeutet diese Norm für deinen Ausbildungsbetrieb?"
+  question: "Was bedeutet die ISO 9001 Zertifizierung für einen Ausbildungsbetrieb?"
   answer: "ISO 9001 legt Anforderungen an ein Qualitätsmanagementsystem fest. Ziel ist die Qualitätssicherung durch kontinuierliche Verbesserung der Prozesse auf Basis von Kundenorientierung, Prozessorientierung und Risikomanagement."
   examples: []
 

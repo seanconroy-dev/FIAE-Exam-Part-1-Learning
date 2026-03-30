@@ -14,7 +14,7 @@ tags: ["organigramm", "aufbauorganisation", "hierarchie"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was ist ein Organigramm?"
+  question: "Erkläre den Begriff Organigramm."
   answer: "Ein Organigramm ist ein grafisches Schaubild der Aufbauorganisation eines Unternehmens, das Struktur, Zuständigkeiten und Weisungsbeziehungen darstellt."
   examples: []
 

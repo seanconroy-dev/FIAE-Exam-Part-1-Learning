@@ -14,7 +14,7 @@ tags: ["ap1", "wlan", "vergleich"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Nenne Vor- und Nachteile beim Einsatz eines 2,4 GHz sowie eines 5 GHz WLANs."
+  question: "Was sind die Vor- und Nachteile beim Einsatz eines 2,4-GHz- sowie eines 5-GHz-WLANs?"
   answer: "2,4 GHz: große Reichweite und hohe Verbreitung, aber geringere Geschwindigkeit und störanfällig (Channel Overlapping). 5 GHz: höhere Datenraten und weniger Störungen, aber geringere Reichweite und stärkere Dämpfung durch Hindernisse."
   examples: []
 

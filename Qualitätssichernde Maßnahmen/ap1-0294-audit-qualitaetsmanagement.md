@@ -14,7 +14,7 @@ tags: ["ap1", "iso-9001", "prüfung", "prozesse"]
 # Flashcard payload
 card:
   type: basic
-  question: "Im Qualitätsmanagement spricht man oftmals im Zusammenhang einer Zertifizierung von einem Audit. Was versteht man unter einem Audit?"
+  question: "Was versteht man im Qualitätsmanagement unter einem Audit?"
   answer: "Ein Audit ist eine systematische Prüfung von Prozessen, Anforderungen und Richtlinien, um festzustellen, ob festgelegte Standards (z. B. ISO 9001) eingehalten werden."
   examples: []
 

@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "grundlagen"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Regeln sollte man im telefonischen Kundensupport beachten?"
+  question: "Was ist im telefonischen Kundensupport zu beachten?"
   answer: |
     - Vermeide Worte und Ausdrücke, die den Kunden reizen könnten.
     - Höre dem Gesprächspartner aktiv zu.

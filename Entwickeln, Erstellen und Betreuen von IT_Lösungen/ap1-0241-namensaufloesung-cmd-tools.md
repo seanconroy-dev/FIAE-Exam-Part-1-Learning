@@ -14,7 +14,7 @@ tags: ["ap1", "dns", "cmd", "powershell"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Wie kann ich mit Hilfe von Kommandozeilen-Werkzeugen in einer windowsbasierten IT-Landschaft die Namensauflösung überprüfen?"
+  question: "Welche Kommandozeilen-Werkzeuge eignen sich zur Überprüfung der Namensauflösung in einer Windows-Umgebung?"
   answer: "Mit CMD: ping -a, nslookup, tracert. Mit PowerShell: Resolve-DnsName."
   examples: ["nslookup google.de", "ping -a 8.8.8.8"]
 

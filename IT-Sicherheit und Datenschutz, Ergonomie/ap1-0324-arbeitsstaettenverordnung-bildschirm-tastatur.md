@@ -14,7 +14,7 @@ tags: ["ap1", "richtlinien", "gesundheit"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Aussagen trifft die Arbeitsstättenverordnung (ArbStättV) in Bezug auf Bildschirm und Tastatur?"
+  question: "Was regelt die Arbeitsstättenverordnung (ArbStättV) hinsichtlich Bildschirm und Tastatur?"
   answer: "Bildschirm: scharf, flimmerfrei, verstellbar, keine Reflexionen, Helligkeit/Kontrast einstellbar. Tastatur: getrennt, neigbar, reflexionsarm, ergonomisch und gut lesbar."
   examples: []
 

@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition", "netzplan"]
 # Flashcard payload
 card:
   type: multi
-  question: "Welche Elemente und Bezeichnungen gehören zu einem Vorgang im Netzplan?"
+  question: "Aus welchen Elementen und Bezeichnungen setzt sich ein Vorgang im Netzplan zusammen?"
   answer: |
     Ein **Vorgang im Netzplan** enthält mehrere standardisierte Elemente zur Planung und Berechnung von Zeitabläufen:
 

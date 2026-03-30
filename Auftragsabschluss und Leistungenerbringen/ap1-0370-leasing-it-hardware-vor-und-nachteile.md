@@ -14,7 +14,7 @@ tags: ["leasing", "it-hardware", "vorteile", "nachteile"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Vor- und Nachteile hat ein Unternehmen beim Leasing von IT-Hardware?"
+  question: "Was sind die Vor- und Nachteile für ein Unternehmen beim Leasing von IT-Hardware?"
   answer: "Vorteile: keine hohe Anfangsinvestition, planbare Raten, bilanzneutral, oft Wartung durch Anbieter, stets aktuelle Technik. Nachteile: kein Eigentum, feste Laufzeiten, meist nicht kündbar, insgesamt oft höhere Kosten."
   examples: []
 

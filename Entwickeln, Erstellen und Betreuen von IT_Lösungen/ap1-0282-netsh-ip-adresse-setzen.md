@@ -14,7 +14,7 @@ tags: ["ap1", "netsh", "ip", "ipv4"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Wie lautet das Kommando zum Einrichten einer IPv4-Adresse (192.168.0.1/24) mit Gateway 192.168.0.254 für den Netzwerkadapter „LAN-Verbindung“?"
+  question: "Welches Kommando richtet eine IPv4-Adresse (192.168.0.1/24) mit Gateway 192.168.0.254 für den Adapter LAN-Verbindung ein?"
   answer: "netsh interface ip set address name=\"LAN-Verbindung\" address=192.168.0.1 mask=255.255.255.0 gateway=192.168.0.254"
   examples: ["netsh interface ip set address name=\"LAN-Verbindung\" address=192.168.0.1 mask=255.255.255.0 gateway=192.168.0.254"]
 

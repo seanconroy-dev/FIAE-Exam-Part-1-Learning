@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition", "cloud"]
 # Flashcard payload
 card:
   type: definition
-  question: "Erkläre den Cloud-Computing-Begriff Software as a Service (SaaS)."
+  question: "Was versteht man unter dem Cloud-Computing-Begriff Software as a Service (SaaS)?"
   answer: "Software as a Service (SaaS) ist ein Cloud-Servicemodell, bei dem Anwendungen nicht lokal installiert werden, sondern über das Internet als Dienst bereitgestellt und meist über einen Webbrowser genutzt werden."
   examples:
     - "Microsoft 365"

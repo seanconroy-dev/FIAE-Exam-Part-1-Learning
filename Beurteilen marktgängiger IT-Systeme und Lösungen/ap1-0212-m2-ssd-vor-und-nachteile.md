@@ -14,7 +14,7 @@ tags: ["ssd", "m2", "nvme"]
 # Flashcard payload
 card:
   type: comparison
-  question: "Ermittle Vor- und Nachteile einer M.2-SSD."
+  question: "Welche Vor- und Nachteile hat eine M.2-SSD?"
   answer: "Vorteile: sehr hohe Geschwindigkeit (bis ~7.450 MB/s), kompaktes Design, keine Verkabelung, direkte Mainboard-Anbindung (NVMe). Nachteile: teurer, nicht mit allen Mainboards kompatibel, höhere Wärmeentwicklung, oft geringere Kapazität als SATA-SSDs."
   examples: ["NVMe M.2 SSD im Gaming-PC", "Ultrabook mit platzsparender M.2 SSD"]
 

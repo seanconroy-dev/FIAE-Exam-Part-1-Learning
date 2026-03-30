@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was versteht man unter dem Begriff Cross-Selling?"
+  question: "Wie definiert man den Begriff Cross-Selling?"
   answer: |
     Cross-Selling (deutsch: Querverkauf) bezeichnet im Marketing das Anbieten zusätzlicher, zum Hauptprodukt passender Produkte oder Dienstleistungen.
 

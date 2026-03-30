@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "wasserfallmodell", "vergleich"]
 # Flashcard payload
 card:
   type: comparison
-  question: "Welche Vor- und Nachteile hat das Wasserfallmodell?"
+  question: "Was sind die Vor- und Nachteile des Wasserfallmodells?"
   answer: |
     Vorteile:
     - Klare Reihenfolge der Projektphasen

@@ -14,7 +14,7 @@ tags: ["ap1", "planung", "methoden"]
 # Flashcard payload
 card:
   type: basic
-  question: "Beschreibe die fünf Punkte der SMART-Methode im Projektmanagement."
+  question: "Was sind die fünf Punkte der SMART-Methode im Projektmanagement?"
   answer: "SMART = Spezifisch, Messbar, Attraktiv/Akzeptiert, Realistisch, Terminiert."
   examples: []
 

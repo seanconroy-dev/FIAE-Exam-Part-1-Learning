@@ -14,7 +14,7 @@ tags: ["green-it", "energieeffizienz", "ressourcen"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was versteht man unter dem Begriff Nachhaltigkeit in der Informationstechnologie-Branche?"
+  question: "Welche Bedeutung hat der Begriff Nachhaltigkeit in der IT-Branche?"
   answer: "Nachhaltigkeit bedeutet in der IT ein verantwortungsvolles Handeln zur Schonung von Ressourcen, z. B. durch Energieeinsparung, effiziente Technologien, Nutzung erneuerbarer Energien und Reduzierung von Verbrauch."
   examples: []
 

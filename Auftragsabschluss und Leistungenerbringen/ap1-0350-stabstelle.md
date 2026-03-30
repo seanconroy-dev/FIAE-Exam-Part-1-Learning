@@ -14,7 +14,7 @@ tags: ["stabsstelle", "stabliniensystem", "beratung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was versteht man bei Aufbauorganisationen unter einer Stabsstelle?"
+  question: "Wie lässt sich der Begriff Stabsstelle bei Aufbauorganisationen definieren?"
   answer: "Eine Stabsstelle unterstützt die Leitung bei Entscheidungsfindungen, hat aber keine eigene Weisungsbefugnis."
   examples: []
 

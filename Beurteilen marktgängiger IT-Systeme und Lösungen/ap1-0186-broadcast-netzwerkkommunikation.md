@@ -14,7 +14,7 @@ tags: ["broadcast","netzwerkkommunikation","ip"]
 # Flashcard payload
 card:
   type: basic
-  question: "In IPv4 Netzwerken ist man bestrebt, den Broadcast zu minimieren. Erläutere bitte den Begriff Broadcast."
+  question: "Was versteht man in IPv4-Netzwerken unter dem Begriff Broadcast?"
   answer: "Broadcast bezeichnet eine Netzwerkkommunikation, bei der ein Sender Daten gleichzeitig an alle Geräte eines Netzwerks oder Subnetzes sendet."
   examples:
     - "ARP-Anfragen in IPv4-Netzwerken"

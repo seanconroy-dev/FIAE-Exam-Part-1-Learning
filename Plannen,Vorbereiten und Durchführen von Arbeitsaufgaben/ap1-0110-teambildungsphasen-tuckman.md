@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition", "team"]
 # Flashcard payload
 card:
   type: multi
-  question: "Was versteht man unter Forming, Storming, Norming und Performing im Teambildungsprozess?"
+  question: "Wie definiert man Forming, Storming, Norming und Performing im Teambildungsprozess?"
   answer: |
     **Forming, Storming, Norming und Performing** beschreiben die **vier Phasen der Teamentwicklung nach dem Tuckman-Modell**.
 

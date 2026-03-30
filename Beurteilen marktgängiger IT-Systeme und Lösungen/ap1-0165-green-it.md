@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was versteht man unter dem Begriff Green-IT?"
+  question: "Wie definiert man den Begriff Green-IT?"
   answer: "Green-IT bezeichnet alle Maßnahmen, die Informations- und Kommunikationstechnik über ihren gesamten Lebenszyklus hinweg umweltfreundlicher und ressourcenschonender gestalten."
   examples:
     - "Einsatz von Virtualisierung zur Reduzierung von Hardware"

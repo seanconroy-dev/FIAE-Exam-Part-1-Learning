@@ -14,7 +14,7 @@ tags: ["ipv6", "slaac", "link-local", "autokonfiguration"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was versteht man bei IPv6 unter einer Stateless Address Autoconfiguration?"
+  question: "Wie funktioniert die Stateless Address Autoconfiguration bei IPv6?"
   answer: "SLAAC (Stateless Address Autoconfiguration) ist die automatische IPv6-Adresskonfiguration ohne zentralen Server. Jedes Gerät erhält automatisch eine Link-Local-Adresse (beginnend mit fe80::) und kann daraus eine gültige IPv6-Adresse erzeugen."
   examples: []
 

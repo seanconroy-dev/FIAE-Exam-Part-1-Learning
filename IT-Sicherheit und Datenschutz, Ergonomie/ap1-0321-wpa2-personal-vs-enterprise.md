@@ -14,7 +14,7 @@ tags: ["ap1", "netzwerk", "sicherheit"]
 # Flashcard payload
 card:
   type: basic
-  question: "Benenne je 2 Vor- und Nachteile des Sicherheitstyps WPA2-Personal und WPA2-Enterprise."
+  question: "Was sind je 2 Vor- und Nachteile der Sicherheitstypen WPA2-Personal und WPA2-Enterprise?"
   answer: "WPA2-Personal: + einfach zu implementieren, weit verbreitet; − unsicher bei vielen Nutzern, Passwortwechsel aufwendig. WPA2-Enterprise: + hohe Sicherheit, zentrale Verwaltung; − hoher Aufwand, RADIUS-Server nötig."
   examples: []
 

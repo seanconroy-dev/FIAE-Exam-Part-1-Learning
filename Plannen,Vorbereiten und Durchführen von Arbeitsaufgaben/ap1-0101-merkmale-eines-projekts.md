@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition", "grundlagen"]
 # Flashcard payload
 card:
   type: multi
-  question: "Nenne Merkmale eines Projekts."
+  question: "Welche Merkmale hat ein Projekt?"
   answer: |
     Ein Projekt besitzt typischerweise folgende Merkmale:
 

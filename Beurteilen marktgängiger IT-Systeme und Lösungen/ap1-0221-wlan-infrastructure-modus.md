@@ -14,7 +14,7 @@ tags: ["ap1", "wlan", "grundlagen"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Was bedeutet es, wenn ein WLAN Access Point im Infrastructure Modus arbeitet?"
+  question: "Wie funktioniert ein WLAN Access Point im Infrastructure-Modus?"
   answer: "Clients verbinden sich über den Access Point mit einem Netzwerk und authentifizieren sich (z. B. per WPA2/WPA3, RADIUS oder WPS), um Zugriff auf z. B. das Unternehmensnetzwerk zu erhalten."
   examples: []
 

@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Wann spricht man von einem Käufermarkt?"
+  question: "Was versteht man unter einem Käufermarkt?"
   answer: |
     Von einem Käufermarkt spricht man, wenn das Angebot größer ist als die Nachfrage.
 

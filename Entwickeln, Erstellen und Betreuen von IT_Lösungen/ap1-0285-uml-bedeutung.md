@@ -14,7 +14,7 @@ tags: ["ap1", "uml", "modellierung", "grundlagen"]
 # Flashcard payload
 card:
   type: definition       # basic | multi | steps | definition | comparison
-  question: "Was bedeutet der Begriff UML?"
+  question: "Wofür steht die Abkürzung UML?"
   answer: "UML (Unified Modeling Language) ist eine standardisierte grafische Modellierungssprache zur Visualisierung, Spezifikation, Konstruktion und Dokumentation von Softwaresystemen."
   examples: ["Klassendiagramm", "Sequenzdiagramm"]
 

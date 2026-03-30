@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: comparison
-  question: "In der Kundenkommunikation, im Speziellen während der Fehleranalyse im Telefonsupport, sind Fragen von besonderer Bedeutung. Unterscheide bitte geschlossene und offene Fragen."
+  question: "Wie unterscheiden sich geschlossene und offene Fragen in der Kundenkommunikation?"
   answer: |
     Geschlossene Fragen:
     - Fragen, die meist mit „Ja“ oder „Nein“ beantwortet werden können.

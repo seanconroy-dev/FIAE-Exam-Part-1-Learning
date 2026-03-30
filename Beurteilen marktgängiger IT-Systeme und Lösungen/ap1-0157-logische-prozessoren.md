@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition"]
 # Flashcard payload
 card:
   type: definition
-  question: "Erläutern Sie den Begriff „Logische Prozessoren“."
+  question: "Was bezeichnet man in der CPU-Technologie als logische Prozessoren?"
   answer: "Logische Prozessoren sind virtuelle Verarbeitungseinheiten einer CPU, die durch Technologien wie Hyper-Threading (HTT) oder Simultaneous Multithreading (SMT) entstehen. Sie ermöglichen es, mehrere Threads parallel auf einem physischen Prozessorkern auszuführen und dadurch die Auslastung und Leistung der CPU zu verbessern."
   examples:
     - "Ein Prozessor mit 8 physischen Kernen und Hyper-Threading kann 16 logische Prozessoren bereitstellen."

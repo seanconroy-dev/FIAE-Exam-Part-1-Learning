@@ -14,7 +14,7 @@ tags: ["ap1", "oem", "software", "hardware"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Was ist unter den Begriffen OEM-Software und OEM-Hardware zu verstehen?"
+  question: "Wie werden die Begriffe OEM-Software und OEM-Hardware definiert?"
   answer: "OEM-Produkte werden vom Hersteller nicht direkt verkauft, sondern zusammen mit anderer Hardware/Software ausgeliefert. OEM-Software ist oft eingeschränkt, OEM-Hardware wird unter anderem Markennamen vertrieben."
   examples: ["Windows vorinstalliert auf PCs", "Hardware von Herstellern unter anderem Markennamen"]
 

@@ -14,7 +14,7 @@ tags: ["matrixorganisation", "mehrliniensystem", "projektorganisation"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was versteht man bei den Leitungssystemen unter dem Begriff Matrixorganisation?"
+  question: "Wie wird die Matrixorganisation bei den Leitungssystemen definiert?"
   answer: "Die Matrixorganisation ist eine Erweiterung des Mehrliniensystems, bei der jede Stelle zwei Weisungslinien (z. B. funktional und objektbezogen) unterliegt."
   examples: []
 

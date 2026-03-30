@@ -14,7 +14,7 @@ tags: ["snmp", "monitoring", "netzwerkverwaltung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Aufgabe hat das Simple Network Management Protocol, kurz SNMP?"
+  question: "Wozu dient das Simple Network Management Protocol (SNMP)?"
   answer: "SNMP ist ein Netzwerkprotokoll zur Überwachung und Verwaltung von Netzwerkgeräten. Es ermöglicht das zentrale Auslesen und Steuern von Geräten wie Routern, Switches oder Servern über eine Management-Konsole."
   examples: []
 

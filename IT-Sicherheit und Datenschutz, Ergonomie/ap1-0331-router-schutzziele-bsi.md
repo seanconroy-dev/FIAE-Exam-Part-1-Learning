@@ -14,7 +14,7 @@ tags: ["ap1", "it-sicherheit", "cia"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welcher Schutzbedarf bzw. welche Schutzziele gelten für einen Router nach BSI IT-Grundschutz?"
+  question: "Welche Schutzziele und welcher Schutzbedarf gelten für einen Router gemäß BSI IT-Grundschutz?"
   answer: "Vertraulichkeit: hoch, Integrität: normal, Verfügbarkeit: normal."
   examples: []
 

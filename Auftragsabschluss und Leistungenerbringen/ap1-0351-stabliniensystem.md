@@ -14,7 +14,7 @@ tags: ["stabliniensystem", "stabsstelle", "einliniensystem"]
 # Flashcard payload
 card:
   type: basic
-  question: "Wie ist eine Stabliniensorganisation aufgebaut?"
+  question: "Beschreibe den Aufbau einer Stablinienorganisation."
   answer: "Das Stabliniensystem ist ein Einliniensystem, das durch Stabsstellen ergänzt wird, welche die Leitung unterstützen, aber keine Weisungsbefugnis haben."
   examples: []
 

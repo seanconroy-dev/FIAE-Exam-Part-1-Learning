@@ -14,7 +14,7 @@ tags: ["1st-level", "2nd-level", "3rd-level", "sla"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was versteht man unter dem Begriff Eskalationsstufe im 3-stufigen IT-Kundensupport-Modell?"
+  question: "Wie wird der Begriff Eskalationsstufe im 3-stufigen IT-Kundensupport-Modell definiert?"
   answer: "Eskalationsstufen sind definierte Support-Ebenen nach Schweregrad eines Falls.\n1st Level: erste Anlaufstelle\n2nd Level: Spezialisten (Incident Management)\n3rd Level: Experten/Entwickler"
   examples: []
 

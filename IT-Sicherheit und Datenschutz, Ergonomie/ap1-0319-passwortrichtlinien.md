@@ -14,7 +14,7 @@ tags: ["ap1", "grundlagen", "richtlinien"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Kriterien muss eine sichere Passwortrichtlinie erfüllen?"
+  question: "Was sind die Anforderungen an eine sichere Passwortrichtlinie?"
   answer: "Mindestlänge, Komplexität (Groß-/Kleinbuchstaben, Zahlen, Sonderzeichen), keine einfachen Begriffe, regelmäßige Änderung, Begrenzung von Loginversuchen und optional MFA."
   examples: []
 

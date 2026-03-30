@@ -14,7 +14,7 @@ tags: ["dns", "active-directory", "netzwerkdienste"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Aufgaben hat ein Domain Name System (DNS) in einer Windows-Domänenlandschaft bzw. Active Directory?"
+  question: "Welchen Zweck erfüllt ein Domain Name System (DNS) in einer Windows-Domänenlandschaft bzw. Active Directory?"
   answer: "DNS übernimmt die Namensauflösung (Name ↔ IP-Adresse) und ermöglicht zusätzlich Reverse Lookup (IP → Name), z. B. über PTR-Records in der Reverse Lookup Zone (Active Directory)."
   examples: []
 

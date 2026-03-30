@@ -14,7 +14,7 @@ tags: ["ap1", "datenbank", "normalformen"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Nenne die ersten drei Normalformen und deren Zweck."
+  question: "Welche ersten drei Normalformen gibt es und was ist ihr Zweck?"
   answer: "1NF: atomare Werte; 2NF: volle funktionale Abhängigkeit vom Schlüssel; 3NF: keine transitive Abhängigkeit. Zweck: Vermeidung von Datenredundanzen."
   examples: []
 

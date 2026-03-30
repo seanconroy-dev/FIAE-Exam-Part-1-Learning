@@ -14,7 +14,7 @@ tags: ["ap1", "grundlagen", "sicherheit"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welchem Zweck dient das IT-Sicherheitsmanagement?"
+  question: "Wozu wird IT-Sicherheitsmanagement eingesetzt?"
   answer: "IT-Sicherheitsmanagement dient der kontinuierlichen Gewährleistung von IT-Sicherheit und Datenschutz, indem Risiken erkannt und Maßnahmen zur Verhinderung oder Abwehr von Bedrohungen umgesetzt werden."
   examples: []
 

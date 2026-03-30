@@ -14,7 +14,7 @@ tags: ["ap1", "proprietaer", "software"]
 # Flashcard payload
 card:
   type: definition       # basic | multi | steps | definition | comparison
-  question: "Was bedeutet der Begriff „Proprietäre Software“?"
+  question: "Erkläre den Begriff proprietäre Software."
   answer: "Proprietäre Software ist Software, deren Nutzung, Weitergabe und Veränderung durch Lizenzbedingungen eingeschränkt ist und deren Quellcode meist nicht offen zugänglich ist."
   examples: ["Microsoft Windows", "Adobe Photoshop"]
 

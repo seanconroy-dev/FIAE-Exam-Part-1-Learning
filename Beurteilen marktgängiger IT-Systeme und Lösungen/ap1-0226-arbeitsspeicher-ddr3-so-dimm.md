@@ -14,7 +14,7 @@ tags: ["ap1", "hardware", "ram"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche Speichermodule sind auf dem Bild zu erkennen?"
+  question: "Um welche Speichermodule handelt es sich auf dem Bild?"
   answer: "Links ein DDR3-SDRAM DIMM (Desktop-RAM) und rechts ein SO-DIMM (Notebook-RAM)."
   examples: []
 

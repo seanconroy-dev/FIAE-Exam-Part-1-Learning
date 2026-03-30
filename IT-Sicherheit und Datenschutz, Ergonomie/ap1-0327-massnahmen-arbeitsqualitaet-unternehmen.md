@@ -14,7 +14,7 @@ tags: ["ap1", "organisation", "arbeitsumfeld"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Maßnahmen im Unternehmen haben einen positiven Effekt auf die Arbeitsqualität?"
+  question: "Wodurch kann die Arbeitsqualität im Unternehmen positiv beeinflusst werden?"
   answer: "Flexible Arbeitszeitmodelle, Homeoffice, Weiterbildungsangebote, variable Zusatzvergütung, Gewinnbeteiligung und Altersteilzeitangebote."
   examples: []
 

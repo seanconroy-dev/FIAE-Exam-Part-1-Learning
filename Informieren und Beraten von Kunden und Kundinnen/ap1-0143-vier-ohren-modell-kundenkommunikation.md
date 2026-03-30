@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: multi
-  question: "Ergänze nach dem Vier-Ohren-Modell (Sachebene, Appell, Selbstoffenbarung und Beziehung) die folgenden Aussagen eines Kunden gegenüber eines Vertriebsmitarbeiters."
+  question: "Analysiere nach dem Vier-Ohren-Modell (Sachebene, Appell, Selbstoffenbarung und Beziehung) die Aussagen eines Kunden gegenüber einem Vertriebsmitarbeiter."
   answer: |
     1. Sie müssen pünktlich liefern! → Appell
     2. Ich bin mit Ihnen nicht zufrieden. → Beziehung

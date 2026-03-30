@@ -14,7 +14,7 @@ tags: ["ap1", "berechnung", "energie"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Wie hoch sind die Energiekosten für eine IT-Ausstattung pro Jahr (gegeben: Arbeitsstationen, Drucker, Server, Strompreis 0,30 €/kWh)?"
+  question: "Berechne die jährlichen Energiekosten für eine IT-Ausstattung (Arbeitsstationen, Drucker, Server) bei einem Strompreis von 0,30 €/kWh."
   answer: "Die jährlichen Energiekosten betragen 8.373,30 €."
   examples: []
 

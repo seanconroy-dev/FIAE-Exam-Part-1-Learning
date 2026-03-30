@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: basic
-  question: "Beschreibe den Begriff Pre-Sales-Angebot und nenne 3 Beispiele."
+  question: "Was versteht man unter einem Pre-Sales-Angebot und welche 3 Beispiele gibt es?"
   answer: |
     Ein Pre-Sales-Angebot umfasst Dienstleistungen oder Maßnahmen, die potenziellen Kunden vor dem eigentlichen Kauf oder Vertragsabschluss angeboten werden.
 

@@ -14,7 +14,7 @@ tags: ["ap1", "ssd", "nvme"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welches Modul ist auf diesem Bild zu erkennen?"
+  question: "Was für ein Modul ist auf diesem Bild dargestellt?"
   answer: "Eine NVMe-SSD im M.2-Formfaktor, die über PCIe angebunden ist."
   examples: []
 

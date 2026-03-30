@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition"]
 # Flashcard payload
 card:
   type: definition
-  question: "Erkläre den Begriff des Servicemodells Infrastructure as a Service (IaaS)."
+  question: "Was versteht man unter dem Servicemodell Infrastructure as a Service (IaaS)?"
   answer: "Infrastructure as a Service (IaaS) ist ein Cloud-Servicemodell, bei dem grundlegende IT-Infrastruktur wie Server, Speicher und Netzwerke über das Internet bereitgestellt werden. Der Anbieter stellt die Infrastruktur bereit, während der Nutzer seine eigenen virtuellen Maschinen und Systeme selbst verwaltet."
   examples:
     - "Virtuelle Server in der Cloud"

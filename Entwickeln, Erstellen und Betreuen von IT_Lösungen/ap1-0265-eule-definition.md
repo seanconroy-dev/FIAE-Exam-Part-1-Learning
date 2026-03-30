@@ -14,7 +14,7 @@ tags: ["ap1", "eula", "lizenz", "software"]
 # Flashcard payload
 card:
   type: definition       # basic | multi | steps | definition | comparison
-  question: "Was beschreibt eine EULA (engl. End User License Agreement) während des Installationsprozesses von Software?"
+  question: "Welchen Inhalt hat eine EULA (End User License Agreement) beim Installationsprozess von Software?"
   answer: "Eine EULA enthält die Lizenzbedingungen und Nutzungsregeln einer Software, denen der Nutzer vor der Installation zustimmen muss."
   examples: ["Zustimmungsdialog bei Softwareinstallation", "Lizenzbedingungen bei Windows-Installation"]
 

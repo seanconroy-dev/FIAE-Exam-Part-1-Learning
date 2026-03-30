@@ -14,7 +14,7 @@ tags: ["ap1", "hardware", "beschaffung"]
 # Flashcard payload
 card:
   type: multi       # basic | multi | steps | definition | comparison
-  question: "Worauf sollte man bei der Beschaffung von IT-Hardware achten?"
+  question: "Welche Kriterien sind bei der Beschaffung von IT-Hardware zu berücksichtigen?"
   answer: "Langlebigkeit, Skalierbarkeit, Support, geringer Stromverbrauch, Austauschbarkeit, Remote-Management und schnelle Ersatzbeschaffung."
   examples: ["Serverbeschaffung im Unternehmen", "Arbeitsplatz-PC Auswahl"]
 

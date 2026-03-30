@@ -14,7 +14,7 @@ tags: ["transportschaden", "falschlieferung", "wareneingang"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Kriterien müssen erfüllt sein, um die Warenannahme zu verweigern?"
+  question: "Unter welchen Voraussetzungen darf die Warenannahme verweigert werden?"
   answer: "- Lieferung ist falsch adressiert\n- Paket weist Transportschäden auf\n- Anzahl der Packstücke stimmt nicht mit der Bestellung überein"
   examples: []
 

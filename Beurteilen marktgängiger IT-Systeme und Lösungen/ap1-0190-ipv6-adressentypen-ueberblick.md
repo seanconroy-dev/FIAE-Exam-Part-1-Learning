@@ -14,7 +14,7 @@ tags: ["ipv6", "adressbereiche", "loopback", "multicast", "link-local"]
 # Flashcard payload
 card:
   type: basic
-  question: "Benenne die IPv6-Adressbereiche (IPv6-Address-Types)."
+  question: "Welche IPv6-Adressbereiche (IPv6-Address-Types) gibt es?"
   answer: "::1/128 → Loopback, fe80::/10 → Link-Local Addresses, 2000::/3 → Global Unicast, ff00::/8 → Multicast."
   examples: []
 

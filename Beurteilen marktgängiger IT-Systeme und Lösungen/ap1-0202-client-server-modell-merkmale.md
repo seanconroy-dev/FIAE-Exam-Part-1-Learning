@@ -14,7 +14,7 @@ tags: ["client-server", "netzwerkmodelle"]
 # Flashcard payload
 card:
   type: basic
-  question: "Beschreibe typische Merkmale des Client-Server-Modells."
+  question: "Was sind typische Merkmale des Client-Server-Modells?"
   answer: "Server stellen Dienste bereit, Clients fordern diese an. Die Kommunikation erfolgt über Protokolle. Ein Server kann mehrere Clients bedienen, Funktionen sind nicht hardwaregebunden und Systeme können gleichzeitig Client und Server sein."
   examples: []
 

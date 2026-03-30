@@ -14,7 +14,7 @@ tags: ["ap1", "vpn", "netzwerk", "sicherheit"]
 # Flashcard payload
 card:
   type: definition       # basic | multi | steps | definition | comparison
-  question: "Was ist ein Virtual Private Network (VPN)?"
+  question: "Erkläre den Begriff Virtual Private Network (VPN)."
   answer: "Ein VPN ist ein virtuelles privates Netzwerk, das über öffentliche Netze eine sichere und verschlüsselte Verbindung zwischen Teilnehmern herstellt."
   examples: ["Homeoffice-Zugriff auf Firmennetz", "Verbindung zwischen zwei Standorten über das Internet"]
 

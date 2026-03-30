@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition", "netzplantechnik"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was bezeichnet man als kritischen Pfad beim Netzplan?"
+  question: "Erkläre den Begriff kritischer Pfad beim Netzplan."
   answer: |
     Der **kritische Pfad** ist die **längste Abfolge voneinander abhängiger Vorgänge** in einem Netzplan.
 

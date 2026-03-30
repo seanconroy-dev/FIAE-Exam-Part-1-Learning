@@ -14,7 +14,7 @@ tags: ["ap1", "it-sicherheit", "organisation"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Themen sind für einen TÜV geprüften IT-Sicherheitsbeauftragten für die IT-Sicherheit im Unternehmen von Bedeutung?"
+  question: "Mit welchen Themen befasst sich ein TÜV-geprüfter IT-Sicherheitsbeauftragter im Unternehmen?"
   answer: "Informationssicherheit und ISMS, ISO 27001, BSI IT-Grundschutz, Sicherheitskonzepte, aktuelle Bedrohungen sowie Maßnahmen für Organisation, Infrastruktur, Netzwerke und Anwendungen."
   examples: []
 

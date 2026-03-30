@@ -14,7 +14,7 @@ tags: ["ap1", "grundlagen", "sicherheit", "endgeraete"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was versteht man unter dem Begriff Endpoint-Security?"
+  question: "Wie definiert man den Begriff Endpoint-Security?"
   answer: "Alle Maßnahmen und Richtlinien zum Schutz von Endgeräten vor unbefugten Zugriffen und schädlichen Angriffen im Netzwerk."
   examples: []
 

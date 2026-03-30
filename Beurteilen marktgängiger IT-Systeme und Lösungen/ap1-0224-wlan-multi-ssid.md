@@ -14,7 +14,7 @@ tags: ["ap1", "wlan", "ssid"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Was versteht man unter dem Begriff Multi-SSID?"
+  question: "Wie definiert man den Begriff Multi-SSID?"
   answer: "Multi-SSID ermöglicht es, mit einem Access Point mehrere logisch getrennte WLAN-Netzwerke (SSIDs) bereitzustellen, die unterschiedliche Zugänge und Netzsegmente haben."
   examples: []
 

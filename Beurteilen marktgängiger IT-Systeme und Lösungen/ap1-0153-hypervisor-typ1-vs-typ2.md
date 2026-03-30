@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition", "vergleich"]
 # Flashcard payload
 card:
   type: comparison
-  question: "Worin besteht in der Virtualisierung von Hostsystemen der Unterschied zwischen Hypervisor Typ 1 und Typ 2?"
+  question: "Wie unterscheiden sich Hypervisor Typ 1 und Typ 2 bei der Virtualisierung von Hostsystemen?"
   answer: "Ein Hypervisor Typ 1 (Bare-Metal) läuft direkt auf der Hardware des Hostsystems und benötigt kein zusätzliches Betriebssystem. Ein Hypervisor Typ 2 (Hosted) läuft dagegen als Anwendung auf einem bestehenden Betriebssystem und nutzt dessen Treiber und Ressourcen."
   examples:
     - "Typ 1: VMware ESXi, Microsoft Hyper-V (Bare-Metal)"

@@ -14,7 +14,7 @@ tags: ["ap1", "umwelt", "zertifizierung", "qualität"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was steckt hinter dem Zeichen „Blauer Engel“?"
+  question: "Was bedeutet das Umweltzeichen Blauer Engel?"
   answer: "Der Blaue Engel ist ein Umweltzeichen der Bundesregierung für besonders umweltfreundliche Produkte und Dienstleistungen, die strengere Umweltkriterien als vergleichbare Produkte erfüllen."
   examples: []
 

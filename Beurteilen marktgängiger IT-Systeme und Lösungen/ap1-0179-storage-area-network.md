@@ -14,7 +14,7 @@ tags: ["definition","prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was ist ein Storage Area Network (SAN)?"
+  question: "Erkläre den Begriff Storage Area Network (SAN)."
   answer: "Ein Storage Area Network (SAN) ist ein dediziertes Netzwerk für blockbasierten Speicher, über das Server direkt auf zentrale Speicherressourcen zugreifen."
   examples:
     - "Mehrere Server greifen in einem Rechenzentrum über Fibre Channel auf ein gemeinsames SAN zu."

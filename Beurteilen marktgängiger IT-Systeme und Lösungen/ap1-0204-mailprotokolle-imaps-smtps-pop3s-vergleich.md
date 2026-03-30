@@ -14,7 +14,7 @@ tags: ["smtp", "imap", "pop3", "tls", "email"]
 # Flashcard payload
 card:
   type: comparison
-  question: "Unterscheide die Mailprotokolle IMAPS, SMTPS und POP3S nach ihren Eigenschaften."
+  question: "Wie unterscheiden sich die Mailprotokolle IMAPS, SMTPS und POP3S in ihren Eigenschaften?"
   answer: "SMTPS: Versand von E-Mails (Port 465, SSL/TLS). IMAPS: Zugriff und Synchronisation von Mails auf dem Server (Port 993, SSL/TLS). POP3S: Download von Mails vom Server (Port 995, SSL/TLS, meist lokale Speicherung)."
   examples: []
 

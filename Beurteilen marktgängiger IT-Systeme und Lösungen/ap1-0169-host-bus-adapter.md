@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was ist ein Host Bus Adapter (HBA)?"
+  question: "Wie definiert man den Begriff Host Bus Adapter (HBA)?"
   answer: "Ein Host Bus Adapter (HBA) ist eine Netzwerkschnittstelle bzw. Erweiterungskarte in einem Server, die die Verbindung zwischen dem Host-System und externen Speichersystemen (Storage) ermöglicht."
   examples:
     - "Fibre Channel HBA für SAN-Systeme"

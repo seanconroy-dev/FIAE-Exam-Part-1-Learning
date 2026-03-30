@@ -14,7 +14,7 @@ tags: ["poe","ieee","infrastruktur"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was bedeutet in der Netzwerktechnologie der Begriff PoE?"
+  question: "Was bezeichnet man in der Netzwerktechnologie als PoE?"
   answer: "Power over Ethernet (PoE) bezeichnet ein Verfahren, bei dem Netzwerkgeräte über das Ethernet-Kabel gleichzeitig mit Daten und Strom versorgt werden."
   examples:
     - "IP-Telefone"

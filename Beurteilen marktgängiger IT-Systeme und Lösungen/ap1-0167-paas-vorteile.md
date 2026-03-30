@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "cloud"]
 # Flashcard payload
 card:
   type: multi
-  question: "Nenne die Vorteile des Servicemodells PaaS (Platform as a Service)."
+  question: "Welche Vorteile bietet das Servicemodell PaaS (Platform as a Service)?"
   answer: |
     - Reduzierter Programmieraufwand durch vorhandene Entwicklungstools
     - Zusätzliche Entwicklungsmöglichkeiten durch vorgefertigte Komponenten

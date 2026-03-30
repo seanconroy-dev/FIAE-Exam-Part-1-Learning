@@ -14,7 +14,7 @@ tags: ["ap1", "dateiserver", "anforderungen"]
 # Flashcard payload
 card:
   type: multi       # basic | multi | steps | definition | comparison
-  question: "Welche Hard- und Softwareanforderungen werden an einen Dateiserver im Unternehmen gestellt?"
+  question: "Welche Anforderungen an Hard- und Software muss ein Dateiserver im Unternehmen erfüllen?"
   answer: "Redundanz (Netzteil, Netzwerk, RAID), Zugriff über SMB/NFS, Rechteverwaltung, Backup/Snapshots, geringe Latenz, Remote-Zugriff, skalierbarer Speicher."
   examples: ["NAS im Unternehmen", "Fileserver mit RAID-Verbund und Backup"]
 

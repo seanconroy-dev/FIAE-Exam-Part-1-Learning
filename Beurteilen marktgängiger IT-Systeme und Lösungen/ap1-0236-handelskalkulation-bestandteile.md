@@ -14,7 +14,7 @@ tags: ["ap1", "handelskalkulation", "zuschlagskalkulation"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Aus welchen Bestandteilen besteht eine Handelskalkulation und wie unterscheidet sie sich von der Zuschlagskalkulation (Vorkalkulation)?"
+  question: "Wie ist eine Handelskalkulation aufgebaut und wie unterscheidet sie sich von der Zuschlagskalkulation?"
   answer: "Handelskalkulation: Listeneinkaufspreis → Zieleinkaufspreis → Bareinkaufspreis → Bezugspreis → Selbstkosten → Barverkaufspreis → Zielverkaufspreis → Listenverkaufspreis. Unterschied: Zuschlagskalkulation berechnet Selbstkosten aus Herstellkosten (Material, Lohn, Gemeinkosten)."
   examples: ["Rabatt und Skonto im Einkauf", "Gewinnaufschlag im Verkauf"]
 

@@ -14,7 +14,7 @@ tags: ["ap1", "grundlagen", "rechte", "eu"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Rechte hat eine Person betreffend ihrer personenbezogenen Daten?"
+  question: "Über welche Rechte verfügt eine Person bezüglich ihrer personenbezogenen Daten?"
   answer: "Auskunftsrecht, Recht auf Berichtigung, Löschung („Recht auf Vergessenwerden“), Einschränkung der Verarbeitung, Datenübertragbarkeit, Widerspruchsrecht sowie Rechte bei automatisierten Entscheidungen."
   examples: []
 

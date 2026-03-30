@@ -14,7 +14,7 @@ tags: ["ap1", "windows", "installation", "ablauf"]
 # Flashcard payload
 card:
   type: steps       # basic | multi | steps | definition | comparison
-  question: "Bringe die Schritte zur Installation eines Windows-Betriebssystems in die richtige Reihenfolge."
+  question: "In welcher Reihenfolge werden die Schritte zur Installation eines Windows-Betriebssystems durchgeführt?"
   answer: "1. POST → 2. Bootreihenfolge festlegen → 3. Installationsmedium einlegen → 4. EULA akzeptieren → 5. Dateisystem anlegen → 6. Dateisystem formatieren → 7. Benutzer + Passwort anlegen → 8. Benutzerprofil erstellen"
   examples: ["Installation von Windows 10", "Neuinstallation eines PCs"]
 

@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition", "meeting"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was bezeichnet man als Kick-Off-Meeting?"
+  question: "Erkläre den Begriff Kick-Off-Meeting."
   answer: |
     Ein **Kick-Off-Meeting** ist das **offizielle Startmeeting eines Projekts**.
 

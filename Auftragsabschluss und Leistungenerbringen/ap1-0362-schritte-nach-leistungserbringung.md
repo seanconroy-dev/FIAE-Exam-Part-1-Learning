@@ -14,7 +14,7 @@ tags: ["abnahme", "leistungserbringung", "projekt"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Schritte sind notwendig nach Abschluss erfolgter Leistungserbringung?"
+  question: "Was muss nach dem Abschluss der Leistungserbringung unternommen werden?"
   answer: "Nach der Leistungserbringung erfolgt die (Teil- oder Voll-)Abnahme durch den Auftraggeber, die Prüfung der Leistungen, die Dokumentation im Abnahmeprotokoll, die Behandlung von Mängeln sowie die Unterschriften beider Parteien."
   examples: []
 

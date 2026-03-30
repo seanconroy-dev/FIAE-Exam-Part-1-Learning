@@ -14,7 +14,7 @@ tags: ["lastenheft", "pflichtenheft", "abnahme", "verguetung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Vertragsbestandteile sollten in einem Vertrag zur Softwareerstellung geregelt sein?"
+  question: "Was sollte in einem Vertrag zur Softwareerstellung geregelt sein?"
   answer: "- Vertragsgegenstand (Lastenheft)\n- Entwicklung und Herstellung (Pflichtenheft)\n- Qualitätsstandard\n- Fertigstellungstermin\n- Nutzungsrechte\n- Haftung\n- Abnahme\n- Vergütung"
   examples: []
 

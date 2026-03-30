@@ -14,7 +14,7 @@ tags: ["ap1", "displayport", "anschlüsse"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welcher digitale Anschluss ist auf dem Bild zu erkennen?"
+  question: "Um welchen digitalen Anschluss handelt es sich auf dem Bild?"
   answer: "DisplayPort (inkl. Mini-DisplayPort) – digitale Schnittstelle für Bild- und Tonübertragung."
   examples: ["Anschluss eines Monitors an den PC", "Verbindung Laptop zu externem Display"]
 

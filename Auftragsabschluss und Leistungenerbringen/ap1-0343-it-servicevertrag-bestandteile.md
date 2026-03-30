@@ -14,7 +14,7 @@ tags: ["wartung", "haftung", "datenschutz", "verguetung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Bestandteile hat in der Regel ein IT-Servicevertrag?"
+  question: "Aus welchen Bestandteilen besteht in der Regel ein IT-Servicevertrag?"
   answer: "- Angaben zum Wartungsgegenstand (Systeme, Standorte)\n- Leistungen und Einsatzzeiten\n- Mitwirkungspflichten und Ansprechpartner\n- Mängelgewährleistung\n- Datenschutz und Datensicherheit\n- Haftung\n- Vergütung\n- Laufzeit und Kündigung\n- Nebenabreden / salvatorische Klausel"
   examples: []
 

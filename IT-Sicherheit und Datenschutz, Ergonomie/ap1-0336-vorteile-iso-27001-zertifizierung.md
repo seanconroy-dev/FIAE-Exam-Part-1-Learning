@@ -14,7 +14,7 @@ tags: ["ap1", "it-sicherheit", "normen"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was sind die Vorteile einer Zertifizierung nach ISO 27001?"
+  question: "Welche Vorteile bringt eine Zertifizierung nach ISO 27001?"
   answer: "Verbesserter Schutz von Informationen und Prozessen, Vertrauensgewinn bei Kunden und Partnern, kontinuierliche Verbesserung (PDCA), geringere Kosten durch weniger Sicherheitsvorfälle sowie höheres Sicherheitsbewusstsein."
   examples: []
 

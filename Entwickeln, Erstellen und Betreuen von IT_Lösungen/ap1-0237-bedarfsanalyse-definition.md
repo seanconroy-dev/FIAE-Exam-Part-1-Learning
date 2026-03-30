@@ -14,7 +14,7 @@ tags: ["ap1", "bedarfsanalyse", "projekt"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Was versteht man unter dem Begriff der Bedarfsanalyse?"
+  question: "Wie definiert man den Begriff der Bedarfsanalyse?"
   answer: "Die Bedarfsanalyse ist die systematische Ermittlung des Bedarfs an Waren, Dienstleistungen oder Ressourcen für einen bestimmten Zeitraum, um Beschaffungen und Projekte zu planen."
   examples: ["Ermittlung benötigter Serverkapazitäten", "Planung von Softwarelizenzen"]
 

@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "grundlagen"]
 # Flashcard payload
 card:
   type: multi
-  question: "Nenne die verschiedenen Cloud-Formen, die durch Cloud Computing angeboten werden."
+  question: "Welche Cloud-Formen werden durch Cloud Computing angeboten?"
   answer: "Die wichtigsten Cloud-Formen sind: Public Cloud, Private Cloud, Hybrid Cloud und Community Cloud. Zusätzlich existieren Mischformen wie Virtual Private Cloud und Multi Cloud."
   examples:
     - "Public Cloud → öffentlich zugängliche Cloud-Infrastruktur"

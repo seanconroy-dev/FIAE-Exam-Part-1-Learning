@@ -14,7 +14,7 @@ tags: ["ap1", "wlan", "wpa2", "wpa3", "verschluesselung"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Beim Einsatz eines WLANs im Unternehmen ist besondere Sorgfalt auf die Einhaltung der Datensicherheit zu legen. Welche Sicherheitsmethoden und Verschlüsselungsstandards können zum Einsatz kommen?"
+  question: "Welche Sicherheitsmethoden und Verschlüsselungsstandards kommen beim Einsatz eines Unternehmens-WLANs zum Schutz der Datensicherheit in Frage?"
   answer: "Sicherheitsmethoden: WPA (unsicher), WPA2-Personal/Enterprise, WPA3-Personal/Enterprise (mit RADIUS). Verschlüsselung: AES, TKIP und SAE."
   examples: ["WPA3-Enterprise mit RADIUS", "WPA2-Personal im Heimnetz"]
 

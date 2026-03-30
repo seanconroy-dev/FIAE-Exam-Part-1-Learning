@@ -14,7 +14,7 @@ tags: ["schulung", "dokumentation", "it-arbeitsplatz"]
 # Flashcard payload
 card:
   type: basic
-  question: "Nenne 3 Methoden, mit der ein Kunde oder eine Kundin am IT-Arbeitsplatz eingewiesen werden kann."
+  question: "Welche 3 Methoden gibt es, um einen Kunden oder eine Kundin am IT-Arbeitsplatz einzuweisen?"
   answer: "Handbücher/Dokumentationen, persönliche Schulung durch IT-Fachpersonal sowie Online-Schulungen (Webportale), Videos oder Tutorials."
   examples: []
 

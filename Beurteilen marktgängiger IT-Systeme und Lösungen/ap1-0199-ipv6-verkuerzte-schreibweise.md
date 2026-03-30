@@ -14,7 +14,7 @@ tags: ["ipv6", "netzwerkgrundlagen", "adressnotation"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche verkürzte Schreibweise der IPv6-Adresse 2001:0db8:0f3c:00d7:7dab:03d0:0000:00ff sind erlaubt?"
+  question: "Welche Schreibweisen sind bei der Kürzung der IPv6-Adresse 2001:0db8:0f3c:00d7:7dab:03d0:0000:00ff zulässig?"
   answer: "Erlaubt sind nur Kürzungen durch Weglassen führender Nullen und einmaliges Zusammenfassen von aufeinanderfolgenden 0-Blöcken (::). Korrekt: 2001:db8:f3c:d7:7dab:3d0:0:ff und 2001:db8:f3c:d7:7dab:3d0::ff."
   examples: []
 

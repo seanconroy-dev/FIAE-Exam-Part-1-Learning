@@ -14,7 +14,7 @@ tags: ["software-rollout", "deployment", "verteilung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Prozesse müssen bei einem Software-Rollout beachtet werden?"
+  question: "Was ist bei einem Software-Rollout zu beachten?"
   answer: "Beim Software-Rollout müssen die Software veröffentlicht, auf Kompatibilität geprüft sowie für die automatische Verteilung (z. B. per Paketierung und Verteilungssoftware) vorbereitet werden."
   examples: []
 

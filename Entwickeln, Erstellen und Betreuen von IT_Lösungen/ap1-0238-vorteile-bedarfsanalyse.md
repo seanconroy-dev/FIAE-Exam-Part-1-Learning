@@ -14,7 +14,7 @@ tags: ["ap1", "bedarfsanalyse", "vorteile"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Nenne die Vorteile einer Bedarfsanalyse."
+  question: "Welche Vorteile bietet eine Bedarfsanalyse?"
   answer: "Ermittlung von Kundenwünschen und -zielen, Identifikation von Kundentypen, stärkere Kundenbindung, individuelle Lösungen, Wettbewerbsvorteile und Umsatzsteigerung."
   examples: ["Individuelle IT-Lösung für Kunden", "Gezielte Produktentwicklung"]
 

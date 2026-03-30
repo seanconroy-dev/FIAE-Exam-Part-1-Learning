@@ -14,7 +14,7 @@ tags: ["usv", "line-interactive", "stromausfall"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was versteht man unter der Bezeichnung netzinteraktive USV?"
+  question: "Wie funktioniert eine netzinteraktive USV?"
   answer: "Eine netzinteraktive USV arbeitet ähnlich wie eine Offline-USV, kann jedoch Spannungsschwankungen aktiv ausgleichen; bei Stromausfall erfolgt eine sehr kurze Umschaltung (ca. 2–4 ms) auf Batterie."
   examples: []
 

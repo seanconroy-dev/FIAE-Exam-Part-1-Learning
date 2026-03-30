@@ -14,7 +14,7 @@ tags: ["iaas", "paas", "saas", "cloud"]
 # Flashcard payload
 card:
   type: basic
-  question: "Unterscheide die 3 Cloud-Computing Begriffe IaaS, SaaS und PaaS."
+  question: "Wie unterscheiden sich die 3 Cloud-Computing-Begriffe IaaS, SaaS und PaaS?"
   answer: "IaaS: Bereitstellung von IT-Infrastruktur\nPaaS: Bereitstellung von Entwicklungs- und Laufzeitumgebungen\nSaaS: Bereitstellung fertiger Software als Service"
   examples: []
 

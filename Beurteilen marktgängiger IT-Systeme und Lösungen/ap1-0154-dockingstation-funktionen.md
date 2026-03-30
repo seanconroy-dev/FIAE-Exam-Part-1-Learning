@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition"]
 # Flashcard payload
 card:
   type: basic
-  question: "Welche Funktionen bietet eine Dockingstation für Notebooks?"
+  question: "Wofür wird eine Dockingstation für Notebooks verwendet?"
   answer: "Eine Dockingstation erweitert ein Notebook um zusätzliche Schnittstellen und Anschlüsse (z. B. USB, Netzwerk, Videoausgänge) und ermöglicht den einfachen Anschluss von Peripheriegeräten wie Monitor, Tastatur, Maus oder Netzwerk über eine zentrale Verbindung."
   examples:
     - "Anschluss mehrerer Monitore über HDMI oder DisplayPort"

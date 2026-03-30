@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: basic
-  question: "Unternehmen richten ihre Produkte und Dienstleistungen mit Hilfe von Marketingmaßnahmen nach den Kundenwünschen aus. Welchem Zweck dienen in diesem Zusammenhang Kundenbefragungen?"
+  question: "Welchen Zweck erfüllen Kundenbefragungen im Rahmen von Marketingmaßnahmen?"
   answer: |
     Kundenbefragungen dienen dazu, Informationen über Kundenmeinungen, Bedürfnisse und Zufriedenheit zu gewinnen.
 

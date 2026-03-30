@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "machbarkeitsanalyse", "projektplanung"]
 # Flashcard payload
 card:
   type: multi
-  question: "Was sind Ziele einer Machbarkeitsanalyse?"
+  question: "Welche Ziele verfolgt eine Machbarkeitsanalyse?"
   answer: |
     Ziele einer Machbarkeitsanalyse sind:
 

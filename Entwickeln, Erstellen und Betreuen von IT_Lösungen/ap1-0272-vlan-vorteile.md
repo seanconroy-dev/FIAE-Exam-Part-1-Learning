@@ -14,7 +14,7 @@ tags: ["ap1", "vlan", "netzwerk", "segmentierung"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche Vorteile ergeben sich durch den Einsatz eines Virtual Local Area Networks (VLAN)?"
+  question: "Was sind die Vorteile beim Einsatz eines Virtual Local Area Networks (VLAN)?"
   answer: "Logische Segmentierung des Netzwerks, Priorisierung des Datenverkehrs, bessere Lastverteilung, weniger Kollisionen durch Broadcast-Domänen, flexible Gruppierung und Trennung des Datenverkehrs."
   examples: ["Trennung von Abteilungen (z. B. HR und IT)", "Priorisierung von VoIP-Datenverkehr"]
 

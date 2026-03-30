@@ -14,7 +14,7 @@ tags: ["ap1", "it-sicherheit", "grundschutz"]
 # Flashcard payload
 card:
   type: basic
-  question: "Beschreibe die Schutzbedarfskategorien (normal, hoch, sehr hoch) lt. BSI IT-Grundschutz."
+  question: "Wie sind die Schutzbedarfskategorien (normal, hoch, sehr hoch) laut BSI IT-Grundschutz definiert?"
   answer: "Normal: geringe Auswirkungen, Schaden < 50.000 €; Hoch: erhebliche Auswirkungen, Schaden 50.000–500.000 €; Sehr hoch: existenzbedrohende Auswirkungen, Schaden > 500.000 €."
   examples: []
 

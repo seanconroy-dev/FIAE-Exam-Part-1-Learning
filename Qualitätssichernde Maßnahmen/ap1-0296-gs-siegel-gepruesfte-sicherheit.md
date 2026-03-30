@@ -14,7 +14,7 @@ tags: ["ap1", "sicherheit", "normen", "prüfung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was bedeutet das Gütesiegel „Geprüfte Sicherheit“ (GS)?"
+  question: "Wofür steht das Gütesiegel Geprüfte Sicherheit (GS)?"
   answer: "Das GS-Siegel bestätigt, dass ein Produkt die Anforderungen des Produktsicherheitsgesetzes erfüllt und von einer unabhängigen Prüfstelle geprüft wurde."
   examples: []
 

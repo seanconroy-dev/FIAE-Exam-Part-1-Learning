@@ -14,7 +14,7 @@ tags: ["ap1", "arp", "netzwerk", "ip", "mac"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welches Befehlszeilenkommando wurde im Bild ausgeführt? Erläutere die Funktion des Protokolls."
+  question: "Welches Befehlszeilenkommando ist im Bild zu sehen und wie funktioniert das zugehörige Protokoll?"
   answer: "Befehl: arp. ARP ordnet einer IP-Adresse die physische MAC-Adresse zu und speichert diese Zuordnung im ARP-Cache."
   examples: ["arp -a", "Anzeige der ARP-Tabelle"]
 

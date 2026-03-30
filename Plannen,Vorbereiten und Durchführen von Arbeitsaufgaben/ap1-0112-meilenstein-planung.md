@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition", "meilenstein"]
 # Flashcard payload
 card:
   type: definition
-  question: "Was versteht man unter einer Meilenstein-Planung?"
+  question: "Wie wird der Begriff Meilenstein-Planung definiert?"
   answer: |
     Die **Meilenstein-Planung** ist eine Methode der **Projektplanung**, bei der wichtige **Zwischenereignisse (Meilensteine)** im Projekt festgelegt werden.
 

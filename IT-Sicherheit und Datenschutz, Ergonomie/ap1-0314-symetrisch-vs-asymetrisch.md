@@ -14,7 +14,7 @@ tags: ["ap1", "grundlagen", "sicherheit", "rsa", "aes"]
 # Flashcard payload
 card:
   type: basic
-  question: "Vergleiche symmetrische und asymmetrische Verschlüsselung (Schlüsselanzahl, Geschwindigkeit, Schlüsselaustausch, Algorithmen, Anwendungsfälle)."
+  question: "Wie unterscheiden sich symmetrische und asymmetrische Verschlüsselung hinsichtlich Schlüsselanzahl, Geschwindigkeit, Schlüsselaustausch, Algorithmen und Anwendungsfälle?"
   answer: "Symmetrisch: ein Schlüssel, schnell, Schlüsselaustausch problematisch, z. B. AES/3DES, für große Datenmengen/VPN. Asymmetrisch: zwei Schlüssel, langsam, einfacher Austausch (öffentlicher Schlüssel), z. B. RSA/ECC, für Schlüsselaustausch und digitale Signaturen."
   examples: []
 

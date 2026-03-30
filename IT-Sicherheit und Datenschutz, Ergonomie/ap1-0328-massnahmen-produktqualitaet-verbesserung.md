@@ -14,7 +14,7 @@ tags: ["ap1", "prozesse", "optimierung"]
 # Flashcard payload
 card:
   type: basic
-  question: "Mit welchen Maßnahmen kann man im Unternehmen die Produktqualität entscheidend verbessern?"
+  question: "Welche Maßnahmen eignen sich, um die Produktqualität im Unternehmen zu verbessern?"
   answer: "Qualitätssicherung einführen, Kundenbefragungen durchführen, Prozesse verbessern, Mitarbeiterschulungen anbieten, hochwertige Materialien nutzen und Prozessfehler analysieren und beheben."
   examples: []
 

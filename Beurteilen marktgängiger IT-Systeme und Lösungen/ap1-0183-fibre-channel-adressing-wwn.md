@@ -14,7 +14,7 @@ tags: ["wwn","storage","fibre-channel"]
 # Flashcard payload
 card:
   type: definition
-  question: "Wie wird eine Fibre Channel Verbindung adressiert?"
+  question: "Auf welche Weise erfolgt die Adressierung einer Fibre-Channel-Verbindung?"
   answer: "Fibre Channel Geräte werden über eine weltweit eindeutige World Wide Name (WWN) Adresse identifiziert, meist als WWNN (Node Name) oder WWPN (Port Name), ein 64-Bit hexadezimaler Wert ähnlich einer MAC-Adresse."
   examples:
     - "20:00:05:45:E4:67:A3:88"

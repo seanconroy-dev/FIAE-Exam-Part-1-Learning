@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "definition"]
 # Flashcard payload
 card:
   type: multi
-  question: "Nenne die drei USV-Klassen nach IEC 62040-3 und erkläre ihre Wirkungsweise."
+  question: "Welche drei USV-Klassen gibt es nach IEC 62040-3 und wie funktionieren sie?"
   answer: |
     - **VFI (Voltage and Frequency Independent)** – Die Ausgangsspannung ist vollständig unabhängig vom Stromnetz. Schützt vor Stromausfall, Unterspannung, Überspannung, Frequenzschwankungen und Oberschwingungen.
     - **VI (Voltage Independent)** – Schützt vor Stromausfall, Unterspannung und Überspannung. Die Frequenz bleibt vom Stromnetz abhängig.

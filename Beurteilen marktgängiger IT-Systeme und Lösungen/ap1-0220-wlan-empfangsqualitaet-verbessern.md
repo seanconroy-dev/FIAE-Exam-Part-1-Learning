@@ -14,7 +14,7 @@ tags: ["ap1", "wlan", "optimierung"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Nenne Maßnahmen zur Verbesserung der WLAN-Empfangsqualität."
+  question: "Welche Maßnahmen verbessern die WLAN-Empfangsqualität?"
   answer: "Repeater einsetzen, Sendeleistung erhöhen (z. B. bessere Antennen), Access Point anders positionieren, anderen WLAN-Standard wählen, zusätzliche Access Points installieren, Antennencharakteristik anpassen."
   examples: []
 

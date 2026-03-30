@@ -14,7 +14,7 @@ tags: ["prüfungsrelevant", "support", "service-management"]
 # Flashcard payload
 card:
   type: multi
-  question: "Nenne die Vorteile eines User-Helpdesk-Ticketsystems."
+  question: "Welche Vorteile bietet ein User-Helpdesk-Ticketsystem?"
   answer: |
     - Zugriff auf die Service- und Fehlerhistorie für alle Ticketbearbeiter
     - Unterstützung der Weiterentwicklung von Produkten und Services durch Auswertung der Tickets

@@ -14,7 +14,7 @@ tags: ["ap1", "kosten", "server"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Welche Kosten entstehen für ein Rechenzentrum (On-Premises) mit einer Server-Client-Struktur?"
+  question: "Mit welchen Kosten muss für ein On-Premises-Rechenzentrum mit einer Server-Client-Struktur gerechnet werden?"
   answer: "Kosten für Gebäude/Raum, Anschaffung (Hardware/Software), Leasing/Miete, Lizenzen, Energiekosten, Wartung, Sicherheitstechnik, Brandschutz und Versicherungen."
   examples: ["Serverhardware kaufen", "Stromkosten für Kühlung", "Softwarelizenzen"]
 

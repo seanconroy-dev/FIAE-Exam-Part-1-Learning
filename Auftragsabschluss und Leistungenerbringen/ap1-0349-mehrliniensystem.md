@@ -14,7 +14,7 @@ tags: ["mehrliniensystem", "weisungsbeziehung", "organisation"]
 # Flashcard payload
 card:
   type: basic
-  question: "Was versteht man bei den Leitungssystemen unter einem Mehrliniensystem?"
+  question: "Wie wird das Mehrliniensystem bei den Leitungssystemen definiert?"
   answer: "Im Mehrliniensystem erhält eine untergeordnete Stelle Anweisungen von mehreren übergeordneten Stellen."
   examples: []
 

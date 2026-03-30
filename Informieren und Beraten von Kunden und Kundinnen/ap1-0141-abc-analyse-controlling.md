@@ -14,7 +14,7 @@ tags: ["definition", "prüfungsrelevant"]
 # Flashcard payload
 card:
   type: definition
-  question: "Das Controlling im Unternehmen wird als eine Funktion des Managements gesehen, dessen zentrale Aufgabe die Planung, Steuerung sowie die Kontrolle aller Unternehmensbereiche ist. Wozu dient dabei eine ABC-Analyse?"
+  question: "Welchem Zweck dient eine ABC-Analyse im Unternehmens-Controlling?"
   answer: |
     Die ABC-Analyse dient dazu, Objekte (z. B. Kunden, Produkte oder Materialien) nach ihrer wirtschaftlichen Bedeutung zu klassifizieren.
 

@@ -14,7 +14,7 @@ tags: ["ap1", "bios", "uefi"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Bitte vergleiche BIOS mit UEFI."
+  question: "Worin unterscheiden sich BIOS und UEFI?"
   answer: "UEFI: moderner, grafische Oberfläche, Mausbedienung, unterstützt große Laufwerke (>2 TB), GPT und 64-Bit. BIOS: älter, keine Maus, nur MBR, max. 2 TB, eingeschränkte Funktionalität."
   examples: ["Neuer PC nutzt UEFI", "Alte Systeme nutzen BIOS"]
 

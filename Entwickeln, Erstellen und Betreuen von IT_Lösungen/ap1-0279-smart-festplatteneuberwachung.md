@@ -14,7 +14,7 @@ tags: ["ap1", "smart", "festplatte", "diagnose"]
 # Flashcard payload
 card:
   type: basic       # basic | multi | steps | definition | comparison
-  question: "Festplatten unterliegen unterschiedlichen Einflüssen, welche sich negativ auf sie auswirken. Was bedeutet in diesem Zusammenhang S.M.A.R.T.?"
+  question: "Was bedeutet S.M.A.R.T. im Zusammenhang mit der Überwachung von Festplatten?"
   answer: "S.M.A.R.T. ist ein Selbstüberwachungs- und Diagnosesystem für HDDs/SSDs, das Zustandswerte analysiert und frühzeitig vor Ausfällen warnt."
   examples: ["Temperaturüberwachung", "Erkennung von Bad Blocks"]
 
