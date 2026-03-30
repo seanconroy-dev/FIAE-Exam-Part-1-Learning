@@ -7,7 +7,7 @@ slug: hypervisor-typ1-vs-typ2
 title: "Hypervisor Typ 1 vs. Typ 2"
 
 # Classification / navigation (machine-side)
-module: "<MODULE_PLACEHOLDER>"
+module: "it-systeme"
 topics: ["Virtualisierung"]
 tags: ["prüfungsrelevant", "definition", "vergleich"]
 
