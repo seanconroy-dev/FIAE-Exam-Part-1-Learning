@@ -7,7 +7,7 @@ slug: snmp-aufgabe-und-funktion
 title: "SNMP – Aufgabe und Funktion"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["netzwerkmanagement", "protokolle"]
 tags: ["snmp", "monitoring", "netzwerkverwaltung"]
 

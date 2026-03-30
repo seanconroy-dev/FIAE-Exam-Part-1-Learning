@@ -7,7 +7,7 @@ slug: ipv6-slaac-autokonfiguration
 title: "IPv6 SLAAC (Stateless Address Autoconfiguration)"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["ipv6", "adressierung", "autokonfiguration"]
 tags: ["ipv6", "slaac", "link-local", "autokonfiguration"]
 

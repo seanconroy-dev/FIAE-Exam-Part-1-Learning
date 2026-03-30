@@ -7,7 +7,7 @@ slug: cloud-formen
 title: "Cloud-Formen im Cloud Computing"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Cloud Computing"]
 tags: ["prüfungsrelevant", "grundlagen"]
 

@@ -7,7 +7,7 @@ slug: singlemode-glasfaser-vor-und-nachteile
 title: "Vor- und Nachteile von Singlemode-Glasfasern"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["netzwerktechnik", "glasfaser", "physikalische-uebertragung"]
 tags: ["glasfaser", "singlemode", "lichtwellenleiter"]
 

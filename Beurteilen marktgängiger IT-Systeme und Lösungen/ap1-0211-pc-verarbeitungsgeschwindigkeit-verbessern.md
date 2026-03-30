@@ -7,7 +7,7 @@ slug: pc-verarbeitungsgeschwindigkeit-verbessern
 title: "Maßnahmen zur Verbesserung der Verarbeitungsgeschwindigkeit"
 
 # Classification / navigation (machine-side)
-module: "hardware"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["leistung", "optimierung"]
 tags: ["ssd", "hdd", "netzwerk", "performance"]
 

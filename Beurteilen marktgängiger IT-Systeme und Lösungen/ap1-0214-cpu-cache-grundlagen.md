@@ -7,7 +7,7 @@ slug: cpu-cache-grundlagen
 title: "CPU-Cache – Grundlagen"
 
 # Classification / navigation (machine-side)
-module: "hardware"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["cpu", "speicher"]
 tags: ["cache", "l1", "l2", "l3"]
 

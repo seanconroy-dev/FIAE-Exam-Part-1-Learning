@@ -7,7 +7,7 @@ slug: handelskalkulation-bestandteile
 title: "Handelskalkulation: Bestandteile und Abgrenzung zur Zuschlagskalkulation"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Kalkulation", "Kostenrechnung", "BWL"]
 tags: ["ap1", "handelskalkulation", "zuschlagskalkulation"]
 

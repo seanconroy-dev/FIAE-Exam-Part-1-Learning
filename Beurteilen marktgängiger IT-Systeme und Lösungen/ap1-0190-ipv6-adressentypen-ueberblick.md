@@ -7,7 +7,7 @@ slug: ipv6-adresstypen-ueberblick
 title: "IPv6-Adresstypen und ihre Bereiche"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["ipv6", "adressierung"]
 tags: ["ipv6", "adressbereiche", "loopback", "multicast", "link-local"]
 

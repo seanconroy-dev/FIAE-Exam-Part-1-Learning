@@ -7,7 +7,7 @@ slug: tagged-vlan-einsatz
 title: "Tagged VLAN – Einsatz"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["vlan", "switching"]
 tags: ["vlan", "tagging", "trunk"]
 

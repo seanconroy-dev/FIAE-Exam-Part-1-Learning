@@ -7,7 +7,7 @@ slug: virtualisierung-vor-und-nachteile
 title: "Virtualisierung: Vor- und Nachteile (inkl. Cloud)"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Virtualisierung", "Cloud", "Server"]
 tags: ["ap1", "virtualisierung", "cloud"]
 

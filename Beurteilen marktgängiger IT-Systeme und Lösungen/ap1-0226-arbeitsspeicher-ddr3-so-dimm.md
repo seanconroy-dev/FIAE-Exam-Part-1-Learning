@@ -7,7 +7,7 @@ slug: arbeitsspeicher-ddr3-so-dimm
 title: "Arbeitsspeicher: DDR3 DIMM vs. SO-DIMM"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "Arbeitsspeicher", "RAM"]
 tags: ["ap1", "hardware", "ram"]
 

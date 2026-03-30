@@ -7,7 +7,7 @@ slug: cms-erp-crm-grundlagen
 title: "CMS, ERP und CRM – Grundlagen"
 
 # Classification / navigation (machine-side)
-module: "anwendungen"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["unternehmenssoftware", "systeme"]
 tags: ["cms", "erp", "crm"]
 

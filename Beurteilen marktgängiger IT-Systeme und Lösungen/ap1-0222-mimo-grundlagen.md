@@ -7,7 +7,7 @@ slug: mimo-grundlagen
 title: "MIMO: Bedeutung in der Nachrichtentechnik"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["WLAN", "Funktechnik", "Übertragung"]
 tags: ["ap1", "mimo", "netzwerk"]
 

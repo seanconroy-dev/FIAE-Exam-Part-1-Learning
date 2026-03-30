@@ -7,7 +7,7 @@ slug: dhcp-aufgaben-und-funktion
 title: "DHCP – Aufgaben und Funktion"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["netzwerkmanagement", "protokolle", "adressierung"]
 tags: ["dhcp", "ip-adressen", "netzwerkdienste"]
 

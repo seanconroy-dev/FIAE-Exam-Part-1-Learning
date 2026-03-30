@@ -7,7 +7,7 @@ slug: technische-merkmale-notebook
 title: "Technische Merkmale eines Notebooks"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "Mobile Systeme"]
 tags: ["prüfungsrelevant", "definition"]
 

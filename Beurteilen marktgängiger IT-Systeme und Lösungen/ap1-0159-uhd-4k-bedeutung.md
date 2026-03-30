@@ -7,7 +7,7 @@ slug: uhd-4k-bedeutung
 title: "UHD 4K – Bedeutung"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "Videoauflösung"]
 tags: ["prüfungsrelevant", "definition"]
 

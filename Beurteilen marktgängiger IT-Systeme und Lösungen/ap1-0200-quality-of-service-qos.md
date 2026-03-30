@@ -7,7 +7,7 @@ slug: quality-of-service-qos
 title: "Quality of Service (QoS)"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["netzwerkmanagement", "qos"]
 tags: ["qos", "netzwerkqualität", "priorisierung"]
 

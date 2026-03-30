@@ -7,7 +7,7 @@ slug: energiekosten-it-ausstattung-berechnung
 title: "Energiekosten von IT-Ausstattung berechnen"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Energieverbrauch", "Kostenberechnung", "Leistung"]
 tags: ["ap1", "berechnung", "energie"]
 

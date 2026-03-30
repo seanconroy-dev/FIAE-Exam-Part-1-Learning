@@ -7,7 +7,7 @@ slug: schnittstellen-erkennen
 title: "Schnittstellen erkennen (DisplayPort, DVI, VGA, USB)"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "Schnittstellen"]
 tags: ["prüfungsrelevant", "bilderkennung"]
 

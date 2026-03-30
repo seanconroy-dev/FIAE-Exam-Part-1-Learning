@@ -7,7 +7,7 @@ slug: sd-vs-microsd-karte
 title: "SD-Karte vs. microSD-Karte erkennen"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "Massenspeicher", "Speicherkarten"]
 tags: ["ap1", "hardware", "speicher"]
 

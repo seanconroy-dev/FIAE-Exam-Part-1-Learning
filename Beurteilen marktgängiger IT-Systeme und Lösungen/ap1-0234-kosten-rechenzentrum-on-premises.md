@@ -7,7 +7,7 @@ slug: kosten-rechenzentrum-on-premises
 title: "Kosten eines Rechenzentrums (On-Premises)"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Kosten", "Rechenzentrum", "On-Premises"]
 tags: ["ap1", "kosten", "server"]
 

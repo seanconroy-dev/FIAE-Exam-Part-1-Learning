@@ -7,7 +7,7 @@ slug: anforderungsarten-software
 title: "Anforderungsarten: Geschäfts-, Benutzer-, funktionale und Projektanforderungen"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Anforderungen", "Softwareentwicklung", "Projektmanagement"]
 tags: ["ap1", "anforderungen", "alm"]
 

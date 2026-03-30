@@ -7,7 +7,7 @@ slug: video-schnittstellen-4k-8k
 title: "Video-Schnittstellen für 4K und 8K"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "Grafikschnittstellen"]
 tags: ["prüfungsrelevant", "vergleich"]
 

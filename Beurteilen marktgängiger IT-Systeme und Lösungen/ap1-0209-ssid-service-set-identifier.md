@@ -7,7 +7,7 @@ slug: ssid-service-set-identifier
 title: "SSID (Service Set Identifier)"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["wlan", "grundlagen"]
 tags: ["ssid", "wlan", "802.11"]
 

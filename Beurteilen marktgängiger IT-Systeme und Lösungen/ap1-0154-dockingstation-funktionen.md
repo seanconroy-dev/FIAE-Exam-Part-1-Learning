@@ -7,7 +7,7 @@ slug: dockingstation-funktionen
 title: "Dockingstation für Notebooks – Funktionen"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "Peripherie"]
 tags: ["prüfungsrelevant", "definition"]
 

@@ -7,7 +7,7 @@ slug: logische-prozessoren
 title: "Logische Prozessoren"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "CPU"]
 tags: ["prüfungsrelevant", "definition"]
 

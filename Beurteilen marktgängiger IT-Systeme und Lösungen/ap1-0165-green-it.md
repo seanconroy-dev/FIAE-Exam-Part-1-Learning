@@ -7,7 +7,7 @@ slug: green-it
 title: "Green IT"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Nachhaltigkeit", "IT-Betrieb"]
 tags: ["prüfungsrelevant", "definition"]
 

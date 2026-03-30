@@ -7,7 +7,7 @@ slug: unterschied-switch-router
 title: "Switch vs. Router – Unterschiede"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["switch", "router", "osi-modell"]
 tags: ["netzwerkgeraete", "osi", "routing", "switching"]
 

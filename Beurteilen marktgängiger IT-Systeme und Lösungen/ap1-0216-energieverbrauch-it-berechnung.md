@@ -7,7 +7,7 @@ slug: energieverbrauch-it-berechnung
 title: "Energieverbrauch einer IT-Landschaft berechnen"
 
 # Classification / navigation (machine-side)
-module: "hardware"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["energie", "berechnung"]
 tags: ["leistung", "kwh", "verbrauch"]
 

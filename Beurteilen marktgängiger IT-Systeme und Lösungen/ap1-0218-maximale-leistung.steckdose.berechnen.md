@@ -7,7 +7,7 @@ slug: maximale-leistung-steckdose-berechnen
 title: "Maximale Leistung einer Steckdose berechnen"
 
 # Classification / navigation (machine-side)
-module: "hardware"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["elektrotechnik", "leistung"]
 tags: ["leistung", "spannung", "strom", "berechnung"]
 

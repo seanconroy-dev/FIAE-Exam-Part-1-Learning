@@ -7,7 +7,7 @@ slug: dhcp-bereitgestellte-informationen
 title: "DHCP – bereitgestellte Informationen"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["netzwerkmanagement", "dhcp", "adressierung"]
 tags: ["dhcp", "netzwerkkonfiguration", "ip-adressen"]
 

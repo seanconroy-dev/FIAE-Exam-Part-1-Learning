@@ -7,7 +7,7 @@ slug: standby-offline-usv
 title: "Standby-/Offline-USV – Bedeutung"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["stromversorgung", "usv"]
 tags: ["usv", "stromausfall", "hardware"]
 

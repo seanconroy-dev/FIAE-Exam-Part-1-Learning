@@ -7,7 +7,7 @@ slug: host-bus-adapter
 title: "Host Bus Adapter (HBA)"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Storage", "Hardware", "Schnittstellen"]
 tags: ["prüfungsrelevant", "definition"]
 

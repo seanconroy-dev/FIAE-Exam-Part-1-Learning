@@ -7,7 +7,7 @@ slug: ipv6-adresse-verkuerzte-schreibweise
 title: "Verkürzte Schreibweise einer IPv6-Adresse"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["ipv6", "adressierung"]
 tags: ["ipv6", "adressformat", "netzwerkgrundlagen"]
 

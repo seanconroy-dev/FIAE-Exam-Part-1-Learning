@@ -7,7 +7,7 @@ slug: client-server-modell-merkmale
 title: "Client-Server-Modell – typische Merkmale"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["client-server", "architektur"]
 tags: ["client-server", "netzwerkmodelle"]
 

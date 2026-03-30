@@ -7,7 +7,7 @@ slug: dns-aufgaben-active-directory
 title: "DNS – Aufgaben in Windows-Domänen / Active Directory"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["dns", "namensauflösung"]
 tags: ["dns", "active-directory", "netzwerkdienste"]
 

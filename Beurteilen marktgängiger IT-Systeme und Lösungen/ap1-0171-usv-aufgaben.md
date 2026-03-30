@@ -7,7 +7,7 @@ slug: usv-aufgaben
 title: "Aufgaben einer USV"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "Stromversorgung", "Verfügbarkeit"]
 tags: ["prüfungsrelevant", "definition"]
 

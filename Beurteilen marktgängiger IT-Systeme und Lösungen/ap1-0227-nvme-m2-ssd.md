@@ -7,7 +7,7 @@ slug: nvme-m2-ssd
 title: "NVMe M.2 SSD: Aufbau und Eigenschaften"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "Massenspeicher", "SSD"]
 tags: ["ap1", "ssd", "nvme"]
 

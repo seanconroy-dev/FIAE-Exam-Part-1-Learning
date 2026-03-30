@@ -7,7 +7,7 @@ slug: waermeleitpaste-funktion
 title: "Wärmeleitpaste – Funktion und Aufgabe"
 
 # Classification / navigation (machine-side)
-module: "hardware"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["cpu", "kuehlung"]
 tags: ["waermeleitpaste", "cpu", "kuehler"]
 

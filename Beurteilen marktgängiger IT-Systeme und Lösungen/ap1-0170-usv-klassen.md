@@ -7,7 +7,7 @@ slug: usv-klassen
 title: "USV-Klassen nach IEC 62040-3"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "Stromversorgung", "Rechenzentrum"]
 tags: ["prüfungsrelevant", "definition"]
 

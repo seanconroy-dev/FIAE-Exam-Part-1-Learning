@@ -7,7 +7,7 @@ slug: usb-c-vorteile
 title: "Vorteile von USB-C"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "Schnittstellen"]
 tags: ["prüfungsrelevant", "grundlagen"]
 

@@ -7,7 +7,7 @@ slug: wlan-multi-ssid
 title: "WLAN Multi-SSID: Mehrere Netzwerke über einen Access Point"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["WLAN", "Netzwerk", "Access Point"]
 tags: ["ap1", "wlan", "ssid"]
 

@@ -7,7 +7,7 @@ slug: dual-channel-ram-vorteil
 title: "Dual-Channel-Technik bei RAM"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "Arbeitsspeicher"]
 tags: ["prüfungsrelevant", "definition"]
 

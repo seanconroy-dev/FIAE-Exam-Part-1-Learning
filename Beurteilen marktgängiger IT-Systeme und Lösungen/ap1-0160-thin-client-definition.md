@@ -7,7 +7,7 @@ slug: thin-client-definition
 title: "Thin Client"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Systemarchitektur", "Virtualisierung"]
 tags: ["prüfungsrelevant", "definition"]
 

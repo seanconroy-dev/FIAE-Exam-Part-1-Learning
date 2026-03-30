@@ -7,7 +7,7 @@ slug: sata-ssd-vor-und-nachteile
 title: "SATA-SSD – Vor- und Nachteile"
 
 # Classification / navigation (machine-side)
-module: "hardware"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["speicher", "massenspeicher"]
 tags: ["ssd", "sata"]
 

@@ -7,7 +7,7 @@ slug: ipv6-verkuerzte-schreibweise
 title: "IPv6 – verkürzte Schreibweise"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["ipv6", "adressierung"]
 tags: ["ipv6", "netzwerkgrundlagen", "adressnotation"]
 

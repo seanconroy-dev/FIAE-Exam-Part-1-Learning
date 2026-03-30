@@ -7,7 +7,7 @@ slug: saas
 title: "Software as a Service (SaaS)"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Cloud Computing", "Servicemodelle"]
 tags: ["prüfungsrelevant", "definition", "cloud"]
 

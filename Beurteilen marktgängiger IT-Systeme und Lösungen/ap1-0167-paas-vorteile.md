@@ -7,7 +7,7 @@ slug: paas-vorteile
 title: "Vorteile von Platform as a Service (PaaS)"
 
 # Classification / navigation (machine-side)
-module: "it-systeme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Cloud Computing", "Servicemodelle"]
 tags: ["prüfungsrelevant", "cloud"]
 

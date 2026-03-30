@@ -7,7 +7,7 @@ slug: sata-schnittstelle-erkennen
 title: "SATA-Schnittstelle: Aufbau und Eigenschaften"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Hardware", "Schnittstellen", "Massenspeicher"]
 tags: ["ap1", "sata", "hardware"]
 

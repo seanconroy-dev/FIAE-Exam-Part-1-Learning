@@ -7,7 +7,7 @@ slug: elektrische-leistung-berechnung
 title: "Elektrische Leistung berechnen (P = U · I)"
 
 # Classification / navigation (machine-side)
-module: "hardware"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["elektrotechnik", "grundlagen"]
 tags: ["leistung", "spannung", "strom"]
 

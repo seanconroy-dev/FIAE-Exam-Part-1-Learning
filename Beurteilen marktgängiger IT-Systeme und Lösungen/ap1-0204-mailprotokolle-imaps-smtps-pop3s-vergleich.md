@@ -7,7 +7,7 @@ slug: mailprotokolle-imaps-smtps-pop3s-vergleich
 title: "Mailprotokolle – IMAPS, SMTPS und POP3S"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["mailprotokolle", "anwendungsprotokolle"]
 tags: ["smtp", "imap", "pop3", "tls", "email"]
 

@@ -7,7 +7,7 @@ slug: serverkonsolidierung-definition
 title: "Serverkonsolidierung – Definition und Zweck"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Virtualisierung", "Server", "Konsolidierung"]
 tags: ["ap1", "server", "virtualisierung"]
 

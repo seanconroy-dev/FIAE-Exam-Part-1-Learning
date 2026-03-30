@@ -7,7 +7,7 @@ slug: kostenvergleich-leasing-kauf-pay-per-use
 title: "Kostenvergleich: Leasing vs. Kauf vs. Pay-per-use"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["Kostenvergleich", "Cloud", "Betriebsmodelle"]
 tags: ["ap1", "leasing", "cloud", "kosten"]
 

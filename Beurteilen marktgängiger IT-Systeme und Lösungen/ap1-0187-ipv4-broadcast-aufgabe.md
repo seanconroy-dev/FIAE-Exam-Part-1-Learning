@@ -7,7 +7,7 @@ slug: ipv4-broadcast-adresse-aufgabe
 title: "Aufgabe einer IPv4 Broadcast-Adresse"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["ipv4", "adressierung", "subnetze"]
 tags: ["broadcast", "ipv4", "netzwerkgrundlagen", "subnetz"]
 

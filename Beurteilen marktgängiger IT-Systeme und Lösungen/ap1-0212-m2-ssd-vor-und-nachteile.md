@@ -7,7 +7,7 @@ slug: m2-ssd-vor-und-nachteile
 title: "M.2-SSD – Vor- und Nachteile"
 
 # Classification / navigation (machine-side)
-module: "hardware"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["speicher", "massenspeicher"]
 tags: ["ssd", "m2", "nvme"]
 

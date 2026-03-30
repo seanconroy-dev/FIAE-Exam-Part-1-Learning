@@ -7,7 +7,7 @@ slug: udp-vs-tcp-vergleich
 title: "UDP vs. TCP – Vergleich der Protokolle"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["protokolle", "transportprotokolle"]
 tags: ["tcp", "udp", "vergleich", "netzwerkgrundlagen"]
 

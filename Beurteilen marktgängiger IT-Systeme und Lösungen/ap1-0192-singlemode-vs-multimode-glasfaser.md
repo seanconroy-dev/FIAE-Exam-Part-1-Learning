@@ -7,7 +7,7 @@ slug: singlemode-vs-multimode-glasfaser
 title: "Unterschied zwischen Singlemode- und Multimode-Glasfaser"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["netzwerktechnik", "glasfaser", "physikalische-uebertragung"]
 tags: ["glasfaser", "singlemode", "multimode", "lichtwellenleiter"]
 

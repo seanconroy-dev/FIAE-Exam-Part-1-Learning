@@ -7,7 +7,7 @@ slug: wlan-2-4ghz-vs-5ghz
 title: "WLAN: Unterschiede zwischen 2,4 GHz und 5 GHz"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["WLAN", "Funktechnik", "Frequenzen"]
 tags: ["ap1", "wlan", "vergleich"]
 

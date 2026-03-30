@@ -7,7 +7,7 @@ slug: wlan-infrastructure-modus
 title: "WLAN Infrastructure Mode: Bedeutung und Funktionsweise"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["WLAN", "Netzwerk", "Access Point"]
 tags: ["ap1", "wlan", "grundlagen"]
 

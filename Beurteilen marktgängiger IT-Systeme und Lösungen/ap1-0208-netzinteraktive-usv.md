@@ -7,7 +7,7 @@ slug: netzinteraktive-usv
 title: "Netzinteraktive USV – Bedeutung"
 
 # Classification / navigation (machine-side)
-module: "netze"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["stromversorgung", "usv"]
 tags: ["usv", "line-interactive", "stromausfall"]
 

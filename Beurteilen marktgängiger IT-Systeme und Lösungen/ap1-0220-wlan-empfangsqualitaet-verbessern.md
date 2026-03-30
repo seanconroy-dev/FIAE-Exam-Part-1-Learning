@@ -7,7 +7,7 @@ slug: wlan-empfangsqualitaet-verbessern
 title: "WLAN: Maßnahmen zur Verbesserung der Empfangsqualität"
 
 # Classification / navigation (machine-side)
-module: "itsysteme"
+module: "Beurteilen marktgängiger IT-Systeme und Lösungen"
 topics: ["WLAN", "Netzwerk", "Funktechnik"]
 tags: ["ap1", "wlan", "optimierung"]
 
