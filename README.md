@@ -12,7 +12,7 @@ Exam-focused content
 
 ## Preview
 
-![App Preview](./assets/preview.gif)
+![App Preview](./assets/Preview_final.gif)
 
 ## Screenshot
 
