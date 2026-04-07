@@ -1,4 +1,4 @@
-# Ap1-Learning
+# FIAE-Exam-Part-1-Learning
 
 Learning materials and resources for preparing for the **AP1 exam (IT professions)**.
 
@@ -6,7 +6,7 @@ Structured learning cards
 Flashcard-based learning  
 Exam-focused content
 
-**Live Website:** https://seanconroy-dev.github.io/Ap1-Learning
+**Live Website:** https://seanconroy-dev.github.io/FIAE-Exam-Part-1-Learning
 
 ---
 
