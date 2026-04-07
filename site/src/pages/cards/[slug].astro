@@ -69,6 +69,9 @@ const answerHtmlFull = mRenderer.parse(card.card.answer);
       <div class="bg-blue-50 px-6 py-4 border-b border-blue-200">
         <div class="text-xs uppercase tracking-wider text-blue-400 font-semibold mb-1">Frage</div>
         <div class="text-lg font-semibold text-gray-800">{card.card.question}</div>
+        {card.card.image && (
+          <img src={`${base}/${card.card.image}`} alt={card.card.question} class="mt-4 max-h-64 rounded-lg object-contain" />
+        )}
       </div>
       <div id="answer-block" class="hidden px-6 py-5">
         <div class="text-xs uppercase tracking-wider text-green-500 font-semibold mb-2">Antwort</div>
