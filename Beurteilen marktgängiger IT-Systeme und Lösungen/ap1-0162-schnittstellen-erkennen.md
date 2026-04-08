@@ -13,7 +13,7 @@ card:
   question: "Benenne die folgenden Schnitstellen"
   image: "assets/Computer-ports-in-a-row-on-white-question.png"
   answer: "Von rechts nach links"
-  image: "assets/Row-of-computer-connector-ports-answer-png"
+  answerImage: "assets/Row-of-computer-connector-ports-answer-png"
   examples:
     - "DisplayPort → digitale Video- und Audioübertragung"
     - "DVI → digitale bzw. kombinierte digitale/analoge Bildübertragung"

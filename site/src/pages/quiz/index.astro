@@ -16,6 +16,7 @@ const cardData = cards.map(c => ({
   question: c.card.question,
   image: c.card.image ?? null,
   answer: c.card.answer,
+  answerImage: c.card.answerImage ?? null,
   examples: c.card.examples ?? [],
   type: c.card.type,
 }));
@@ -78,6 +79,7 @@ const cardData = cards.map(c => ({
           >
             <div class="text-xs uppercase tracking-wider text-green-500 font-semibold mb-3">Antwort</div>
             <div id="card-answer" class="text-sm text-gray-700 leading-relaxed prose prose-sm max-w-none"></div>
+            <img id="card-answer-image" class="hidden mt-4 max-h-32 mx-auto rounded-lg object-contain" alt="" />
             <div id="card-examples" class="mt-4 hidden">
               <div class="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Beispiele</div>
               <ul id="card-examples-list" class="text-sm text-gray-600 space-y-1 list-disc list-inside"></ul>
@@ -154,6 +156,7 @@ const cardData = cards.map(c => ({
   const cardQuestion = document.getElementById('card-question');
   const cardImage = document.getElementById('card-image');
   const cardAnswer = document.getElementById('card-answer');
+  const cardAnswerImage = document.getElementById('card-answer-image');
   const cardExamples = document.getElementById('card-examples');
   const cardExamplesList = document.getElementById('card-examples-list');
   const ratingButtons = document.getElementById('rating-buttons');
@@ -213,6 +216,14 @@ const cardData = cards.map(c => ({
       cardImage.classList.add('hidden');
     }
     cardAnswer.innerHTML = renderMd(card.answer);
+    if (card.answerImage) {
+      cardAnswerImage.src = `${base}/${card.answerImage}`;
+      cardAnswerImage.alt = card.answer;
+      cardAnswerImage.classList.remove('hidden');
+    } else {
+      cardAnswerImage.src = '';
+      cardAnswerImage.classList.add('hidden');
+    }
 
     if (card.examples && card.examples.length > 0) {
       cardExamplesList.innerHTML = card.examples.map(e => `<li>${e}</li>`).join('');
