@@ -15,6 +15,7 @@ tags: ["ap1", "hardware", "ram"]
 card:
   type: basic       # basic | multi | steps | definition | comparison
   question: "Um welche Speichermodule handelt es sich auf dem Bild?"
+  image: "assets/so-dimm_dimmDDR3.png"
   answer: "Links ein DDR3-SDRAM DIMM (Desktop-RAM) und rechts ein SO-DIMM (Notebook-RAM)."
   examples: []
 
@@ -25,6 +26,7 @@ updated: "2026-03-18"
 ---
 
 ## Arbeitsspeicher: DDR3 DIMM vs. SO-DIMM
+
 Arbeitsspeicher (RAM) gibt es in unterschiedlichen Bauformen, je nach Einsatzgebiet:
 
 - **DIMM (Dual Inline Memory Module)** → Desktop-PCs  
