@@ -15,7 +15,8 @@ tags: ["ap1", "hardware", "speicher"]
 card:
   type: basic       # basic | multi | steps | definition | comparison
   question: "Wie unterscheiden sich SD-Karte und microSD-Karte auf dem Bild?"
-  answer: "Die SD-Karte ist Nummer 1, die microSD-Karte ist Nummer 3."
+  image: "assets/sd_vs_microsd_question.png"
+  answer: "Die SD-Karte ist Rechts, die microSD-Karte ist Links. Die SD-Karte ist deutlich größer als die microSD-Karte."
   examples: []
 
 # Lifecycle
@@ -34,11 +35,11 @@ Die wichtigsten Varianten sind:
 ## Kernerklärung
 
 ### Erkennung der Karten
-- **Nr. 1 → SD-Karte**
+- **Links → SD-Karte**
   - größere Bauform
   - häufig in Kameras verwendet
 
-- **Nr. 3 → microSD-Karte**
+- **Rechts → microSD-Karte**
   - sehr kleine Bauform
   - häufig in Smartphones, Tablets
 
