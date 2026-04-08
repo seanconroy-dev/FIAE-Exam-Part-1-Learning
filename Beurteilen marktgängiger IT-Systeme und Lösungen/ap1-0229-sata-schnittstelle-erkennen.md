@@ -15,6 +15,7 @@ tags: ["ap1", "sata", "hardware"]
 card:
   type: basic       # basic | multi | steps | definition | comparison
   question: "Welche Schnittstelle ist auf dem Bild zu sehen?"
+  image: "assets/sata_interface_question.png"
   answer: "Es handelt sich um eine SATA-Schnittstelle (Serial ATA)."
   examples: []
 
