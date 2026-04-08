@@ -27,6 +27,7 @@ export interface CardFrontmatter {
     question: string;
     image?: string;
     answer: string;
+    answerImage?: string;
     examples?: string[];
   };
   status: 'draft' | 'published' | 'deprecated';
@@ -73,6 +74,7 @@ export function getAllCards(): Card[] {
           question: data.card?.question ?? '',
           image: data.card?.image,
           answer: data.card?.answer ?? '',
+          answerImage: data.card?.answerImage,
           examples: data.card?.examples ?? [],
         },
         status: data.status ?? 'draft',

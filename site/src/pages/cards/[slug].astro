@@ -76,6 +76,9 @@ const answerHtmlFull = mRenderer.parse(card.card.answer);
       <div id="answer-block" class="hidden px-6 py-5">
         <div class="text-xs uppercase tracking-wider text-green-500 font-semibold mb-2">Antwort</div>
         <div class="prose prose-sm max-w-none text-gray-700" set:html={answerHtmlFull} />
+        {card.card.answerImage && (
+          <img src={`${base}/${card.card.answerImage}`} alt={card.card.answer} class="mt-4 max-h-64 rounded-lg object-contain" />
+        )}
         {card.card.examples && card.card.examples.length > 0 && (
           <div class="mt-4 bg-gray-50 rounded-lg p-4">
             <div class="text-xs uppercase tracking-wider text-gray-400 font-semibold mb-2">Beispiele</div>
