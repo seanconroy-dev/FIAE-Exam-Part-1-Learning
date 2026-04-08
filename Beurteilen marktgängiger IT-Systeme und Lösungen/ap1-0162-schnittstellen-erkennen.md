@@ -10,9 +10,10 @@ tags: ["prüfungsrelevant"]
 
 card:
   type: basic
-  question: "Nenne typische Monitor- und Geräteschnittstellen für Video- und Datenübertragung."
-  image: "assets/Schnittstellen0162.png"
-  answer: "DisplayPort, DVI, VGA (Video) sowie USB Typ B und USB Typ A (Daten)."
+  question: "Benenne die folgenden Schnitstellen"
+  image: "assets/Computer-ports-in-a-row-on-white-question.png"
+  answer: "Von rechts nach links"
+  image: "assets/Row-of-computer-connector-ports-answer-png"
   examples:
     - "DisplayPort → digitale Video- und Audioübertragung"
     - "DVI → digitale bzw. kombinierte digitale/analoge Bildübertragung"
