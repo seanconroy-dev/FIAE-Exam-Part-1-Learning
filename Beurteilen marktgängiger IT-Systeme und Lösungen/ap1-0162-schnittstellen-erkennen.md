@@ -13,7 +13,7 @@ card:
   question: "Benenne die folgenden Schnitstellen"
   image: "assets/Computer-ports-in-a-row-on-white-question.png"
   answer: "Von links nach rechts: USB Typ A, USB Typ B, VGA, DisplayPort, DVI (Dual-Link)"
-  image: "assets/Row-of-computer-connector-ports-answer-png"
+  answerImage: "assets/Row-of-computer-connector-ports-answer.png"
   examples:
     - "DisplayPort → digitale Video- und Audioübertragung"
     - "DVI → digitale bzw. kombinierte digitale/analoge Bildübertragung"
