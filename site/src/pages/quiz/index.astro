@@ -52,7 +52,7 @@ const cardData = cards.map(c => ({
       <div
         id="flip-card"
         class="relative cursor-pointer"
-        style="perspective: 1000px; min-height: 340px;"
+        style="perspective: 1000px; min-height: clamp(330px, 50vh, 500px);"
         title="Klicken zum Aufdecken"
       >
         <div
@@ -62,7 +62,7 @@ const cardData = cards.map(c => ({
         >
           <!-- Front -->
           <div
-            class="absolute inset-0 bg-white border-2 border-blue-200 rounded-2xl p-4 sm:p-8 flex flex-col justify-between shadow-md"
+            class="absolute inset-0 bg-white border-2 border-blue-200 rounded-2xl p-4 md:p-8 flex flex-col justify-between shadow-md overflow-y-auto"
             style="backface-visibility: hidden;"
           >
             <div>
@@ -74,7 +74,7 @@ const cardData = cards.map(c => ({
           </div>
           <!-- Back -->
           <div
-            class="absolute inset-0 bg-white border-2 border-green-200 rounded-2xl p-4 sm:p-8 flex flex-col justify-center shadow-md overflow-y-auto"
+            class="absolute inset-0 bg-white border-2 border-green-200 rounded-2xl p-4 md:p-8 flex flex-col justify-start shadow-md overflow-y-auto"
             style="backface-visibility: hidden; transform: rotateY(180deg);"
           >
             <div class="text-xs uppercase tracking-wider text-green-500 font-semibold mb-3">Antwort</div>
