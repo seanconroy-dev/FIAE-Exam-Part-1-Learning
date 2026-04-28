@@ -65,8 +65,8 @@ const cardData = cards.map(c => ({
             class="absolute inset-0 bg-white border-2 border-blue-200 rounded-2xl p-4 md:p-8 flex flex-col shadow-md overflow-y-auto"
             style="backface-visibility: hidden;"
           >
+            <div class="text-xs uppercase tracking-wider text-blue-500 font-semibold text-center">Frage</div>
             <div class="flex-1 flex flex-col items-center justify-center text-center">
-              <div class="text-xs uppercase tracking-wider text-blue-500 font-semibold mb-3">Frage</div>
               <div id="card-question" class="text-xl lg:text-2xl font-semibold text-gray-800 leading-relaxed w-full text-center"></div>
               <img id="card-image" class="hidden mt-4 max-h-32 mx-auto rounded-lg object-contain" alt="" />
             </div>
@@ -77,8 +77,8 @@ const cardData = cards.map(c => ({
             class="absolute inset-0 bg-white border-2 border-green-200 rounded-2xl p-4 md:p-8 flex flex-col shadow-md overflow-y-auto"
             style="backface-visibility: hidden; transform: rotateY(180deg);"
           >
+            <div class="text-xs uppercase tracking-wider text-green-500 font-semibold text-center">Antwort</div>
             <div class="flex-1 flex flex-col items-center justify-center text-center">
-              <div class="text-xs uppercase tracking-wider text-green-500 font-semibold mb-3">Antwort</div>
               <div id="card-answer" class="text-xl lg:text-2xl text-gray-800 leading-relaxed w-full text-center"></div>
               <img id="card-answer-image" class="hidden mt-4 max-h-32 mx-auto rounded-lg object-contain" alt="" />
               <div id="card-examples" class="mt-4 hidden w-full text-left">
