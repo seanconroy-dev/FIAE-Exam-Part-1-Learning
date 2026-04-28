@@ -25,8 +25,8 @@ const cardData = cards.map(c => ({
   <div class="max-w-2xl mx-auto space-y-6">
     <div class="flex items-center justify-between flex-wrap gap-3">
       <h1 class="text-3xl font-bold text-gray-900">Quiz</h1>
-      <div class="flex flex-wrap items-center gap-2">
-        <select id="quiz-module" class="flex-1 sm:flex-none border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <div class="flex flex-wrap items-center gap-2 w-full sm:w-auto">
+        <select id="quiz-module" class="min-w-0 flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
           <option value="">Alle Module</option>
           {modules.map(m => <option value={m}>{m}</option>)}
         </select>
