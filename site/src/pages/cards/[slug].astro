@@ -108,7 +108,7 @@ const answerHtmlFull = apiCard.card?.answer;
 <script>
   import mermaid from 'mermaid';
 
-  mermaid.initialize({ startOnLoad: false });
+  mermaid.initialize({ startOnLoad: false, fontSize: 16 });
 
   async function renderMermaid() {
     const nodes = Array.from(
@@ -157,6 +157,11 @@ const answerHtmlFull = apiCard.card?.answer;
   }
   .prose :global(pre.mermaid) {
     @apply bg-transparent p-0 overflow-x-auto;
+  }
+  .prose :global(pre.mermaid svg) {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
   }
   .prose :global(code:not(pre code)) {
     @apply bg-gray-100 text-red-600 rounded px-1 py-0.5 text-xs;
