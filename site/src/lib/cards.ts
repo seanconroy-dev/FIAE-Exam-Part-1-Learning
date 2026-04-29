@@ -41,16 +41,19 @@ export function getAllCards(): Promise<Card[]> {
 
       return res.json() as Promise<Card[]>;
     })
+.then((cards: Card[]): Card[] => {
+  const parsed: Card[] = cards.map((c): Card => ({
+    ...c,
+    body: mRenderer.parse(c.body ?? '') as string,
+    card: {
+      ...c.card,
+      answer: mRenderer.parse(c.card.answer ?? '') as string
+    }
+  }));
 
-    .then((cards) => {
-      for (const c of cards) {
-        c.body = mRenderer.parse(c.body ?? '') as string;
-        c.card.answer = mRenderer.parse(c.card.answer ?? '') as string;
-      }
-
-      cards.sort((a, b) => a.id.localeCompare(b.id));
-      return cards;
-    });
+  parsed.sort((a, b) => a.id.localeCompare(b.id));
+  return parsed;
+});
 
   return _cache;
 }
