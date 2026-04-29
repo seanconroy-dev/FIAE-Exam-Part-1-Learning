@@ -4,7 +4,7 @@ import { getAllCards, getCardBySlug, moduleSlug } from '../../lib/cards';
 import { Marked } from 'marked';
 
 export async function getStaticPaths() {
-  const cards = getAllCards();
+  const cards = await getAllCards();
   return cards.map(card => ({
     params: { slug: card.slug },
   }));
@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 const API_BASE = import.meta.env.PUBLIC_API_BASE;
 console.log('API_BASE:', API_BASE);
-const card = getCardBySlug(slug!)!;
+const card = await getCardBySlug(slug!);
 const res = await fetch(`${API_BASE}/api/cards/markdown/${slug}`);
 const apiCard = await res.json();
 

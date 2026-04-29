@@ -2,9 +2,9 @@
 import Base from '../../layouts/Base.astro';
 import { getAllCards, getAllModules, getAllTags, moduleSlug } from '../../lib/cards';
 
-const cards = getAllCards();
-const modules = getAllModules();
-const tags = getAllTags();
+const cards = await getAllCards();
+const modules =  await getAllModules();
+const tags = await getAllTags();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <Base title="Alle Karten – FIAE Exam 1">

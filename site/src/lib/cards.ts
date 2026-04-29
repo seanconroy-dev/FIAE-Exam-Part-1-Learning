@@ -1,19 +1,4 @@
-import fs from 'node:fs';
-import path from 'node:path';
-import matter from 'gray-matter';
 
-// Resolve the content root relative to this file (site/src/lib → repo root)
-const REPO_ROOT = path.resolve(import.meta.dirname, '../../..');
-
-const CONTENT_DIRS = [
-  'Plannen,Vorbereiten und Durchführen von Arbeitsaufgaben',
-  'Beurteilen marktgängiger IT-Systeme und Lösungen',
-  'Entwickeln, Erstellen und Betreuen von IT_Lösungen',
-  'IT-Sicherheit und Datenschutz, Ergonomie',
-  'Informieren und Beraten von Kunden und Kundinnen',
-  'Auftragsabschluss und Leistungenerbringen',
-  'Qualitätssichernde Maßnahmen',
-];
 
 export interface CardFrontmatter {
   id: string;
@@ -43,74 +28,48 @@ export interface Card extends CardFrontmatter {
 
 let _cache: Card[] | null = null;
 
-export function getAllCards(): Card[] {
+export async function getAllCards(): Promise<Card[]> {
   if (_cache) return _cache;
 
-  const cards: Card[] = [];
+  const API_BASE = import.meta.env.PUBLIC_API_BASE;
+  const res = await fetch(`${API_BASE}/api/cards/markdown`);
 
-  for (const dir of CONTENT_DIRS) {
-    const dirPath = path.join(REPO_ROOT, dir);
-    if (!fs.existsSync(dirPath)) continue;
-
-    const files = fs.readdirSync(dirPath).filter((f) => f.endsWith('.md') && f !== 'README.md');
-
-    for (const file of files) {
-      const filePath = path.join(dirPath, file);
-      const raw = fs.readFileSync(filePath, 'utf-8');
-      const { data, content } = matter(raw);
-
-      // Skip if required fields are missing
-      if (!data.id || !data.slug) continue;
-
-      cards.push({
-        id: data.id ?? '',
-        slug: data.slug ?? '',
-        title: data.title ?? data.slug,
-        module: (data.module && !data.module.startsWith('<')) ? data.module : dir,
-        topics: data.topics ?? [],
-        tags: data.tags ?? [],
-        card: {
-          type: data.card?.type ?? 'basic',
-          question: data.card?.question ?? '',
-          image: data.card?.image,
-          answer: data.card?.answer ?? '',
-          answerImage: data.card?.answerImage,
-          examples: data.card?.examples ?? [],
-        },
-        status: data.status ?? 'draft',
-        created: data.created ?? '',
-        updated: data.updated ?? '',
-        body: content.trim(),
-        category: dir,
-      });
-    }
+  if (!res.ok) {
+    throw new Error(`Failed to fetch cards: ${res.status}`);
   }
 
-  // Sort by numeric ID
+  const cards = await res.json() as Card[];
+
   cards.sort((a, b) => a.id.localeCompare(b.id));
   _cache = cards;
+
   return cards;
 }
 
-export function getPublishedCards(): Card[] {
-  return getAllCards().filter((c) => c.status === 'published');
+export async function getPublishedCards(): Promise<Card[]> {
+  const cards = await getAllCards();
+  return cards.filter((c) => c.status === 'published');
 }
 
-export function getCardBySlug(slug: string): Card | undefined {
-  return getAllCards().find((c) => c.slug === slug);
+export async function getCardBySlug(slug: string): Promise<Card | undefined> {
+  const cards = await getAllCards();
+  return cards.find((c) => c.slug === slug);
 }
 
-export function getCardsByModule(module: string): Card[] {
-  return getAllCards().filter((c) => c.module === module);
+export async function getCardsByModule(module: string): Promise<Card[]> {
+  const cards = await getAllCards();
+  return cards.filter((c) => c.module === module);
 }
 
-export function getAllModules(): string[] {
-  const set = new Set(getAllCards().map((c) => c.module).filter(Boolean));
+export async function getAllModules(): Promise<string[]> {
+  const cards = await getAllCards();
+  const set = new Set(cards.map((c) => c.module).filter(Boolean));
   return Array.from(set).sort();
 }
 
-export function getAllTags(): string[] {
-  const set = new Set(getAllCards().flatMap((c) => c.tags));
+export async function getAllTags(): Promise<string[]> {
+  const cards = await getAllCards();
+  const set = new Set(cards.flatMap((c) => c.tags));
   return Array.from(set).sort();
 }
 
@@ -127,6 +86,7 @@ export function moduleSlug(module: string): string {
     .trim();
 }
 
-export function moduleFromSlug(slug: string): string {
-  return getAllModules().find((m) => moduleSlug(m) === slug) ?? slug;
+export async function moduleFromSlug(slug: string): Promise<string> {
+  const modules = await getAllModules();
+  return modules.find((m) => moduleSlug(m) === slug) ?? slug;
 }
