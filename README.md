@@ -12,11 +12,11 @@ Exam-focused content
 
 ## Preview
 
-![App Preview](./assets/Preview_final.gif)
+![App Preview](https://raw.githubusercontent.com/seanconroy-dev/FIAE-Exam-Part-1-Content/ecb6c01d2154634dff603b5d9bb06090b433d75c/assets/Preview_final.gif)
 
 ## Screenshot
 
-![Main Page](assets/FrontPage.png)
+![Main Page](https://raw.githubusercontent.com/seanconroy-dev/FIAE-Exam-Part-1-Content/ecb6c01d2154634dff603b5d9bb06090b433d75c/assets/FrontPage.png)
 
 ---
 
