@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getAllCards, getCardBySlug, moduleSlug } from '../../lib/cards';
-import { Marked } from 'marked';
+
 
 export async function getStaticPaths() {
   const cards = await getAllCards();
@@ -11,32 +11,20 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const API_BASE = import.meta.env.PUBLIC_API_BASE;
-console.log('API_BASE:', API_BASE);
-const card = await getCardBySlug(slug!);
-const res = await fetch(`${API_BASE}/api/cards/markdown/${slug}`);
-const apiCard = await res.json();
 
-console.log('LOCAL CARD:', card);
-console.log('API CARD:', apiCard);
+const apiCard = await getCardBySlug(slug!);
+
+if (!apiCard) {
+  throw new Error(`Card not found: ${slug}`);
+}
+
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-// Custom renderer: mermaid code blocks become <pre class="mermaid"> so
-// the Mermaid client library can find and render them as diagrams.
-const mRenderer = new Marked({
-  renderer: {
-    code(text: string, lang?: string) {
-      if (lang === 'mermaid') {
-        return `<pre class="mermaid">${text}</pre>`;
-      }
-      return false; // fall through to default renderer
-    },
-  },
-});
 
-const bodyHtml = mRenderer.parse(apiCard.body ?? '');
 
-const answerHtmlFull = mRenderer.parse(apiCard.card?.answer ?? '');
+
+const bodyHtml = apiCard.body;
+const answerHtmlFull = apiCard.card?.answer;
 ---
 <Base title={`${apiCard.title} – AP1`}>
   <div class="max-w-3xl mx-auto space-y-6">

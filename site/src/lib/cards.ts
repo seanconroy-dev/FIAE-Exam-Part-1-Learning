@@ -1,4 +1,4 @@
-
+import { Marked } from 'marked';
 
 export interface CardFrontmatter {
   id: string;
@@ -19,31 +19,40 @@ export interface CardFrontmatter {
   created: string;
   updated: string;
 }
-
+const mRenderer = new Marked();
 export interface Card extends CardFrontmatter {
   body: string;
   /** The folder the source file lives in */
   category: string;
 }
 
-let _cache: Card[] | null = null;
+let _cache: Promise<Card[]> | null = null;
 
-export async function getAllCards(): Promise<Card[]> {
+export function getAllCards(): Promise<Card[]> {
   if (_cache) return _cache;
 
   const API_BASE = import.meta.env.PUBLIC_API_BASE;
-  const res = await fetch(`${API_BASE}/api/cards/markdown`);
 
-  if (!res.ok) {
-    throw new Error(`Failed to fetch cards: ${res.status}`);
-  }
+  _cache = fetch(`${API_BASE}/api/cards/markdown`)
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error(`Failed to fetch cards: ${res.status}`);
+      }
 
-  const cards = await res.json() as Card[];
+      return res.json() as Promise<Card[]>;
+    })
 
-  cards.sort((a, b) => a.id.localeCompare(b.id));
-  _cache = cards;
+    .then((cards) => {
+      for (const c of cards) {
+        c.body = mRenderer.parse(c.body ?? '') as string;
+        c.card.answer = mRenderer.parse(c.card.answer ?? '') as string;
+      }
 
-  return cards;
+      cards.sort((a, b) => a.id.localeCompare(b.id));
+      return cards;
+    });
+
+  return _cache;
 }
 
 export async function getPublishedCards(): Promise<Card[]> {
