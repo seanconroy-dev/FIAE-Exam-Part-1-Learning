@@ -3,15 +3,16 @@ import Base from '../../layouts/Base.astro';
 import { getAllModules, getCardsByModule, moduleSlug, moduleFromSlug } from '../../lib/cards';
 
 export async function getStaticPaths() {
-  const modules = getAllModules();
-  return modules.map(mod => ({
+  const modules = await getAllModules(); 
+
+  return modules.map((mod) => ({
     params: { module: moduleSlug(mod) },
   }));
 }
 
 const { module: moduleParam } = Astro.params;
-const moduleName = moduleFromSlug(moduleParam!);
-const cards = getCardsByModule(moduleName);
+const moduleName = await moduleFromSlug(moduleParam!);
+const cards = await getCardsByModule(moduleName);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <Base title={`${moduleName} – Exam Part 1`}>
