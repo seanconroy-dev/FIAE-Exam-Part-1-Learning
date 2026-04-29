@@ -1,1 +1,0 @@
-# Qualitätssichernde Maßnahmen
