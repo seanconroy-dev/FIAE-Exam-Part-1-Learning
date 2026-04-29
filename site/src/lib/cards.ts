@@ -1,5 +1,16 @@
 import { Marked } from 'marked';
 
+// Custom renderer: emit <pre class="mermaid"> so the client-side Mermaid
+// script can find and render diagrams (it queries `pre.mermaid`).
+const mermaidRenderer = {
+  code(code: string, infostring: string | undefined): string | false {
+    if (infostring === 'mermaid') {
+      return `<pre class="mermaid">${code}</pre>`;
+    }
+    return false;
+  },
+};
+
 export interface CardFrontmatter {
   id: string;
   slug: string;
@@ -20,6 +31,8 @@ export interface CardFrontmatter {
   updated: string;
 }
 const mRenderer = new Marked();
+mRenderer.use({ renderer: mermaidRenderer });
+
 export interface Card extends CardFrontmatter {
   body: string;
   /** The folder the source file lives in */
