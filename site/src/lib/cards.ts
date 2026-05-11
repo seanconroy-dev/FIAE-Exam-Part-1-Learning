@@ -57,10 +57,16 @@ export function getAllCards(): Promise<Card[]> {
 .then((cards: Card[]): Card[] => {
   const parsed: Card[] = cards.map((c): Card => ({
     ...c,
+    title: c.title ?? '',
+    module: c.module ?? '',
+    topics: c.topics ?? [],
+    tags: c.tags ?? [],
     body: mRenderer.parse(c.body ?? '') as string,
     card: {
-      ...c.card,
-      answer: mRenderer.parse(c.card.answer ?? '') as string
+      ...(c.card ?? {}),
+      question: c.card?.question ?? '',
+      answer: mRenderer.parse(c.card?.answer ?? '') as string,
+      examples: c.card?.examples ?? [],
     }
   }));
 
