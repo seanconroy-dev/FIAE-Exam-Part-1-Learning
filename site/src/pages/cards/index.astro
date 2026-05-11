@@ -40,10 +40,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <a
           href={`${base}/cards/${card.slug}`}
           class="card-item flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-4 hover:border-blue-400 hover:shadow-sm transition-all group"
-          data-title={card.title.toLowerCase()}
-          data-question={card.card.question.toLowerCase()}
-          data-module={card.module}
-          data-tags={card.tags.join(',')}
+          data-title={(card.title ?? '').toLowerCase()}
+          data-question={(card.card?.question ?? '').toLowerCase()}
+          data-module={card.module ?? ''}
+          data-tags={(card.tags ?? []).join(',')}
         >
           <div class="flex-1 min-w-0">
             <div class="flex items-center gap-2 flex-wrap mb-1">
