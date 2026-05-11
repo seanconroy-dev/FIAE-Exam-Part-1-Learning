@@ -63,7 +63,7 @@ export function getAllCards(): Promise<Card[]> {
     tags: c.tags ?? [],
     body: mRenderer.parse(c.body ?? '') as string,
     card: {
-      ...c.card,
+      ...(c.card ?? {}),
       question: c.card?.question ?? '',
       answer: mRenderer.parse(c.card?.answer ?? '') as string,
       examples: c.card?.examples ?? [],
