@@ -2,7 +2,11 @@ const API_KEY_STORAGE_KEY = 'fiae.apiKey';
 
 function getSessionStorage(): Storage | null {
   if (typeof window === 'undefined') return null;
-  return window.sessionStorage;
+  try {
+    return window.sessionStorage;
+  } catch {
+    return null;
+  }
 }
 
 export function getStoredApiKey(): string | null {

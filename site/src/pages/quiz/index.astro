@@ -365,17 +365,29 @@ const quizClientData = JSON.stringify({ cardData, apiBase });
     startQuiz(filtered);
   });
 
-  btnConnect.addEventListener('click', async () => {
+  async function handleConnect() {
     const enteredKey = apiKeyInput.value.trim();
     if (!enteredKey) {
       setPersistenceStatus('Bitte API Key eingeben', 'error');
-      return;
+      return false;
     }
 
     setPersistenceStatus('Prüfe API Key …', 'neutral');
     const connected = await activateWithApiKey(enteredKey);
     if (connected) {
       apiKeyInput.value = '';
+    }
+    return connected;
+  }
+
+  btnConnect.addEventListener('click', () => {
+    void handleConnect();
+  });
+
+  apiKeyInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      void handleConnect();
     }
   });
 
