@@ -21,6 +21,7 @@ const cardData = cards.map(c => ({
   examples: c.card.examples ?? [],
   type: c.card.type,
 }));
+const quizClientData = JSON.stringify({ cardData, apiBase });
 ---
 <Base title="Quiz – FIAE Exam 1">
   <div class="max-w-2xl lg:max-w-4xl mx-auto space-y-6">
@@ -33,6 +34,26 @@ const cardData = cards.map(c => ({
       <button id="btn-start" class="shrink-0 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
         Starten
       </button>
+    </div>
+
+    <div class="bg-white border border-gray-200 rounded-xl p-4 space-y-3">
+      <div class="text-sm font-semibold text-gray-700">Optionale Persistenz</div>
+      <div class="flex flex-col sm:flex-row gap-2">
+        <input
+          id="api-key-input"
+          type="password"
+          placeholder="API Key"
+          class="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          autocomplete="off"
+        />
+        <button id="btn-connect" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
+          Verbinden
+        </button>
+        <button id="btn-disconnect" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-4 py-2 rounded-lg text-sm transition-colors border border-gray-300">
+          Trennen
+        </button>
+      </div>
+      <div id="persistence-status" class="text-xs text-gray-500">Persistenz inaktiv</div>
     </div>
 
     <!-- Progress bar -->
@@ -122,7 +143,22 @@ const cardData = cards.map(c => ({
   </div>
 </Base>
 
-<script define:vars={{ cardData, base, apiBase }}>
+<script id="quiz-client-data" type="application/json" set:html={quizClientData}></script>
+
+<script type="module">
+  import {
+    getStoredApiKey,
+    storeApiKeyForSession,
+    clearStoredApiKey,
+    verifyApiKey,
+    postCardAnswerProgress,
+  } from '../../lib/progress';
+
+  const dataElement = document.getElementById('quiz-client-data');
+  const parsed = dataElement?.textContent ? JSON.parse(dataElement.textContent) : {};
+  const cardData = parsed.cardData ?? [];
+  const apiBase = parsed.apiBase ?? '';
+
   // Simple markdown bold/italic renderer for answer text
   function renderMd(text) {
     return text
@@ -168,6 +204,43 @@ const cardData = cards.map(c => ({
   const btnRetryWrong = document.getElementById('btn-retry-wrong');
   const btnRestart = document.getElementById('btn-restart');
   const emptyState = document.getElementById('empty-state');
+  const apiKeyInput = document.getElementById('api-key-input');
+  const btnConnect = document.getElementById('btn-connect');
+  const btnDisconnect = document.getElementById('btn-disconnect');
+  const persistenceStatus = document.getElementById('persistence-status');
+  let activeApiKey = null;
+
+  function setPersistenceStatus(message, tone = 'neutral') {
+    persistenceStatus.textContent = message;
+    persistenceStatus.classList.remove('text-gray-500', 'text-green-600', 'text-red-600');
+    if (tone === 'success') persistenceStatus.classList.add('text-green-600');
+    else if (tone === 'error') persistenceStatus.classList.add('text-red-600');
+    else persistenceStatus.classList.add('text-gray-500');
+  }
+
+  function setDisconnectedStatus() {
+    setPersistenceStatus('Persistenz inaktiv', 'neutral');
+  }
+
+  async function activateWithApiKey(apiKey) {
+    const authResult = await verifyApiKey(apiBase, apiKey);
+    if (!authResult.ok) {
+      activeApiKey = null;
+      clearStoredApiKey();
+      setPersistenceStatus('Verbindung fehlgeschlagen', 'error');
+      return false;
+    }
+
+    storeApiKeyForSession(apiKey);
+    activeApiKey = apiKey;
+    setPersistenceStatus('Persistenz aktiv', 'success');
+    return true;
+  }
+
+  async function persistAnswer(cardSlug, correct) {
+    if (!activeApiKey) return;
+    void postCardAnswerProgress(apiBase, activeApiKey, cardSlug, correct);
+  }
 
   // Pre-fill module from URL param
   const urlParams = new URLSearchParams(window.location.search);
@@ -259,12 +332,16 @@ const cardData = cards.map(c => ({
   });
 
   btnCorrect.addEventListener('click', () => {
+    const cardSlug = queue[current]?.slug;
+    if (cardSlug) persistAnswer(cardSlug, true);
     score.correct++;
     current++;
     showCard();
   });
 
   btnWrong.addEventListener('click', () => {
+    const cardSlug = queue[current]?.slug;
+    if (cardSlug) persistAnswer(cardSlug, false);
     score.wrong++;
     wrong.push(queue[current]);
     current++;
@@ -287,6 +364,36 @@ const cardData = cards.map(c => ({
     const filtered = mod ? cardData.filter(c => c.module === mod) : cardData;
     startQuiz(filtered);
   });
+
+  btnConnect.addEventListener('click', async () => {
+    const enteredKey = apiKeyInput.value.trim();
+    if (!enteredKey) {
+      setPersistenceStatus('Bitte API Key eingeben', 'error');
+      return;
+    }
+
+    setPersistenceStatus('Prüfe API Key …', 'neutral');
+    const connected = await activateWithApiKey(enteredKey);
+    if (connected) {
+      apiKeyInput.value = '';
+    }
+  });
+
+  btnDisconnect.addEventListener('click', () => {
+    clearStoredApiKey();
+    activeApiKey = null;
+    apiKeyInput.value = '';
+    setDisconnectedStatus();
+  });
+
+  apiKeyInput.value = '';
+  const storedApiKey = getStoredApiKey();
+  if (storedApiKey) {
+    setPersistenceStatus('Prüfe gespeicherte Verbindung …', 'neutral');
+    void activateWithApiKey(storedApiKey);
+  } else {
+    setDisconnectedStatus();
+  }
 
   // Auto-start if module is pre-selected from URL
   if (urlModule) btnStart.click();
