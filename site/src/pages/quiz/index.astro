@@ -4,7 +4,6 @@ import { getAllCards, getAllModules } from '../../lib/cards';
 
 const cards = await getAllCards();
 const modules = await getAllModules();
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const apiBase = import.meta.env.PUBLIC_API_BASE;
 
 // Pass card data to client-side JS
@@ -22,6 +21,7 @@ const cardData = cards.map(c => ({
   type: c.card.type,
 }));
 const quizClientData = JSON.stringify({ cardData, apiBase });
+const quizClientDataEscaped = quizClientData.replace(/<\//g, '<\\/');
 ---
 <Base title="Quiz – FIAE Exam 1">
   <div class="max-w-2xl lg:max-w-4xl mx-auto space-y-6">
@@ -143,7 +143,7 @@ const quizClientData = JSON.stringify({ cardData, apiBase });
   </div>
 </Base>
 
-<script id="quiz-client-data" type="application/json" set:html={quizClientData}></script>
+<script id="quiz-client-data" type="application/json">{quizClientDataEscaped}</script>
 
 <script type="module">
   import {
@@ -210,6 +210,7 @@ const quizClientData = JSON.stringify({ cardData, apiBase });
   const btnDisconnect = document.getElementById('btn-disconnect');
   const persistenceStatus = document.getElementById('persistence-status');
   let activeApiKey = null;
+  let isConnecting = false;
 
   function setPersistenceStatus(message, tone = 'neutral') {
     persistenceStatus.textContent = message;
@@ -337,7 +338,7 @@ const quizClientData = JSON.stringify({ cardData, apiBase });
     if (answerLocked) return;
     answerLocked = true;
     const cardSlug = queue[current]?.slug;
-    if (flipped && cardSlug) persistAnswer(cardSlug, true);
+    if (cardSlug) persistAnswer(cardSlug, true);
     score.correct++;
     current++;
     showCard();
@@ -347,7 +348,7 @@ const quizClientData = JSON.stringify({ cardData, apiBase });
     if (answerLocked) return;
     answerLocked = true;
     const cardSlug = queue[current]?.slug;
-    if (flipped && cardSlug) persistAnswer(cardSlug, false);
+    if (cardSlug) persistAnswer(cardSlug, false);
     score.wrong++;
     wrong.push(queue[current]);
     current++;
@@ -372,18 +373,25 @@ const quizClientData = JSON.stringify({ cardData, apiBase });
   });
 
   async function handleConnect() {
+    if (isConnecting) return false;
     const enteredKey = apiKeyInput.value.trim();
     if (!enteredKey) {
       setPersistenceStatus('Bitte API Key eingeben', 'error');
       return false;
     }
-
-    setPersistenceStatus('Prüfe API Key …', 'neutral');
-    const connected = await activateWithApiKey(enteredKey);
-    if (connected) {
-      apiKeyInput.value = '';
+    isConnecting = true;
+    btnConnect.disabled = true;
+    try {
+      setPersistenceStatus('Prüfe API Key …', 'neutral');
+      const connected = await activateWithApiKey(enteredKey);
+      if (connected) {
+        apiKeyInput.value = '';
+      }
+      return connected;
+    } finally {
+      isConnecting = false;
+      btnConnect.disabled = false;
     }
-    return connected;
   }
 
   btnConnect.addEventListener('click', () => {
