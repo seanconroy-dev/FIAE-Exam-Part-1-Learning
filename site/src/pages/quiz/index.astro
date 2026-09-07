@@ -211,6 +211,7 @@ const quizClientDataEscaped = quizClientData.replace(/<\//g, '<\\/');
   const persistenceStatus = document.getElementById('persistence-status');
   let activeApiKey = null;
   let isConnecting = false;
+  let authAttemptId = 0;
 
   function setPersistenceStatus(message, tone = 'neutral') {
     persistenceStatus.textContent = message;
@@ -225,7 +226,9 @@ const quizClientDataEscaped = quizClientData.replace(/<\//g, '<\\/');
   }
 
   async function activateWithApiKey(apiKey) {
+    const attemptId = ++authAttemptId;
     const authResult = await verifyApiKey(apiBase, apiKey);
+    if (attemptId !== authAttemptId) return false;
     if (!authResult.ok) {
       activeApiKey = null;
       clearStoredApiKey();

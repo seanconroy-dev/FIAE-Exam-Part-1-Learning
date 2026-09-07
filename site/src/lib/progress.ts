@@ -30,6 +30,12 @@ export function clearStoredApiKey(): void {
 
 function authHeaders(apiKey: string): HeadersInit {
   return {
+    'X-API-Key': apiKey,
+  };
+}
+
+function jsonAuthHeaders(apiKey: string): HeadersInit {
+  return {
     'Content-Type': 'application/json',
     'X-API-Key': apiKey,
   };
@@ -56,7 +62,7 @@ export async function postCardAnswerProgress(
   try {
     await fetch(`${apiBase}/api/progress/${encodeURIComponent(cardSlug)}/answer`, {
       method: 'POST',
-      headers: authHeaders(apiKey),
+      headers: jsonAuthHeaders(apiKey),
       body: JSON.stringify({ correct }),
     });
   } catch {
