@@ -65,14 +65,19 @@ export async function postCardAnswerProgress(
   apiKey: string,
   cardSlug: string,
   correct: boolean,
-): Promise<void> {
+): Promise<{ ok: boolean; status?: number; reason?: 'unauthorized' | 'http_error' | 'network_error' }> {
   try {
-    await fetch(`${apiBase}/api/progress/${encodeURIComponent(cardSlug)}/answer`, {
+    const response = await fetch(`${apiBase}/api/progress/${encodeURIComponent(cardSlug)}/answer`, {
       method: 'POST',
       headers: jsonAuthHeaders(apiKey),
       body: JSON.stringify({ correct }),
     });
+    if (response.ok) return { ok: true, status: response.status };
+    if (response.status === 401 || response.status === 403) {
+      return { ok: false, status: response.status, reason: 'unauthorized' };
+    }
+    return { ok: false, status: response.status, reason: 'http_error' };
   } catch {
-    // intentionally ignored: persistence failures must not block quiz flow
+    return { ok: false, reason: 'network_error' };
   }
 }

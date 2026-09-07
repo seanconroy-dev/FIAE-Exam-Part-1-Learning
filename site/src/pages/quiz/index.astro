@@ -46,10 +46,10 @@ const quizClientDataEscaped = quizClientData.replace(/<\//g, '<\\/');
           class="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           autocomplete="off"
         />
-        <button id="btn-connect" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
+        <button type="button" id="btn-connect" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-lg text-sm transition-colors">
           Verbinden
         </button>
-        <button id="btn-disconnect" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-4 py-2 rounded-lg text-sm transition-colors border border-gray-300">
+        <button type="button" id="btn-disconnect" class="bg-gray-100 hover:bg-gray-200 text-gray-700 font-semibold px-4 py-2 rounded-lg text-sm transition-colors border border-gray-300">
           Trennen
         </button>
       </div>
@@ -269,7 +269,16 @@ const quizClientDataEscaped = quizClientData.replace(/<\//g, '<\\/');
 
   async function persistAnswer(cardSlug, correct) {
     if (!activeApiKey) return;
-    void postCardAnswerProgress(apiBase, activeApiKey, cardSlug, correct);
+    const result = await postCardAnswerProgress(apiBase, activeApiKey, cardSlug, correct);
+    if (result.ok) return;
+    if (result.reason === 'unauthorized') {
+      clearStoredApiKey();
+      activeApiKey = null;
+      setPersistenceStatus('Persistenz deaktiviert: API Key abgelehnt', 'error');
+      updatePersistenceControls();
+      return;
+    }
+    setPersistenceStatus('Persistenzfehler – Quiz läuft lokal weiter', 'error');
   }
 
   // Pre-fill module from URL param
@@ -442,11 +451,15 @@ const quizClientDataEscaped = quizClientData.replace(/<\//g, '<\\/');
   updatePersistenceControls();
   const storedApiKey = getStoredApiKey();
   if (storedApiKey) {
-    beginAuthRequest();
-    setPersistenceStatus('Prüfe gespeicherte Verbindung …', 'neutral');
-    void activateWithApiKey(storedApiKey).finally(() => {
-      endAuthRequest();
-    });
+    void (async () => {
+      beginAuthRequest();
+      setPersistenceStatus('Prüfe gespeicherte Verbindung …', 'neutral');
+      try {
+        await activateWithApiKey(storedApiKey);
+      } finally {
+        endAuthRequest();
+      }
+    })();
   } else {
     setDisconnectedStatus();
   }
