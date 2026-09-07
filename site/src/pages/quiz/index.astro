@@ -180,6 +180,7 @@ const quizClientData = JSON.stringify({ cardData, apiBase });
   let current = 0;
   let score = { correct: 0, wrong: 0 };
   let flipped = false;
+  let answerLocked = false;
 
   const quizModule = document.getElementById('quiz-module');
   const btnStart = document.getElementById('btn-start');
@@ -278,6 +279,7 @@ const quizClientData = JSON.stringify({ cardData, apiBase });
     }
     const card = queue[current];
     flipped = false;
+    answerLocked = false;
     cardInner.style.transform = '';
     ratingButtons.classList.add('hidden');
     cardQuestion.textContent = card.question;
@@ -332,6 +334,8 @@ const quizClientData = JSON.stringify({ cardData, apiBase });
   });
 
   btnCorrect.addEventListener('click', () => {
+    if (answerLocked) return;
+    answerLocked = true;
     const cardSlug = queue[current]?.slug;
     if (flipped && cardSlug) persistAnswer(cardSlug, true);
     score.correct++;
@@ -340,6 +344,8 @@ const quizClientData = JSON.stringify({ cardData, apiBase });
   });
 
   btnWrong.addEventListener('click', () => {
+    if (answerLocked) return;
+    answerLocked = true;
     const cardSlug = queue[current]?.slug;
     if (flipped && cardSlug) persistAnswer(cardSlug, false);
     score.wrong++;
