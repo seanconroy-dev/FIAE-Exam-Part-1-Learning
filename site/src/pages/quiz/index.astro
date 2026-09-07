@@ -332,18 +332,16 @@ const quizClientData = JSON.stringify({ cardData, apiBase });
   });
 
   btnCorrect.addEventListener('click', () => {
-    if (!flipped) return;
     const cardSlug = queue[current]?.slug;
-    if (cardSlug) persistAnswer(cardSlug, true);
+    if (flipped && cardSlug) persistAnswer(cardSlug, true);
     score.correct++;
     current++;
     showCard();
   });
 
   btnWrong.addEventListener('click', () => {
-    if (!flipped) return;
     const cardSlug = queue[current]?.slug;
-    if (cardSlug) persistAnswer(cardSlug, false);
+    if (flipped && cardSlug) persistAnswer(cardSlug, false);
     score.wrong++;
     wrong.push(queue[current]);
     current++;
