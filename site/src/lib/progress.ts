@@ -41,15 +41,22 @@ function jsonAuthHeaders(apiKey: string): HeadersInit {
   };
 }
 
-export async function verifyApiKey(apiBase: string, apiKey: string): Promise<{ ok: boolean }> {
+export async function verifyApiKey(
+  apiBase: string,
+  apiKey: string,
+): Promise<{ ok: boolean; status?: number; reason?: 'unauthorized' | 'http_error' | 'network_error' }> {
   try {
     const response = await fetch(`${apiBase}/api/auth/me`, {
       method: 'GET',
       headers: authHeaders(apiKey),
     });
-    return { ok: response.ok };
+    if (response.ok) return { ok: true, status: response.status };
+    if (response.status === 401 || response.status === 403) {
+      return { ok: false, status: response.status, reason: 'unauthorized' };
+    }
+    return { ok: false, status: response.status, reason: 'http_error' };
   } catch {
-    return { ok: false };
+    return { ok: false, reason: 'network_error' };
   }
 }
 

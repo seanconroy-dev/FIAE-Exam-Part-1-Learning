@@ -210,14 +210,25 @@ const quizClientDataEscaped = quizClientData.replace(/<\//g, '<\\/');
   const btnDisconnect = document.getElementById('btn-disconnect');
   const persistenceStatus = document.getElementById('persistence-status');
   let activeApiKey = null;
-  let isConnecting = false;
+  let pendingAuthRequests = 0;
   let authAttemptId = 0;
 
   function updatePersistenceControls() {
     const isActive = Boolean(activeApiKey);
+    const isConnecting = pendingAuthRequests > 0;
     apiKeyInput.disabled = isActive || isConnecting;
     btnConnect.disabled = isActive || isConnecting;
     btnDisconnect.disabled = !isActive;
+  }
+
+  function beginAuthRequest() {
+    pendingAuthRequests += 1;
+    updatePersistenceControls();
+  }
+
+  function endAuthRequest() {
+    pendingAuthRequests = Math.max(0, pendingAuthRequests - 1);
+    updatePersistenceControls();
   }
 
   function setPersistenceStatus(message, tone = 'neutral') {
@@ -240,7 +251,11 @@ const quizClientDataEscaped = quizClientData.replace(/<\//g, '<\\/');
     if (!authResult.ok) {
       activeApiKey = null;
       clearStoredApiKey();
-      setPersistenceStatus('Verbindung fehlgeschlagen', 'error');
+      if (authResult.reason === 'unauthorized') {
+        setPersistenceStatus('API Key ungültig oder nicht freigeschaltet', 'error');
+      } else {
+        setPersistenceStatus('Verbindung fehlgeschlagen', 'error');
+      }
       updatePersistenceControls();
       return false;
     }
@@ -386,14 +401,13 @@ const quizClientDataEscaped = quizClientData.replace(/<\//g, '<\\/');
   });
 
   async function handleConnect() {
-    if (isConnecting) return false;
+    if (pendingAuthRequests > 0) return false;
     const enteredKey = apiKeyInput.value.trim();
     if (!enteredKey) {
       setPersistenceStatus('Bitte API Key eingeben', 'error');
       return false;
     }
-    isConnecting = true;
-    updatePersistenceControls();
+    beginAuthRequest();
     try {
       setPersistenceStatus('Prüfe API Key …', 'neutral');
       const connected = await activateWithApiKey(enteredKey);
@@ -402,8 +416,7 @@ const quizClientDataEscaped = quizClientData.replace(/<\//g, '<\\/');
       }
       return connected;
     } finally {
-      isConnecting = false;
-      updatePersistenceControls();
+      endAuthRequest();
     }
   }
 
@@ -429,8 +442,11 @@ const quizClientDataEscaped = quizClientData.replace(/<\//g, '<\\/');
   updatePersistenceControls();
   const storedApiKey = getStoredApiKey();
   if (storedApiKey) {
+    beginAuthRequest();
     setPersistenceStatus('Prüfe gespeicherte Verbindung …', 'neutral');
-    void activateWithApiKey(storedApiKey);
+    void activateWithApiKey(storedApiKey).finally(() => {
+      endAuthRequest();
+    });
   } else {
     setDisconnectedStatus();
   }
