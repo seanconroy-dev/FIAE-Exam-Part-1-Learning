@@ -47,6 +47,17 @@ Configure the backend base URL:
 PUBLIC_API_BASE=https://fiae-exam-part-1-backend-production.up.railway.app
 ```
 
+## API key auth
+
+The site keeps an optional backend API key in `localStorage` under `apiKey`.
+
+- Public card endpoints stay unauthenticated.
+- Protected frontend requests add `X-API-Key` automatically for:
+  - `GET /api/auth/me`
+  - `GET /api/progress`
+  - `POST /api/progress/{cardSlug}/answer`
+- If a saved key exists, the app verifies it on load and shows the current auth status in the header.
+
 ---
 
 ## Content Format (Frontmatter + Conventions)

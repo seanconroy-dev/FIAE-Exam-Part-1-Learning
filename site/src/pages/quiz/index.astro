@@ -34,6 +34,9 @@ const cardData = cards.map(c => ({
         Starten
       </button>
     </div>
+    <p id="sync-status" class="text-sm text-gray-500">
+      Ohne API-Key läuft das Quiz lokal ohne Fortschrittssynchronisierung.
+    </p>
 
     <!-- Progress bar -->
     <div id="progress-wrap" class="hidden">
@@ -168,6 +171,7 @@ const cardData = cards.map(c => ({
   const btnRetryWrong = document.getElementById('btn-retry-wrong');
   const btnRestart = document.getElementById('btn-restart');
   const emptyState = document.getElementById('empty-state');
+  const syncStatus = document.getElementById('sync-status');
 
   // Pre-fill module from URL param
   const urlParams = new URLSearchParams(window.location.search);
@@ -184,6 +188,97 @@ const cardData = cards.map(c => ({
       [a[i], a[j]] = [a[j], a[i]];
     }
     return a;
+  }
+
+  function setSyncStatus(message, tone = 'muted') {
+    syncStatus.textContent = message;
+    syncStatus.className = {
+      muted: 'text-sm text-gray-500',
+      success: 'text-sm text-green-600',
+      error: 'text-sm text-red-600',
+    }[tone];
+  }
+
+  function countProgressEntries(payload) {
+    if (Array.isArray(payload)) return payload.length;
+    if (!payload || typeof payload !== 'object') return null;
+    if (Array.isArray(payload.items)) return payload.items.length;
+    if (payload.progress && typeof payload.progress === 'object') return Object.keys(payload.progress).length;
+    return Object.keys(payload).length;
+  }
+
+  async function loadProgress() {
+    if (!window.fiaeAuth) {
+      setSyncStatus('Fortschrittssync ist gerade nicht verfügbar.', 'error');
+      return null;
+    }
+
+    if (!window.fiaeAuth.hasApiKey()) {
+      setSyncStatus('Ohne API-Key läuft das Quiz lokal ohne Fortschrittssynchronisierung.');
+      return null;
+    }
+
+    setSyncStatus('Lade gespeicherten Fortschritt …');
+
+    try {
+      const response = await window.fiaeAuth.apiFetch('/api/progress');
+      let payload = null;
+
+      try {
+        payload = await response.clone().json();
+      } catch {
+        payload = null;
+      }
+
+      if (response.ok) {
+        const entryCount = countProgressEntries(payload);
+        setSyncStatus(
+          entryCount === null
+            ? 'Fortschrittssync aktiv.'
+            : `Fortschrittssync aktiv (${entryCount} Einträge geladen).`,
+          'success',
+        );
+        return payload;
+      }
+
+      setSyncStatus(
+        response.status === 401 || response.status === 403
+          ? 'API-Key abgelehnt; Fortschritt wird nicht synchronisiert.'
+          : `Fortschritt konnte nicht geladen werden (${response.status}).`,
+        'error',
+      );
+      return null;
+    } catch {
+      setSyncStatus('Backend für Fortschrittssync nicht erreichbar.', 'error');
+      return null;
+    }
+  }
+
+  async function submitAnswer(card, wasCorrect) {
+    if (!window.fiaeAuth?.hasApiKey()) {
+      return;
+    }
+
+    try {
+      const response = await window.fiaeAuth.apiFetch(`/api/progress/${encodeURIComponent(card.slug)}/answer`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ wasCorrect }),
+      });
+
+      if (response.ok) {
+        setSyncStatus('Fortschrittssync aktiv.', 'success');
+        return;
+      }
+
+      if (response.status === 401 || response.status === 403) {
+        setSyncStatus('API-Key abgelehnt; Fortschritt wird nicht mehr synchronisiert.', 'error');
+      }
+    } catch {
+      setSyncStatus('Antwort konnte nicht synchronisiert werden.', 'error');
+    }
   }
 
   function startQuiz(cards) {
@@ -259,12 +354,14 @@ const cardData = cards.map(c => ({
   });
 
   btnCorrect.addEventListener('click', () => {
+    void submitAnswer(queue[current], true);
     score.correct++;
     current++;
     showCard();
   });
 
   btnWrong.addEventListener('click', () => {
+    void submitAnswer(queue[current], false);
     score.wrong++;
     wrong.push(queue[current]);
     current++;
@@ -288,6 +385,11 @@ const cardData = cards.map(c => ({
     startQuiz(filtered);
   });
 
+  window.addEventListener('fiae:auth-changed', () => {
+    void loadProgress();
+  });
+
   // Auto-start if module is pre-selected from URL
   if (urlModule) btnStart.click();
+  void loadProgress();
 </script>
