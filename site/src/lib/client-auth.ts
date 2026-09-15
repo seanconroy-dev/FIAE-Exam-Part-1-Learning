@@ -161,7 +161,7 @@ export async function refreshAuthStatus(ui?: AuthUiRefs): Promise<void> {
     );
     emitAuthChange({ apiKey, authenticated: false, user: payload });
   } catch {
-    setStatus(ui?.status ?? null, 'Backend nicht erreichbar.', 'error');
+    setStatus(ui?.status ?? null, 'Backend nicht erreichbar. API-Key bleibt lokal gespeichert.', 'error');
     emitAuthChange({ apiKey, authenticated: false });
   }
 }
