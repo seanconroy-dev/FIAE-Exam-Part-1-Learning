@@ -6,6 +6,7 @@ import {
   clearResetTombstone,
   createEmptyStore,
   createNewSnapshot,
+  dedupeCardsBySlug,
   deriveScore,
   hasPendingResetTombstone,
   loadStore,
@@ -52,6 +53,35 @@ describe('quiz-state local-first persistence', () => {
     const cards = [{ slug: 'a' }, { slug: 'b' }, { slug: 'c' }];
     const queue = restoreQueueFromSlugs(['c', 'a'], cards);
     expect(queue?.map((c) => c.slug)).toEqual(['c', 'a']);
+  });
+
+  it('2a. duplicate source slugs keep the first card and original order', () => {
+    const cards = [{ slug: 'a', title: 'first' }, { slug: 'b' }, { slug: 'a', title: 'second' }, { slug: 'c' }];
+    expect(dedupeCardsBySlug(cards)).toEqual([
+      { slug: 'a', title: 'first' },
+      { slug: 'b' },
+      { slug: 'c' },
+    ]);
+    const snapshot = createNewSnapshot({
+      moduleKey: ALL_MODULE_KEY,
+      moduleName: null,
+      queueSlugs: dedupeCardsBySlug(cards).map((card) => card.slug),
+      nowIso: '2026-09-16T19:00:00Z',
+    });
+    expect(new Set(snapshot.queueSlugs).size).toBe(snapshot.queueSlugs.length);
+  });
+
+  it('2b. module-specific queues deduplicate independently', () => {
+    const cards = [
+      { slug: 'shared', module: 'module-a' },
+      { slug: 'shared', module: 'module-a' },
+      { slug: 'shared', module: 'module-b' },
+      { slug: 'unique', module: 'module-b' },
+    ];
+    expect(dedupeCardsBySlug(cards.filter((card) => card.module === 'module-a')).map((card) => card.slug))
+      .toEqual(['shared']);
+    expect(dedupeCardsBySlug(cards.filter((card) => card.module === 'module-b')).map((card) => card.slug))
+      .toEqual(['shared', 'unique']);
   });
 
   it('3. correct answer updates resultsBySlug', () => {
