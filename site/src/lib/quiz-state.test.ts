@@ -3,6 +3,7 @@ import {
   ALL_MODULE_KEY,
   buildHistoricalAnswerBody,
   compareSnapshots,
+  clearResetTombstone,
   createEmptyStore,
   createNewSnapshot,
   deriveScore,
@@ -224,6 +225,18 @@ describe('quiz-state local-first persistence', () => {
     expect(compareSnapshots(local, remote)).toBe('equal');
   });
 
+  it('17a. equal revisions ignore backend updatedAt differences', () => {
+    const base = createNewSnapshot({
+      moduleKey: ALL_MODULE_KEY,
+      moduleName: null,
+      queueSlugs: ['a'],
+      nowIso: '2026-09-16T19:00:00Z',
+    });
+    const local = { ...base, revision: 5, updatedAt: '2026-09-16T19:01:00Z' };
+    const remote = { ...base, revision: 5, updatedAt: '2026-09-16T19:02:00Z' };
+    expect(compareSnapshots(local, remote)).toBe('equal');
+  });
+
   it('18. equal differing revisions are conflict', () => {
     const base = createNewSnapshot({
       moduleKey: ALL_MODULE_KEY,
@@ -292,6 +305,60 @@ describe('quiz-state local-first persistence', () => {
   it('22. reset tombstone blocks stale-remote restore path', () => {
     const store = markResetTombstone(createEmptyStore(), 'mod-a', '2026-09-16T19:00:00Z');
     expect(hasPendingResetTombstone(store, 'mod-a')).toBe(true);
+  });
+
+  it('22a. reset keeps the new local quiz after the remote delete clears', () => {
+    const oldSnapshot = createNewSnapshot({
+      moduleKey: 'mod-a',
+      moduleName: 'Module A',
+      queueSlugs: ['a'],
+      nowIso: '2026-09-16T19:00:00Z',
+    });
+    const oldStore = setModuleSnapshot(createEmptyStore(), { ...oldSnapshot, revision: 10 });
+    const resetStore = markResetTombstone(oldStore, 'mod-a', '2026-09-16T19:01:00Z');
+    const newSnapshot = createNewSnapshot({
+      moduleKey: 'mod-a',
+      moduleName: 'Module A',
+      queueSlugs: ['b'],
+      nowIso: '2026-09-16T19:02:00Z',
+      previousRevision: oldSnapshot.revision,
+    });
+    const afterDelete = clearResetTombstone(setModuleSnapshot(resetStore, newSnapshot), 'mod-a');
+    expect(afterDelete.states['mod-a']).toEqual(newSnapshot);
+    expect(hasPendingResetTombstone(afterDelete, 'mod-a')).toBe(false);
+  });
+
+  it('22b. malformed module state does not discard valid state or API key', () => {
+    const storage = new MemoryStorage();
+    const valid = createNewSnapshot({
+      moduleKey: 'mod-a',
+      moduleName: 'Module A',
+      queueSlugs: ['a'],
+      nowIso: '2026-09-16T19:00:00Z',
+    });
+    storage.setItem('apiKey', 'still-there');
+    storage.setItem('fiaeQuizStateV1', JSON.stringify({
+      lastActiveModuleKey: 'mod-a',
+      states: { 'mod-a': valid, 'mod-b': { broken: true } },
+      tombstones: { 'mod-c': { moduleKey: 'mod-c', createdAt: '2026-09-16T19:00:00Z', pendingRemoteDelete: true } },
+    }));
+    const loaded = loadStore(storage);
+    expect(loaded.states['mod-a']).toEqual(valid);
+    expect(loaded.states['mod-b']).toBeUndefined();
+    expect(loaded.tombstones['mod-c']).toBeDefined();
+    expect(storage.getItem('apiKey')).toBe('still-there');
+  });
+
+  it('22c. malformed last-active module is cleared', () => {
+    const storage = new MemoryStorage();
+    storage.setItem('fiaeQuizStateV1', JSON.stringify({
+      lastActiveModuleKey: 'mod-b',
+      states: { 'mod-b': { broken: true } },
+      tombstones: {},
+    }));
+    const loaded = loadStore(storage);
+    expect(loaded.states).toEqual({});
+    expect(loaded.lastActiveModuleKey).toBeNull();
   });
 
   it('23. historical answer payload uses { correct } field', () => {

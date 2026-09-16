@@ -636,7 +636,7 @@ const cardData = cards.map(c => ({
     const moduleKey = store.lastActiveModuleKey;
     if (!moduleKey) return false;
     const snapshot = store.states[moduleKey];
-    if (!snapshot || snapshot.completed) return false;
+    if (!snapshot) return false;
     if (!setActiveSnapshot(snapshot, { persist: false })) return false;
     if (snapshot.moduleName) {
       const match = Array.from(quizModule.options).find(option => option.value === snapshot.moduleName);
@@ -651,19 +651,20 @@ const cardData = cards.map(c => ({
     if (!urlModule) return;
     const option = Array.from(quizModule.options).find(entry => entry.value === urlModule);
     if (option) option.selected = true;
+    return option?.value ?? null;
   }
 
   async function initializeQuizState() {
     store = loadStore(window.localStorage);
     sanitizeAndPersistStore();
-    restoreSelectedModuleFromUrl();
-    const restoredLastActive = restoreLastActiveState();
-    if (!restoredLastActive) {
-      renderCurrentCard();
-    }
+    const requestedModuleName = restoreSelectedModuleFromUrl();
+    const restoredLastActive = requestedModuleName ? false : restoreLastActiveState();
+    if (!restoredLastActive && !requestedModuleName) renderCurrentCard();
     await checkBackendReachability();
     await syncPendingDeletes();
-    if (restoredLastActive && activeSnapshot) {
+    if (requestedModuleName) {
+      await restoreOrStartModule(requestedModuleName);
+    } else if (restoredLastActive && activeSnapshot) {
       await syncWithRemoteIfNeeded(activeSnapshot.moduleKey);
     }
     updateStartButtonLabel();

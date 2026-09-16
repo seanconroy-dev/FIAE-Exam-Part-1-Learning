@@ -91,24 +91,25 @@ function toStore(value: unknown): QuizStateStoreV1 | null {
 
   const states: Record<string, QuizSnapshot> = {};
   for (const [moduleKey, snapshot] of Object.entries(value.states)) {
-    if (!validateSnapshotShape(snapshot)) return null;
+    if (!validateSnapshotShape(snapshot) || snapshot.moduleKey !== moduleKey) continue;
     states[moduleKey] = snapshot;
   }
 
   const tombstones: Record<string, QuizResetTombstone> = {};
-  if (value.tombstones !== undefined) {
-    if (!isRecord(value.tombstones)) return null;
+  if (value.tombstones !== undefined && isRecord(value.tombstones)) {
     for (const [moduleKey, marker] of Object.entries(value.tombstones)) {
-      if (!isRecord(marker)) return null;
-      if (marker.moduleKey !== moduleKey) return null;
-      if (!isIsoDateLike(marker.createdAt)) return null;
-      if (typeof marker.pendingRemoteDelete !== 'boolean') return null;
+      if (!isRecord(marker)) continue;
+      if (marker.moduleKey !== moduleKey) continue;
+      if (!isIsoDateLike(marker.createdAt)) continue;
+      if (typeof marker.pendingRemoteDelete !== 'boolean') continue;
       tombstones[moduleKey] = marker as QuizResetTombstone;
     }
   }
 
   return {
-    lastActiveModuleKey: value.lastActiveModuleKey,
+    lastActiveModuleKey: value.lastActiveModuleKey && states[value.lastActiveModuleKey]
+      ? value.lastActiveModuleKey
+      : null,
     states,
     tombstones,
   };
@@ -123,6 +124,13 @@ export function loadStore(storage: StorageLike): QuizStateStoreV1 {
     if (!store) {
       storage.removeItem(QUIZ_STATE_STORAGE_KEY);
       return createEmptyStore();
+    }
+    if (JSON.stringify(store) !== raw) {
+      try {
+        saveStore(storage, store);
+      } catch {
+        // Keep the sanitized store in memory when storage is unavailable.
+      }
     }
     return store;
   } catch {
@@ -281,7 +289,6 @@ export function sameSnapshot(a: QuizSnapshot, b: QuizSnapshot): boolean {
   if (a.completed !== b.completed) return false;
   if (a.revision !== b.revision) return false;
   if (a.startedAt !== b.startedAt) return false;
-  if (a.updatedAt !== b.updatedAt) return false;
   if (a.queueSlugs.length !== b.queueSlugs.length) return false;
   for (let i = 0; i < a.queueSlugs.length; i += 1) {
     if (a.queueSlugs[i] !== b.queueSlugs[i]) return false;
