@@ -22,6 +22,7 @@ const cardData = cards.map(c => ({
   examples: c.card.examples ?? [],
   type: c.card.type,
 }));
+const quizData = JSON.stringify({ cardData, base, apiBase, moduleKeyMap }).replace(/</g, '\\u003c');
 ---
 <Base title="Quiz – FIAE Exam 1">
   <div class="max-w-2xl lg:max-w-4xl mx-auto space-y-6">
@@ -126,7 +127,9 @@ const cardData = cards.map(c => ({
   </div>
 </Base>
 
-<script define:vars={{ cardData, base, apiBase, moduleKeyMap }}>
+<script id="quiz-data" type="application/json" set:html={quizData}></script>
+
+<script>
   import {
     ALL_MODULE_KEY,
     buildHistoricalAnswerBody,
@@ -145,6 +148,10 @@ const cardData = cards.map(c => ({
     setModuleSnapshot,
     validateSnapshotAgainstCards,
   } from '../../lib/quiz-state';
+
+  const { cardData, base, apiBase, moduleKeyMap } = JSON.parse(
+    document.getElementById('quiz-data')?.textContent ?? '{}',
+  );
 
   // Simple markdown bold/italic renderer for answer text
   function renderMd(text) {
