@@ -70,7 +70,8 @@ export function isProtectedApiPath(path: string): boolean {
   return (
     path === '/api/auth/me' ||
     path === '/api/progress' ||
-    /^\/api\/progress\/[^/]+\/answer$/.test(path)
+    /^\/api\/progress\/[^/]+\/answer$/.test(path) ||
+    /^\/api\/quiz-state\/[^/]+$/.test(path)
   );
 }
 
