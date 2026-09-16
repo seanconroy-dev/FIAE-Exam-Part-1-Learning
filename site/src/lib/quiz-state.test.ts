@@ -53,7 +53,7 @@ describe('quiz-state local-first persistence', () => {
     expect(queue?.map((c) => c.slug)).toEqual(['c', 'a']);
   });
 
-  it('3-6. answers update state, advance index, and complete at end', () => {
+  it('3. correct answer updates resultsBySlug', () => {
     let snapshot = createNewSnapshot({
       moduleKey: ALL_MODULE_KEY,
       moduleName: null,
@@ -63,18 +63,51 @@ describe('quiz-state local-first persistence', () => {
 
     snapshot = recordAnswer({ snapshot, slug: 'a', correct: true, nowIso: '2026-09-16T19:01:00Z' });
     expect(snapshot.resultsBySlug.a).toBe('correct');
-    expect(snapshot.currentIndex).toBe(1);
-    expect(snapshot.completed).toBe(false);
+  });
 
+  it('4. wrong answer updates resultsBySlug', () => {
+    let snapshot = createNewSnapshot({
+      moduleKey: ALL_MODULE_KEY,
+      moduleName: null,
+      queueSlugs: ['a', 'b'],
+      nowIso: '2026-09-16T19:00:00Z',
+    });
+    snapshot = recordAnswer({ snapshot, slug: 'a', correct: false, nowIso: '2026-09-16T19:01:00Z' });
+    expect(snapshot.resultsBySlug.a).toBe('wrong');
+  });
+
+  it('5. currentIndex advances', () => {
+    let snapshot = createNewSnapshot({
+      moduleKey: ALL_MODULE_KEY,
+      moduleName: null,
+      queueSlugs: ['a', 'b'],
+      nowIso: '2026-09-16T19:00:00Z',
+    });
+    snapshot = recordAnswer({ snapshot, slug: 'a', correct: true, nowIso: '2026-09-16T19:01:00Z' });
+    expect(snapshot.currentIndex).toBe(1);
+  });
+
+  it('6. completed becomes true at end', () => {
+    let snapshot = createNewSnapshot({
+      moduleKey: ALL_MODULE_KEY,
+      moduleName: null,
+      queueSlugs: ['a', 'b'],
+      nowIso: '2026-09-16T19:00:00Z',
+    });
+    snapshot = recordAnswer({ snapshot, slug: 'a', correct: true, nowIso: '2026-09-16T19:01:00Z' });
+    expect(snapshot.completed).toBe(false);
     snapshot = recordAnswer({ snapshot, slug: 'b', correct: false, nowIso: '2026-09-16T19:02:00Z' });
-    expect(snapshot.resultsBySlug.b).toBe('wrong');
     expect(snapshot.currentIndex).toBe(2);
     expect(snapshot.completed).toBe(true);
   });
 
-  it('7-8. derives correct and wrong counts from resultsBySlug', () => {
+  it('7. correct count derives correctly', () => {
     const score = deriveScore({ a: 'correct', b: 'wrong', c: 'correct' });
     expect(score.correct).toBe(2);
+  });
+
+  it('8. wrong count derives correctly', () => {
+    const score = deriveScore({ a: 'correct', b: 'wrong', c: 'correct' });
     expect(score.wrong).toBe(1);
     expect(score.completedCount).toBe(3);
   });
@@ -155,7 +188,7 @@ describe('quiz-state local-first persistence', () => {
     expect(validateSnapshotAgainstCards(snapshot, knownSlugs)).toBe(false);
   });
 
-  it('15-18. revision comparison handles newer/equal/conflict rules', () => {
+  it('15. local higher revision wins over older remote', () => {
     const base = createNewSnapshot({
       moduleKey: ALL_MODULE_KEY,
       moduleName: null,
@@ -165,9 +198,54 @@ describe('quiz-state local-first persistence', () => {
     const localNewer = { ...base, revision: 5 };
     const remoteOlder = { ...base, revision: 3 };
     expect(compareSnapshots(localNewer, remoteOlder)).toBe('local-newer');
+  });
+
+  it('16. remote higher revision replaces older local', () => {
+    const base = createNewSnapshot({
+      moduleKey: ALL_MODULE_KEY,
+      moduleName: null,
+      queueSlugs: ['a'],
+      nowIso: '2026-09-16T19:00:00Z',
+    });
+    const localOlder = { ...base, revision: 3 };
+    const remoteNewer = { ...base, revision: 5 };
+    expect(compareSnapshots(localOlder, remoteNewer)).toBe('remote-newer');
+  });
+
+  it('17. equal identical revisions are synchronized', () => {
+    const base = createNewSnapshot({
+      moduleKey: ALL_MODULE_KEY,
+      moduleName: null,
+      queueSlugs: ['a'],
+      nowIso: '2026-09-16T19:00:00Z',
+    });
+    const local = { ...base, revision: 5 };
+    const remote = { ...base, revision: 5 };
+    expect(compareSnapshots(local, remote)).toBe('equal');
+  });
+
+  it('18. equal differing revisions are conflict', () => {
+    const base = createNewSnapshot({
+      moduleKey: ALL_MODULE_KEY,
+      moduleName: null,
+      queueSlugs: ['a'],
+      nowIso: '2026-09-16T19:00:00Z',
+    });
+    const local = { ...base, revision: 5, resultsBySlug: { a: 'correct' as const } };
+    const remote = { ...base, revision: 5, resultsBySlug: { a: 'wrong' as const } };
+    expect(compareSnapshots(local, remote)).toBe('conflict');
+  });
+
+  it('revision helper remains directional', () => {
+    const base = createNewSnapshot({
+      moduleKey: ALL_MODULE_KEY,
+      moduleName: null,
+      queueSlugs: ['a'],
+      nowIso: '2026-09-16T19:00:00Z',
+    });
+    const localNewer = { ...base, revision: 5 };
+    const remoteOlder = { ...base, revision: 3 };
     expect(compareSnapshots(remoteOlder, localNewer)).toBe('remote-newer');
-    expect(compareSnapshots(localNewer, { ...localNewer })).toBe('equal');
-    expect(compareSnapshots(localNewer, { ...localNewer, resultsBySlug: { a: 'wrong' } })).toBe('conflict');
   });
 
   it('19. missing API key does not prevent local saving', () => {
