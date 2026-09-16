@@ -136,6 +136,7 @@ const quizData = JSON.stringify({ cardData, base, apiBase, moduleKeyMap }).repla
     clearResetTombstone,
     compareSnapshots,
     createNewSnapshot,
+    dedupeCardsBySlug,
     deriveScore,
     hasPendingResetTombstone,
     loadStore,
@@ -273,7 +274,8 @@ const quizData = JSON.stringify({ cardData, base, apiBase, moduleKeyMap }).repla
   }
 
   function getCardsForModule(moduleName) {
-    return moduleName ? cardData.filter(card => card.module === moduleName) : cardData;
+    const cardsForModule = moduleName ? cardData.filter(card => card.module === moduleName) : cardData;
+    return dedupeCardsBySlug(cardsForModule);
   }
 
   function updateStartButtonLabel() {

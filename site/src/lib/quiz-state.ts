@@ -270,6 +270,15 @@ export function restoreQueueFromSlugs<T extends { slug: string }>(queueSlugs: st
   return queue;
 }
 
+export function dedupeCardsBySlug<T extends { slug: string }>(cards: T[]): T[] {
+  const seenSlugs = new Set<string>();
+  return cards.filter((card) => {
+    if (seenSlugs.has(card.slug)) return false;
+    seenSlugs.add(card.slug);
+    return true;
+  });
+}
+
 function sameResults(a: Record<string, QuizAnswerResult>, b: Record<string, QuizAnswerResult>): boolean {
   const aKeys = Object.keys(a).sort();
   const bKeys = Object.keys(b).sort();
