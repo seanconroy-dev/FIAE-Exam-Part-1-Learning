@@ -12,6 +12,7 @@ import {
   loadStore,
   markResetTombstone,
   recordAnswer,
+  removeModuleSnapshot,
   restoreQueueFromSlugs,
   sanitizeStore,
   saveStore,
@@ -337,7 +338,31 @@ describe('quiz-state local-first persistence', () => {
     expect(hasPendingResetTombstone(store, 'mod-a')).toBe(true);
   });
 
-  it('22a. reset keeps the new local quiz after the remote delete clears', () => {
+  it('22a. resetting one module removes only its snapshot and marks its tombstone', () => {
+    let store = createEmptyStore();
+    const active = createNewSnapshot({
+      moduleKey: 'mod-a',
+      moduleName: 'Module A',
+      queueSlugs: ['a'],
+      nowIso: '2026-09-16T19:00:00Z',
+    });
+    const other = createNewSnapshot({
+      moduleKey: 'mod-b',
+      moduleName: 'Module B',
+      queueSlugs: ['b'],
+      nowIso: '2026-09-16T19:01:00Z',
+    });
+    store = setModuleSnapshot(store, active);
+    store = setModuleSnapshot(store, other);
+    store = removeModuleSnapshot(store, active.moduleKey);
+    store = markResetTombstone(store, active.moduleKey, '2026-09-16T19:02:00Z');
+    expect(store.states['mod-a']).toBeUndefined();
+    expect(store.states['mod-b']).toEqual(other);
+    expect(store.lastActiveModuleKey).toBe('mod-b');
+    expect(hasPendingResetTombstone(store, 'mod-a')).toBe(true);
+  });
+
+  it('22b. reset keeps the new local quiz after the remote delete clears', () => {
     const oldSnapshot = createNewSnapshot({
       moduleKey: 'mod-a',
       moduleName: 'Module A',
@@ -358,7 +383,7 @@ describe('quiz-state local-first persistence', () => {
     expect(hasPendingResetTombstone(afterDelete, 'mod-a')).toBe(false);
   });
 
-  it('22b. malformed module state does not discard valid state or API key', () => {
+  it('22c. malformed module state does not discard valid state or API key', () => {
     const storage = new MemoryStorage();
     const valid = createNewSnapshot({
       moduleKey: 'mod-a',
@@ -379,7 +404,7 @@ describe('quiz-state local-first persistence', () => {
     expect(storage.getItem('apiKey')).toBe('still-there');
   });
 
-  it('22c. malformed last-active module is cleared', () => {
+  it('22d. malformed last-active module is cleared', () => {
     const storage = new MemoryStorage();
     storage.setItem('fiaeQuizStateV1', JSON.stringify({
       lastActiveModuleKey: 'mod-b',

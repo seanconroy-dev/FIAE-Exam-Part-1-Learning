@@ -50,6 +50,11 @@ const quizData = JSON.stringify({ cardData, base, apiBase, moduleKeyMap }).repla
         <div id="progress-bar" class="h-full bg-blue-500 transition-all duration-300" style="width:0%"></div>
       </div>
     </div>
+    <div id="active-reset-wrap" class="hidden flex justify-end">
+      <button id="btn-reset-active" type="button" class="text-xs text-red-700 border border-red-200 hover:bg-red-50 font-semibold px-3 py-1.5 rounded-lg transition-colors">
+        Fortschritt zurücksetzen
+      </button>
+    </div>
 
     <!-- Flashcard -->
     <div id="card-wrap" class="hidden">
@@ -198,6 +203,8 @@ const quizData = JSON.stringify({ cardData, base, apiBase, moduleKeyMap }).repla
   const progressText = document.getElementById('progress-text');
   const scoreText = document.getElementById('score-text');
   const progressBar = document.getElementById('progress-bar');
+  const activeResetWrap = document.getElementById('active-reset-wrap');
+  const btnResetActive = document.getElementById('btn-reset-active');
   const cardWrap = document.getElementById('card-wrap');
   const flipCard = document.getElementById('flip-card');
   const cardInner = document.getElementById('card-inner');
@@ -294,6 +301,7 @@ const quizData = JSON.stringify({ cardData, base, apiBase, moduleKeyMap }).repla
     if (!activeSnapshot) {
       emptyState.classList.remove('hidden');
       progressWrap.classList.add('hidden');
+      activeResetWrap.classList.add('hidden');
       cardWrap.classList.add('hidden');
       finishWrap.classList.add('hidden');
       updateStartButtonLabel();
@@ -307,6 +315,7 @@ const quizData = JSON.stringify({ cardData, base, apiBase, moduleKeyMap }).repla
 
     emptyState.classList.add('hidden');
     progressWrap.classList.remove('hidden');
+    activeResetWrap.classList.toggle('hidden', activeSnapshot.completed || activeSnapshot.currentIndex >= activeQueue.length);
 
     if (activeSnapshot.completed || activeSnapshot.currentIndex >= activeQueue.length) {
       cardWrap.classList.add('hidden');
@@ -620,14 +629,33 @@ const quizData = JSON.stringify({ cardData, base, apiBase, moduleKeyMap }).repla
     const moduleName = activeSnapshot.moduleName;
     const moduleKey = activeSnapshot.moduleKey;
     const previousRevision = activeSnapshot.revision;
-    store = removeModuleSnapshot(store, moduleKey);
-    store = markResetTombstone(store, moduleKey, nowIso());
-    persistStore();
+    resetStoredModule(moduleKey);
     createAndStartNewSnapshot({ moduleName, previousRevision });
     await syncPendingDeletes();
     if (!hasPendingResetTombstone(store, moduleKey) && activeSnapshot) {
       void syncSnapshot(activeSnapshot);
     }
+  }
+
+  function resetStoredModule(moduleKey) {
+    store = removeModuleSnapshot(store, moduleKey);
+    store = markResetTombstone(store, moduleKey, nowIso());
+    persistStore();
+  }
+
+  async function resetActiveQuiz() {
+    if (!activeSnapshot || activeSnapshot.completed) return;
+    if (!window.confirm('Aktuellen Quiz-Fortschritt wirklich löschen?')) return;
+
+    const moduleKey = activeSnapshot.moduleKey;
+    resetStoredModule(moduleKey);
+    activeSnapshot = null;
+    activeQueue = [];
+    flipped = false;
+    cardInner.style.transform = '';
+    ratingButtons.classList.add('hidden');
+    renderCurrentCard();
+    await syncPendingDeletes();
   }
 
   function retryWrongCards() {
@@ -697,6 +725,9 @@ const quizData = JSON.stringify({ cardData, base, apiBase, moduleKeyMap }).repla
 
   quizModule.addEventListener('change', updateStartButtonLabel);
   btnRetryWrong.addEventListener('click', retryWrongCards);
+  btnResetActive.addEventListener('click', () => {
+    void resetActiveQuiz();
+  });
   btnRestart.addEventListener('click', () => {
     void restartActiveQuiz();
   });
