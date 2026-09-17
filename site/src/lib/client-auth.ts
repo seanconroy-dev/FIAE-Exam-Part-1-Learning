@@ -3,6 +3,9 @@ const API_KEY_STORAGE_KEY = 'apiKey';
 type AuthUiRefs = {
   input: HTMLInputElement;
   status: HTMLElement;
+  controls?: HTMLElement;
+  toggle?: HTMLButtonElement;
+  compactStatus?: HTMLElement;
 };
 
 type AuthChangeDetail = {
@@ -16,6 +19,23 @@ function getApiBase(): string {
 }
 
 function setStatus(statusEl: HTMLElement | null, message: string, tone: 'muted' | 'success' | 'error' = 'muted') {
+  if (!statusEl) return;
+
+  statusEl.textContent = message;
+  statusEl.className = {
+    muted: 'text-xs text-gray-500',
+    success: 'text-xs text-green-600',
+    error: 'text-xs text-red-600',
+  }[tone];
+}
+
+function setAuthPanelExpanded(ui: AuthUiRefs | undefined, expanded: boolean) {
+  if (!ui?.controls || !ui.toggle) return;
+  ui.controls.classList.toggle('hidden', !expanded);
+  ui.toggle.setAttribute('aria-expanded', String(expanded));
+}
+
+function setCompactStatus(statusEl: HTMLElement | undefined, message: string, tone: 'muted' | 'success' | 'error' = 'muted') {
   if (!statusEl) return;
 
   statusEl.textContent = message;
@@ -131,6 +151,8 @@ export async function refreshAuthStatus(ui?: AuthUiRefs): Promise<void> {
 
   if (!apiKey) {
     setStatus(ui?.status ?? null, 'Kein API-Key gespeichert.');
+    setCompactStatus(ui?.compactStatus, 'Kein API-Key gespeichert.');
+    setAuthPanelExpanded(ui, true);
     emitAuthChange({ apiKey: null, authenticated: false });
     return;
   }
@@ -150,6 +172,8 @@ export async function refreshAuthStatus(ui?: AuthUiRefs): Promise<void> {
     if (response.ok) {
       const userLabel = getUserLabel(payload);
       setStatus(ui?.status ?? null, userLabel ? `Logged in as ${userLabel}` : 'API-Key verifiziert.', 'success');
+      setCompactStatus(ui?.compactStatus, '✓ Verbunden', 'success');
+      setAuthPanelExpanded(ui, false);
       emitAuthChange({ apiKey, authenticated: true, user: payload });
       return;
     }
@@ -160,9 +184,13 @@ export async function refreshAuthStatus(ui?: AuthUiRefs): Promise<void> {
       invalidKey ? 'Gespeicherter API-Key ist ungültig.' : `Auth-Prüfung fehlgeschlagen (${response.status}).`,
       'error',
     );
+    setCompactStatus(ui?.compactStatus, invalidKey ? 'API-Key ungültig.' : 'Authentifizierung fehlgeschlagen.', 'error');
+    setAuthPanelExpanded(ui, true);
     emitAuthChange({ apiKey, authenticated: false, user: payload });
   } catch {
     setStatus(ui?.status ?? null, 'Backend nicht erreichbar. API-Key bleibt lokal gespeichert.', 'error');
+    setCompactStatus(ui?.compactStatus, 'Backend nicht erreichbar.', 'error');
+    setAuthPanelExpanded(ui, true);
     emitAuthChange({ apiKey, authenticated: false });
   }
 }
@@ -172,7 +200,10 @@ export function initAuthUi() {
   const saveButton = document.getElementById('api-key-save');
   const clearButton = document.getElementById('api-key-clear');
   const status = document.getElementById('api-key-status');
-  const ui = input && status ? { input, status } : undefined;
+  const controls = document.getElementById('api-key-controls');
+  const toggle = document.getElementById('api-key-toggle') as HTMLButtonElement | null;
+  const compactStatus = document.getElementById('api-key-compact-status');
+  const ui = input && status ? { input, status, controls: controls ?? undefined, toggle: toggle ?? undefined, compactStatus: compactStatus ?? undefined } : undefined;
 
   window.fiaeAuth = {
     apiFetch,
@@ -186,6 +217,11 @@ export function initAuthUi() {
     void refreshAuthStatus();
     return;
   }
+
+  toggle?.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    setAuthPanelExpanded(ui, !expanded);
+  });
 
   saveButton.addEventListener('click', async () => {
     const value = input.value.trim();
