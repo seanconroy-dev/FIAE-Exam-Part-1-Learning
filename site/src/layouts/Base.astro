@@ -29,25 +29,39 @@ const apiBase = import.meta.env.PUBLIC_API_BASE;
         <a href={`${base}/quiz`} class="text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-lg transition-colors ml-auto">Quiz starten</a>
       </nav>
       <div class="border-t border-gray-100">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex flex-col lg:flex-row lg:items-center gap-2 lg:gap-3">
-          <label for="api-key-input" class="text-xs font-semibold uppercase tracking-wide text-gray-500 shrink-0">API Key</label>
-          <input
-            id="api-key-input"
-            type="password"
-            placeholder="Backend API-Key"
-            autocomplete="off"
-            spellcheck="false"
-            class="w-full lg:max-w-sm border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-          <div class="flex items-center gap-2">
-            <button id="api-key-save" type="button" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-3 py-2 rounded-lg transition-colors">
-              Speichern
-            </button>
-            <button id="api-key-clear" type="button" class="bg-white border border-gray-300 hover:bg-gray-50 text-sm font-semibold px-3 py-2 rounded-lg transition-colors">
-              Löschen
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex items-center justify-between gap-2 py-2 lg:hidden">
+            <span id="api-key-compact-status" class="text-xs text-gray-500">API-Key</span>
+            <button
+              id="api-key-toggle"
+              type="button"
+              aria-expanded="true"
+              aria-controls="api-key-controls"
+              class="border border-gray-300 bg-white hover:bg-gray-50 text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors"
+            >
+              API-Key
             </button>
           </div>
-          <span id="api-key-status" class="text-xs text-gray-500 lg:ml-2">Kein API-Key gespeichert.</span>
+          <div id="api-key-controls" class="flex flex-col lg:flex lg:flex-row lg:items-center gap-2 lg:gap-3 py-1 pb-3 lg:py-3 lg:pb-3">
+            <label for="api-key-input" class="text-xs font-semibold uppercase tracking-wide text-gray-500 shrink-0">API Key</label>
+            <input
+              id="api-key-input"
+              type="password"
+              placeholder="Backend API-Key"
+              autocomplete="off"
+              spellcheck="false"
+              class="w-full lg:max-w-sm border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <div class="flex items-center gap-2">
+              <button id="api-key-save" type="button" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-3 py-2 rounded-lg transition-colors">
+                Speichern
+              </button>
+              <button id="api-key-clear" type="button" class="bg-white border border-gray-300 hover:bg-gray-50 text-sm font-semibold px-3 py-2 rounded-lg transition-colors">
+                Löschen
+              </button>
+            </div>
+            <span id="api-key-status" class="text-xs text-gray-500 lg:ml-2">Kein API-Key gespeichert.</span>
+          </div>
         </div>
       </div>
     </header>
